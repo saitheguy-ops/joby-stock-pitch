@@ -29,6 +29,24 @@ for (const s of shots) {
   });
   await page.goto(base + s.path, { waitUntil: "networkidle", timeout: 120_000 });
   await page.waitForTimeout(1500);
+  // Guard: refuse to save a screenshot of an unstyled page (CSS failed to load).
+  const styled = await page.evaluate(() => {
+    const sheets = [...document.styleSheets].filter((sh) => {
+      try {
+        return sh.cssRules.length > 0;
+      } catch {
+        return true; // cross-origin sheet: assume loaded
+      }
+    });
+    const font = getComputedStyle(document.body).fontFamily;
+    return sheets.length > 0 && !/^"?Times/i.test(font);
+  });
+  if (!styled) {
+    await browser.close();
+    throw new Error(
+      `Styles did not load on ${s.path}. Run \`npm run build && npm start\` (not a stale dev server) and try again.`,
+    );
+  }
   if (s.scrollTo) {
     await page.locator(s.scrollTo).first().scrollIntoViewIfNeeded();
     await page.evaluate(() => window.scrollBy(0, -140));

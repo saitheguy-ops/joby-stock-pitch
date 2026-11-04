@@ -10,6 +10,16 @@ A web app that builds a complete, sourced investment pitch on **Joby Aviation (N
 | --- | --- | --- | --- |
 | ![Overview](docs/screenshots/overview.png) | ![Financials](docs/screenshots/financials.png) | ![Pitch](docs/screenshots/pitch.png) | ![Mobile](docs/screenshots/mobile-news.png) |
 
+## Why this was hard
+
+Valuing Joby was much harder than valuing a typical company, because it doesn't make money yet. Normal tools like the P/E ratio, revenue multiples or a DCF built on today's cash flows don't work when there are no earnings to start from. I had to evaluate it with completely different metrics:
+
+- **Cash runway:** how many quarters Joby can keep operating before it needs more money
+- **Cash burn and dilution:** how fast it spends, and how much existing shareholders get diluted when it raises more
+- **Certification milestones:** how close it is to FAA approval to fly paying passengers
+- **Future fleet economics:** a bear/base/bull model of how many aircraft it could fly and what each one could earn
+- **What the price assumes:** a reverse DCF asking how big Joby must get to justify today's stock price
+
 ## Key findings (snapshot: Nov 4, 2026, before Q3 2026 results)
 
 - **The price assumes a big fleet.** At ~$5.16, a reverse DCF holding my base-case economics fixed needs **~2,640 aircraft in service by 2035** vs. 800 in my base case. My probability-weighted value is **$4.19 (−19%) → SELL by a disclosed ±15% rule**. Price from [Yahoo Finance](https://finance.yahoo.com/quote/JOBY/); model on the Valuation page.

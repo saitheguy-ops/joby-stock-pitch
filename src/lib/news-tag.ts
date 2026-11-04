@@ -23,7 +23,7 @@ const RISK: [RegExp, string][] = [
   [/\blawsuit|\bsu(e|es|ed|ing)\b|\blitigation|\bitc\b|\bpatent|\btrade secret/i, "litigation"],
   [/\bcrash|\baccident|\bincident|\bmishap|\bntsb\b/i, "safety incident"],
   [/\binvestigat|\bprobe\b|\bsubpoena|\bclass action/i, "investigation"],
-  [/\boffering\b|\bdilut|\bat[- ]the[- ]market\b|\bconvertible\b|\bshare sale\b|\braise[sd]?\b.*\$/i, "equity raise/dilution"],
+  [/\boffering\b|\bdilut|\bat[- ]the[- ]market\b|\bconvertible\b|\b(share|stock) sale\b|\bjoby raises\b.*\b(capital|stock|shares)\b/i, "equity raise/dilution"],
   [/\b(falls?|drops?|plunges?|slumps?|sinks?|tumbles?|slides?|downgrade[sd]?|sell[- ]off)\b/i, "negative price move"],
   [/\bloss(es)?\b|\bmiss(es|ed)?\b|\bburn\b/i, "losses/miss"],
   [/\blayoffs?\b|\bcuts?\b|\bwarn(s|ing)?\b|\bshort seller|\bbubble\b/i, "warning/cuts"],

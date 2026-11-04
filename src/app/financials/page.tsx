@@ -98,8 +98,22 @@ async function FinancialsBody() {
                 Using the trailing four-quarter average burn of {fmtMoney(m.avgQuarterlyBurnTTM.value)}: {m.runwayQuartersAvg.toFixed(1)} quarters.
               </p>
             )}
+            {m.adjustments.length > 0 && m.proFormaCash !== null && m.proFormaRunwayQuarters !== null && (
+              <div className="rounded-md border border-amber-300 bg-amber-50 p-2 text-xs text-amber-900 dark:border-amber-700/60 dark:bg-amber-950/40 dark:text-amber-200">
+                <p className="tabular">
+                  <strong>Pro forma for announced deals:</strong> {fmtMoney(m.cashAndInvestments.value)}{" "}
+                  {m.adjustments.map((a) => `${a.cashImpact < 0 ? "−" : "+"} ${fmtMoney(Math.abs(a.cashImpact))} (${a.label})`).join(" ")} = {fmtMoney(m.proFormaCash)}, or{" "}
+                  <strong>{m.proFormaRunwayQuarters.toFixed(1)} quarters</strong> at the latest burn (to ~{fmtDate(m.proFormaRunwayEnd)}).
+                </p>
+                {m.adjustments.map((a) => (
+                  <p key={a.id} className="mt-1">
+                    {a.explanation} <SourceLink source={a.source} />
+                  </p>
+                ))}
+              </div>
+            )}
             <p className="text-xs text-slate-500 dark:text-slate-400">
-              Caveats: burn has been rising as Joby builds manufacturing and prepares for launch, so a flat-burn runway is optimistic. It also excludes undrawn financing (e.g. at-the-market equity programs) and debt maturities (the 2032 convertible notes).
+              Caveats: burn has been rising as Joby builds manufacturing and prepares for launch, so a flat-burn runway is optimistic. It also excludes undrawn financing (Joby set up a $750M at-the-market stock program in Aug 2026, per its 8-K) and debt maturities (the 2032 convertible notes).
             </p>
             <div className="flex flex-wrap gap-x-4">
               <SourceLink source={m.cashAndInvestments.source} />

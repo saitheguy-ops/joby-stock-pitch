@@ -2,6 +2,7 @@ import "server-only";
 import { JOBY_CIK, TICKER } from "./config";
 import { getFinancials, type Financials, type LineItem } from "./edgar";
 import { lastN, trailingSum, type Point } from "./edgar-parse";
+import { applicableAdjustments, type CashAdjustment } from "./adjustments";
 import { dilutionStats, runwayQuarters, addQuarters, type DilutionStats } from "./metrics";
 import { secFilingIndexUrl, yahooQuoteUrl, type Result, type Source, type Sourced, safe } from "./sources";
 import { getQuote, type QuoteSnapshot } from "./yahoo";
@@ -44,6 +45,11 @@ export interface KeyMetrics {
   dilution: DilutionStats | null;
   dilutionSource: Source | null;
   balanceSheetDate: string | null;
+  /** Announced cash events not yet in the balance sheet (see lib/adjustments.ts). */
+  adjustments: CashAdjustment[];
+  proFormaCash: number | null;
+  proFormaRunwayQuarters: number | null;
+  proFormaRunwayEnd: string | null;
 }
 
 export function computeKeyMetrics(f: Financials): KeyMetrics {
@@ -59,6 +65,10 @@ export function computeKeyMetrics(f: Financials): KeyMetrics {
   const liquidity = cashInv?.val ?? null;
   const rLatest = liquidity !== null && quarterlyBurn !== null ? runwayQuarters(liquidity, quarterlyBurn) : null;
   const rAvg = liquidity !== null && avgBurn !== null ? runwayQuarters(liquidity, avgBurn) : null;
+
+  const adjustments = applicableAdjustments(cashInv?.end ?? null);
+  const proFormaCash = liquidity !== null ? liquidity + adjustments.reduce((sum, a) => sum + a.cashImpact, 0) : null;
+  const rProForma = proFormaCash !== null && quarterlyBurn !== null ? runwayQuarters(proFormaCash, quarterlyBurn) : null;
 
   const shareSeries = f.coverShares.map((p) => ({ date: p.end, shares: p.val }));
   const lastFcf = fcf ? lastN(fcf.quarterly, 4) : [];
@@ -108,6 +118,10 @@ export function computeKeyMetrics(f: Financials): KeyMetrics {
       ? { label: "SEC filings · cover-page shares outstanding (dei:EntityCommonStockSharesOutstanding), all periods", url: `https://data.sec.gov/api/xbrl/companyconcept/CIK${JOBY_CIK}/dei/EntityCommonStockSharesOutstanding.json`, asOf: cover.end }
       : null,
     balanceSheetDate: cashInv?.end ?? null,
+    adjustments,
+    proFormaCash: adjustments.length ? proFormaCash : null,
+    proFormaRunwayQuarters: adjustments.length ? rProForma : null,
+    proFormaRunwayEnd: adjustments.length && rProForma !== null && cashInv ? addQuarters(cashInv.end, rProForma) : null,
   };
 }
 

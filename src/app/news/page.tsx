@@ -21,12 +21,12 @@ export default function NewsPage() {
         intro="Recent headlines from Yahoo Finance and Google News, merged and de-duplicated, plus Joby's own SEC filings. Each headline is auto-tagged as a catalyst or a risk using visible keyword rules (hover a tag to see why). Treat the tags as a first pass, not a judgment."
       />
       <div className="grid gap-6 lg:grid-cols-3">
-        <div className="space-y-6 lg:col-span-2">
+        <div className="min-w-0 space-y-6 lg:col-span-2">
           <Suspense fallback={<Skeleton className="h-[60vh]" />}>
             <Timeline />
           </Suspense>
         </div>
-        <div className="space-y-6">
+        <div className="min-w-0 space-y-6">
           <Suspense fallback={<Skeleton className="h-80" />}>
             <Upcoming />
           </Suspense>

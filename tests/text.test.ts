@@ -64,6 +64,8 @@ describe("headline tagging", () => {
     expect(tagHeadline("Form 144 Joby Aviation For: 2 November").tag).toBe("risk");
     expect(tagHeadline("Beta Technologies Beat Archer and Joby to an FAA First").matched).toContain("competitor ahead");
     expect(tagHeadline("Joby and Beta Kick Off Florida eIPP Flights").tag).toBe("catalyst");
+    // A customer "raising" spend is not an equity raise.
+    expect(tagHeadline("Air Force Raises Joby's Autonomy Bet to $37M").tag).not.toBe("risk");
   });
 
   it("explains its decision with matched keywords", () => {

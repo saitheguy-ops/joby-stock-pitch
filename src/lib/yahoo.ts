@@ -1,6 +1,7 @@
 import "server-only";
 import { cacheLife } from "next/cache";
 import YahooFinance from "yahoo-finance2";
+import { assertSourceUp } from "./http";
 
 /**
  * Yahoo Finance via the `yahoo-finance2` package (server-side only, no API key).
@@ -16,6 +17,7 @@ const MIRRORS: [RegExp, string][] = [
 ];
 
 async function resilientFetch(input: RequestInfo | URL, init?: RequestInit): Promise<Response> {
+  assertSourceUp("yahoo");
   const url = typeof input === "string" ? input : input instanceof URL ? input.href : input.url;
   try {
     return await fetch(input, { ...init, signal: init?.signal ?? AbortSignal.timeout(15_000) });

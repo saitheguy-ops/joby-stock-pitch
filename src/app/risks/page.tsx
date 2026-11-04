@@ -51,6 +51,12 @@ async function RisksBody() {
         text: `${fmtMoney(m.cashAndInvestments.value)} of cash & investments vs. ${fmtMoney(m.quarterlyBurn.value)} burned last quarter: about ${m.runwayQuartersLatest.toFixed(1)} quarters of runway (to ~${fmtDate(m.runwayEndLatest)}) if burn stays flat.`,
         source: m.quarterlyBurn.source,
       });
+    for (const a of m.adjustments)
+      if (m.proFormaRunwayQuarters !== null)
+        cash.splice(1, 0, {
+          text: `Pro forma for the announced ${a.label.toLowerCase()} (${fmtMoney(a.cashImpact)}), runway shortens to about ${m.proFormaRunwayQuarters.toFixed(1)} quarters.`,
+          source: a.source,
+        });
     if (m.dilution && m.dilutionSource)
       cash.push({
         text: `Shares outstanding rose ${fmtPct(m.dilution.totalPct, 0, true)} from ${fmtShares(m.dilution.first.shares)} (${m.dilution.first.date}) to ${fmtShares(m.dilution.last.shares)} (${m.dilution.last.date}), about ${fmtPct(m.dilution.annualPct, 1)} a year.`,

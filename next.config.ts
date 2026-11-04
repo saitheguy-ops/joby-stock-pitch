@@ -6,6 +6,8 @@ const nextConfig: NextConfig = {
   cacheComponents: true,
   partialPrefetching: true,
   serverExternalPackages: ["yahoo-finance2"],
+  // The pitch page reads content/pitch.md at request time; ship it with the server bundle.
+  outputFileTracingIncludes: { "/pitch": ["./content/**/*"] },
   turbopack: {
     rules: {
       "*.css": {

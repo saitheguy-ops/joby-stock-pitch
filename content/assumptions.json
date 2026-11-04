@@ -1,0 +1,68 @@
+{
+  "asOf": "2026-11-04",
+  "note": "Scenario assumptions are judgment, not facts. Change them only when snapshot evidence supports it, and log every change below with the reason and the snapshot source URL. preLaunchBurnM is filled in at runtime from Joby's trailing four-quarter free-cash-flow burn (SEC filings).",
+  "scenarios": [
+    {
+      "id": "bear",
+      "name": "Bear",
+      "probability": 0.25,
+      "launchYear": 2029,
+      "fleetAtLaunch": 10,
+      "fleetAtScale": 200,
+      "yearsToScale": 8,
+      "revenuePerAircraftM": 1.8,
+      "ebitdaMarginAtScale": 0.15,
+      "costPerAircraftM": 3.0,
+      "taxRate": 0.21,
+      "discountRate": 0.18,
+      "terminalMethod": "multiple",
+      "exitMultiple": 8,
+      "terminalGrowth": 0.02,
+      "futureDilution": 0.5
+    },
+    {
+      "id": "base",
+      "name": "Base",
+      "probability": 0.5,
+      "launchYear": 2027,
+      "fleetAtLaunch": 20,
+      "fleetAtScale": 800,
+      "yearsToScale": 8,
+      "revenuePerAircraftM": 3.0,
+      "ebitdaMarginAtScale": 0.3,
+      "costPerAircraftM": 2.0,
+      "taxRate": 0.21,
+      "discountRate": 0.15,
+      "terminalMethod": "multiple",
+      "exitMultiple": 12,
+      "terminalGrowth": 0.03,
+      "futureDilution": 0.2
+    },
+    {
+      "id": "bull",
+      "name": "Bull",
+      "probability": 0.25,
+      "launchYear": 2027,
+      "fleetAtLaunch": 40,
+      "fleetAtScale": 2500,
+      "yearsToScale": 8,
+      "revenuePerAircraftM": 4.0,
+      "ebitdaMarginAtScale": 0.35,
+      "costPerAircraftM": 1.5,
+      "taxRate": 0.21,
+      "discountRate": 0.13,
+      "terminalMethod": "multiple",
+      "exitMultiple": 15,
+      "terminalGrowth": 0.04,
+      "futureDilution": 0.15
+    }
+  ],
+  "changelog": [
+    {
+      "date": "2026-11-04",
+      "change": "Initial assumptions (see docs/VALUATION.md for the reasoning behind each).",
+      "reason": "First version of the model.",
+      "sources": []
+    }
+  ]
+}

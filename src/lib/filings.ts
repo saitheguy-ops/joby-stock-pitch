@@ -1,5 +1,5 @@
 import "server-only";
-import { cacheLife } from "next/cache";
+import { cacheFor } from "./cache";
 import { JOBY_CIK } from "./config";
 import { getFilings, type Filing } from "./edgar";
 import { extractMilestoneSentences, extractRiskSummary, htmlToText, sentencesMatching, type RiskGroup } from "./filing-text";
@@ -23,7 +23,7 @@ export interface RiskFactorsResult {
 /** "Risk Factors Summary" bullets from the most recent 10-K. */
 export async function getRiskFactors(cik: string = JOBY_CIK): Promise<RiskFactorsResult> {
   "use cache";
-  cacheLife("days");
+  cacheFor("days");
   const filings = await getFilings(cik);
   const tenK = filings.find((f) => f.form === "10-K");
   if (!tenK) throw new Error("No 10-K found in recent SEC filings");
@@ -47,7 +47,7 @@ const ITC_RE = /International Trade Commission|evidentiary hearing|Initial Deter
 /** Forward-looking milestones, legal proceedings and liquidity statements from the latest 10-Q or 10-K. */
 export async function getLatestPeriodicHighlights(cik: string = JOBY_CIK): Promise<FilingHighlights> {
   "use cache";
-  cacheLife("hours");
+  cacheFor("hours");
   const filings = await getFilings(cik);
   const latest = filings.find((f) => f.form === "10-Q" || f.form === "10-K");
   if (!latest) throw new Error("No 10-Q/10-K found in recent SEC filings");

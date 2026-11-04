@@ -1,5 +1,5 @@
 import "server-only";
-import { cacheLife } from "next/cache";
+import { cacheFor } from "./cache";
 import YahooFinance from "yahoo-finance2";
 import { assertSourceUp } from "./http";
 
@@ -79,7 +79,7 @@ export interface QuoteSnapshot {
 
 export async function getQuote(ticker: string): Promise<QuoteSnapshot> {
   "use cache";
-  cacheLife("hours");
+  cacheFor("hours");
   const q = await yf.quote(ticker, undefined, NO_VALIDATE);
   if (!q || typeof q !== "object" || !("symbol" in q)) throw new Error(`No Yahoo quote for ${ticker}`);
   return {
@@ -123,7 +123,7 @@ const RANGE_CONFIG: Record<RangeKey, { days: number | null; interval: "1d" | "1w
 
 export async function getHistory(ticker: string, range: RangeKey): Promise<PriceHistory> {
   "use cache";
-  cacheLife("hours");
+  cacheFor("hours");
   const cfg = RANGE_CONFIG[range];
   const period1 = cfg.days === null ? new Date("2000-01-01") : new Date(Date.now() - cfg.days * 86_400_000);
   const res = (await yf.chart(ticker, { period1, interval: cfg.interval }, NO_VALIDATE)) as ChartRes;
@@ -157,7 +157,7 @@ export interface CompanyProfile {
 
 export async function getProfile(ticker: string): Promise<CompanyProfile> {
   "use cache";
-  cacheLife("hours");
+  cacheFor("hours");
   const s = (await yf.quoteSummary(
     ticker,
     { modules: ["assetProfile", "calendarEvents", "financialData"] },
@@ -197,7 +197,7 @@ export interface YahooNewsItem {
 
 export async function getYahooNews(query: string, count = 25): Promise<YahooNewsItem[]> {
   "use cache";
-  cacheLife("hours");
+  cacheFor("hours");
   const res = (await yf.search(query, { newsCount: count, quotesCount: 0 }, NO_VALIDATE)) as SearchRes;
   return (res.news ?? [])
     .map((n) => ({
@@ -231,7 +231,7 @@ export interface PeerFinancials {
 
 export async function getPeerFinancials(ticker: string): Promise<PeerFinancials> {
   "use cache";
-  cacheLife("hours");
+  cacheFor("hours");
   const s = (await yf.quoteSummary(
     ticker,
     { modules: ["price", "financialData", "defaultKeyStatistics"] },
@@ -260,7 +260,7 @@ export async function getPeerFinancials(ticker: string): Promise<PeerFinancials>
 /** Units of USD per one unit of `currency` (e.g. GBP -> ~1.3). */
 export async function getFxToUsd(currency: string): Promise<{ rate: number; asOf: string | null }> {
   "use cache";
-  cacheLife("hours");
+  cacheFor("hours");
   if (currency === "USD") return { rate: 1, asOf: null };
   const q = await yf.quote(`${currency}USD=X`, undefined, NO_VALIDATE);
   const rate = num(q?.regularMarketPrice);

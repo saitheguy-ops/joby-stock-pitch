@@ -1,5 +1,5 @@
 import "server-only";
-import { cacheLife } from "next/cache";
+import { cacheFor } from "./cache";
 import { XMLParser } from "fast-xml-parser";
 import { getText } from "./http";
 import { headlineKey, tagHeadline, type NewsTag } from "./news-tag";
@@ -33,7 +33,7 @@ interface RssItem {
 
 export async function getGoogleNews(query: string = GOOGLE_NEWS_QUERY): Promise<Omit<NewsItem, "tag" | "matched" | "jobySpecific" | "feed">[]> {
   "use cache";
-  cacheLife("hours");
+  cacheFor("hours");
   const xml = await getText(googleNewsRssUrl(query));
   const parsed = new XMLParser({ ignoreAttributes: false }).parse(xml);
   const raw = parsed?.rss?.channel?.item;

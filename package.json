@@ -8,7 +8,9 @@
     "start": "next start",
     "lint": "eslint",
     "test": "vitest run",
-    "typecheck": "next typegen && tsc --noEmit"
+    "typecheck": "next typegen && tsc --noEmit",
+    "snapshot": "tsx --conditions=react-server scripts/snapshot.mts",
+    "snapshot:check": "tsx scripts/snapshot-check.mts"
   },
   "dependencies": {
     "fast-xml-parser": "^5.12.0",
@@ -30,6 +32,7 @@
     "eslint": "^9",
     "eslint-config-next": "16.4.5",
     "tailwindcss": "^4",
+    "tsx": "^4.23.15",
     "typescript": "^5",
     "vitest": "^5.1.0"
   },

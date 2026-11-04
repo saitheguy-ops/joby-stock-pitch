@@ -1,5 +1,5 @@
 import "server-only";
-import { cacheLife } from "next/cache";
+import { cacheFor } from "./cache";
 import { PEER_CANDIDATES, TICKER } from "./config";
 import { getFinancials } from "./edgar";
 import { trailingSum } from "./edgar-parse";
@@ -38,7 +38,7 @@ const MAJOR_EXCHANGES = /NYSE|Nasdaq|NasdaqGS|NasdaqGM|NasdaqCM|NYQ|NMS|NGM|NCM|
 /** SEC ticker -> CIK map, used to fall back to EDGAR when Yahoo lacks cash-flow data. */
 async function getCikMap(): Promise<Record<string, string>> {
   "use cache";
-  cacheLife("days");
+  cacheFor("days");
   const raw = await secJson<Record<string, { cik_str: number; ticker: string }>>("https://www.sec.gov/files/company_tickers.json");
   const out: Record<string, string> = {};
   for (const v of Object.values(raw)) out[v.ticker.toUpperCase()] = String(v.cik_str).padStart(10, "0");

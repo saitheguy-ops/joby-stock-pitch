@@ -1,0 +1,81 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+/* Dark mode follows the OS setting, on screen only (printing is always light). */
+@custom-variant dark (@media screen and (prefers-color-scheme: dark));
+
+:root {
+  --background: #f8fafc;
+  --foreground: #0f172a;
+  /* Chart tokens (reference palette, validated light/dark steps). */
+  --chart-surface: #ffffff;
+  --chart-text: #52514e;
+  --chart-grid: #e5e7eb;
+  --series-1: #2a78d6;
+  --series-2: #eb6834;
+  --series-3: #1baf7a;
+  --status-good: #0f7b3e;
+  --status-bad: #c43c3b;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media screen and (prefers-color-scheme: dark) {
+  :root {
+    --background: #0b1120;
+    --foreground: #e2e8f0;
+    --chart-surface: #0f172a;
+    --chart-text: #c3c2b7;
+    --chart-grid: #1e293b;
+    --series-1: #3987e5;
+    --series-2: #d95926;
+    --series-3: #199e70;
+    --status-good: #34a868;
+    --status-bad: #e66767;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans), ui-sans-serif, system-ui, sans-serif;
+}
+
+.tabular {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Print / PDF: white paper, no chrome, keep cards together. */
+@media print {
+  :root {
+    --background: #ffffff;
+    --foreground: #000000;
+  }
+  @page {
+    margin: 14mm 12mm;
+  }
+  body {
+    font-size: 11pt;
+  }
+  .no-print {
+    display: none !important;
+  }
+  .print-break-avoid {
+    break-inside: avoid;
+  }
+  a {
+    color: inherit !important;
+    text-decoration: none !important;
+  }
+}
+
+/* No decorative quote marks on the DRAFT callout. */
+.prose blockquote p:first-of-type::before,
+.prose blockquote p:last-of-type::after {
+  content: none;
+}

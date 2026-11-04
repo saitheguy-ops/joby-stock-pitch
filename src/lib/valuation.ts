@@ -264,3 +264,56 @@ export function solveForInput(
   }
   return (a + b) / 2;
 }
+
+export interface TornadoBar {
+  key: string;
+  label: string;
+  lowLabel: string;
+  highLabel: string;
+  lowPrice: number;
+  highPrice: number;
+  /** |high − low|: how much this one assumption moves the price. */
+  swing: number;
+}
+
+export interface Flex {
+  key: keyof ScenarioInputs;
+  label: string;
+  /** Pessimistic value. */
+  low: number;
+  /** Optimistic value. */
+  high: number;
+  fmt: (v: number) => string;
+}
+
+/** Standard one-at-a-time flexes around a scenario, used for the tornado chart. */
+export function defaultFlexes(s: ScenarioInputs): Flex[] {
+  const pct = (v: number) => `${(v * 100).toFixed(1).replace(/\.0$/, "")}%`;
+  const money = (v: number) => `$${v.toFixed(1)}M`;
+  return [
+    { key: "launchYear", label: "Launch year", low: s.launchYear + 2, high: s.launchYear - 1, fmt: (v) => String(v) },
+    { key: "fleetAtScale", label: "Fleet at scale", low: s.fleetAtScale * 0.5, high: s.fleetAtScale * 1.5, fmt: (v) => Math.round(v).toLocaleString("en-US") },
+    { key: "revenuePerAircraftM", label: "Revenue / aircraft", low: s.revenuePerAircraftM * 0.75, high: s.revenuePerAircraftM * 1.25, fmt: money },
+    { key: "ebitdaMarginAtScale", label: "EBITDA margin", low: s.ebitdaMarginAtScale - 0.1, high: s.ebitdaMarginAtScale + 0.1, fmt: pct },
+    { key: "costPerAircraftM", label: "Cost / aircraft", low: s.costPerAircraftM * 1.5, high: s.costPerAircraftM * 0.5, fmt: money },
+    { key: "preLaunchBurnM", label: "Annual burn", low: s.preLaunchBurnM * 1.25, high: s.preLaunchBurnM * 0.75, fmt: (v) => `$${Math.round(v)}M` },
+    { key: "discountRate", label: "Discount rate", low: s.discountRate + 0.03, high: Math.max(0.01, s.discountRate - 0.03), fmt: pct },
+    { key: "exitMultiple", label: "Exit multiple", low: Math.max(0, s.exitMultiple - 4), high: s.exitMultiple + 4, fmt: (v) => `${v.toFixed(1)}x` },
+    { key: "yearsToScale", label: "Years to scale", low: s.yearsToScale + 3, high: Math.max(1, s.yearsToScale - 2), fmt: (v) => `${v} yrs` },
+    { key: "futureDilution", label: "Future dilution", low: s.futureDilution + 0.3, high: Math.max(0, s.futureDilution - 0.1), fmt: pct },
+  ];
+}
+
+/**
+ * One-at-a-time sensitivity ("tornado"): flex each assumption to a pessimistic
+ * and an optimistic value, holding everything else fixed, and rank by price swing.
+ */
+export function tornado(s: ScenarioInputs, c: CompanyInputs, flexes: Flex[] = defaultFlexes(s)): TornadoBar[] {
+  return flexes
+    .map((f) => {
+      const lowPrice = runScenario({ ...s, [f.key]: f.low }, c).pricePerShare;
+      const highPrice = runScenario({ ...s, [f.key]: f.high }, c).pricePerShare;
+      return { key: String(f.key), label: f.label, lowLabel: f.fmt(f.low), highLabel: f.fmt(f.high), lowPrice, highPrice, swing: Math.abs(highPrice - lowPrice) };
+    })
+    .sort((a, b) => b.swing - a.swing);
+}

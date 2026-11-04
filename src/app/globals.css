@@ -7,6 +7,15 @@
 :root {
   --background: #f8fafc;
   --foreground: #0f172a;
+  /* Chart tokens (reference palette, validated light/dark steps). */
+  --chart-surface: #ffffff;
+  --chart-text: #52514e;
+  --chart-grid: #e5e7eb;
+  --series-1: #2a78d6;
+  --series-2: #eb6834;
+  --series-3: #1baf7a;
+  --status-good: #0f7b3e;
+  --status-bad: #c43c3b;
 }
 
 @theme inline {
@@ -20,6 +29,14 @@
   :root {
     --background: #0b1120;
     --foreground: #e2e8f0;
+    --chart-surface: #0f172a;
+    --chart-text: #c3c2b7;
+    --chart-grid: #1e293b;
+    --series-1: #3987e5;
+    --series-2: #d95926;
+    --series-3: #199e70;
+    --status-good: #34a868;
+    --status-bad: #e66767;
   }
 }
 

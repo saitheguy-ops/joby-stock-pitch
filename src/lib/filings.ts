@@ -39,6 +39,7 @@ export interface FilingHighlights {
   legal: string[];
   liquidity: string[];
   certification: string[];
+  business: string[];
 }
 
 /** Forward-looking milestones, legal proceedings and liquidity statements from the latest 10-Q or 10-K. */
@@ -63,7 +64,8 @@ export async function getLatestPeriodicHighlights(cik: string = JOBY_CIK): Promi
       4,
     ),
     liquidity: sentencesMatching(narrative, /\b(sufficient|at least the next twelve months|dilution to stockholders)\b/i, 3),
-    certification: sentencesMatching(narrative, /\b(five stages|stage 4|type certification|eIPP|GCAA|Dubai)\b/, 5),
+    certification: sentencesMatching(narrative, /\b(five stages|stage 4|type certification|eIPP|GCAA|Dubai)\b/, 6),
+    business: sentencesMatching(narrative, /\b(designing and testing|routes to market|vertically[- ]integrated|acquired Blade|up to four passengers)\b/, 5),
   };
 }
 

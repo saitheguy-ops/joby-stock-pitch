@@ -69,11 +69,17 @@ export function extractRiskSummary(text: string): RiskGroup[] {
  * "We are targeting carrying our first passengers in 2026." Boilerplate from the
  * forward-looking-statements legend is skipped.
  */
+/** Split into sentences without letting headings (separate lines) bleed into them. */
+export function splitSentences(text: string): string[] {
+  return text
+    .split("\n")
+    .flatMap((line) => line.split(/(?<=[.!?])\s+(?=[A-Z“"])/))
+    .map((s) => s.trim())
+    .filter(Boolean);
+}
+
 export function extractMilestoneSentences(text: string, fromYear: number, max = 8): string[] {
-  const sentences = text
-    .replace(/\n/g, " ")
-    .split(/(?<=[.!?])\s+(?=[A-Z“"])/)
-    .map((s) => s.trim());
+  const sentences = splitSentences(text);
   const yearRe = new RegExp(`\\b(${Array.from({ length: 6 }, (_, i) => fromYear + i).join("|")})\\b`);
   const intentRe = /\b(target(ing|s|ed)?|expect(s|ed)?|plan(s|ned)?|anticipat\w*|intend(s|ed)?|goal|on track|aim(s|ing)?)\b/i;
   const boilerplate = /forward-looking|Private Securities Litigation|undue reliance|could cause actual results|accounting standard|ASU \d|effective for|adopt(ed|ion)? (of )?(the|this) (standard|guidance)|fiscal years? beginning|10b5-1|trading plan/i;
@@ -95,8 +101,7 @@ export function extractMilestoneSentences(text: string, fromYear: number, max = 
 export function sentencesMatching(text: string, re: RegExp, max = 5): string[] {
   const out: string[] = [];
   const seen = new Set<string>();
-  for (const s of text.replace(/\n/g, " ").split(/(?<=[.!?])\s+(?=[A-Z“"])/)) {
-    const t = s.trim();
+  for (const t of splitSentences(text)) {
     if (t.length < 40 || t.length > 600 || !re.test(t)) continue;
     const key = t.toLowerCase().slice(0, 80);
     if (seen.has(key)) continue;

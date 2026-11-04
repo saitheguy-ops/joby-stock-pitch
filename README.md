@@ -8,11 +8,11 @@ A web app that builds a complete, sourced investment pitch on **Joby Aviation (N
 
 **Refreshing.** Say *"refresh the Joby briefing"* to Claude Code. It follows [docs/REFRESH.md](docs/REFRESH.md): `npm run snapshot`, compare with the last briefing, change [assumptions](content/assumptions.json) only with logged evidence, rewrite the briefing, archive a dated copy in `content/briefings/`, run `npm run briefing:check`, lint, tests and build, then push to `main`. No API keys are used.
 
-![Valuation page](docs/screenshots/valuation.png)
+![Briefing page](docs/screenshots/briefing.png)
 
-| Overview | Financials | Pitch | Mobile (dark) |
+| Valuation | Financials | Pitch | Mobile (dark) |
 | --- | --- | --- | --- |
-| ![Overview](docs/screenshots/overview.png) | ![Financials](docs/screenshots/financials.png) | ![Pitch](docs/screenshots/pitch.png) | ![Mobile](docs/screenshots/mobile-news.png) |
+| ![Valuation](docs/screenshots/valuation.png) | ![Financials](docs/screenshots/financials.png) | ![Pitch](docs/screenshots/pitch.png) | ![Mobile](docs/screenshots/mobile-briefing.png) |
 
 ## Why this was hard
 

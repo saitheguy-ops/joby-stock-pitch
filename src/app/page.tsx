@@ -261,7 +261,7 @@ function ScoreCard({
   const r = RATING_META[rating];
   return (
     <div className="min-w-0 rounded-xl border border-slate-200 bg-white p-3 dark:border-slate-800 dark:bg-slate-900">
-      <div className="flex items-center justify-between gap-2">
+      <div className="flex flex-wrap items-center justify-between gap-x-2 gap-y-1">
         <span className="text-sm font-semibold text-slate-900 dark:text-slate-100">
           {area}
         </span>

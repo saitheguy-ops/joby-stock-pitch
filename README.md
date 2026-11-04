@@ -13,7 +13,7 @@ A web app that builds a complete, sourced investment pitch on **Joby Aviation (N
 ## Key findings (snapshot: Nov 4, 2026, before Q3 2026 results)
 
 - **The price assumes a big fleet.** At ~$5.16, a reverse DCF holding my base-case economics fixed needs **~2,640 aircraft in service by 2035** vs. 800 in my base case. My probability-weighted value is **$4.19 (−19%) → SELL by a disclosed ±15% rule**. Price from [Yahoo Finance](https://finance.yahoo.com/quote/JOBY/); model on the Valuation page.
-- **Cash buys ~2–3 years, but dilution continues.** $2.26B of cash and short-term investments against $202M of Q2 free-cash-flow burn is **~11 quarters of runway**, or ~9 pro forma for the ~$450M cash portion of the pending Resonant acquisition ([10-Q](https://www.sec.gov/Archives/edgar/data/1819848/000181984826000435/joby-20260630.htm), [8-K](https://www.sec.gov/Archives/edgar/data/1819848/000162828026055505/joby-20260808.htm)). Shares are **up 64% since Aug 2021**, and a $750M at-the-market program is in place ([424B5](https://www.sec.gov/Archives/edgar/data/1819848/000162828026055507/atm424b5.htm)).
+- **Cash buys ~2–3 years, but dilution continues.** $2.26B of cash and short-term investments against $202M of Q2 free-cash-flow burn is **~11 quarters of runway**, or ~9 pro forma for the ~$450M cash portion of the pending Resonant acquisition ([10-Q](https://www.sec.gov/Archives/edgar/data/1819848/000181984826000435/joby-20260630.htm), [8-K](https://www.sec.gov/Archives/edgar/data/1819848/000162828026055505/joby-20260808.htm)). The share count is **up 64% since Aug 2021**, and a $750M at-the-market program is in place ([424B5](https://www.sec.gov/Archives/edgar/data/1819848/000162828026055507/atm424b5.htm)).
 - **Certification is close but not done.** Joby reports being ~75% through stage 4 of 5 of FAA type certification and targets first passengers in 2026 ([10-Q](https://www.sec.gov/Archives/edgar/data/1819848/000181984826000435/joby-20260630.htm)). The most valuable assumptions are **fleet at scale, margin, launch year and ramp speed**.
 
 ## Pages
@@ -58,11 +58,12 @@ Next.js 16 (App Router, Cache Components) · TypeScript · Tailwind CSS v4 · Re
 
 ## What I learned
 
-- *The hardest assumption to defend in an interview was… because…*
-- *Valuing a pre-revenue company differs from a profitable one in that…*
-- *Reading Joby's 10-K risk factors changed my view on…*
-- *If I rebuilt this, I would…*
-- *The number that surprised me most was…*
+- **Valuing a pre-revenue company is about scenarios, not one forecast.** Joby has almost no revenue, so P/E and EV/Sales say little. A bear/base/bull DCF weighted by probability was the honest way to value it. It also showed how much the answer depends on judgment: $3.69 of my $4.19 target comes from the bull case alone.
+- **A reverse DCF makes a pitch easier to argue.** Instead of only asking "what is it worth?", I asked "what does today's price assume?" The answer, about 2,640 aircraft in service by 2035, is one concrete number that anyone can debate.
+- **Cash runway and dilution matter as much as the business.** For a company burning about $200M a quarter, the 10-Q's cash balance, the share count on each cover page, and the $750M at-the-market program say a lot about what existing shareholders will own later.
+- **Primary sources beat summaries.** Reading the 10-K risk factors, 10-Qs, 8-Ks and the 424B5 directly taught me where each number comes from, and that every claim in a pitch needs a source and a date.
+- **Automation needs checking.** My keyword rules tagged "Air Force raises Joby's autonomy bet to $37M" as a stock offering because it matched "raises … $". It was a contract, which is good news. Every automated label has to be checked by a person.
+- **An analysis has an expiration date.** Joby reported Q3 results the same day I finished the first draft, so the app shows an as-of date on everything, and the written pitch has to be re-checked after each earnings report.
 
 ## Repo map
 

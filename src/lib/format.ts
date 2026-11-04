@@ -62,3 +62,8 @@ export function periodLabel(end: string, annual: boolean): string {
   const m = Number(end.slice(5, 7));
   return `Q${Math.ceil(m / 3)} ${y}`;
 }
+
+/** Epoch milliseconds `days` ago (request-time helper; pages calling it render dynamically). */
+export function msAgo(days: number): number {
+  return Date.now() - days * 86_400_000;
+}

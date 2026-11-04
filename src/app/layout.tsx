@@ -9,7 +9,7 @@ const geistSans = Geist({ variable: "--font-geist-sans", subsets: ["latin"] });
 const geistMono = Geist_Mono({ variable: "--font-geist-mono", subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: { default: "JOBY Stock Pitch Builder", template: "%s · JOBY Pitch" },
+  title: { default: "JOBY Briefing", template: "%s · JOBY Briefing" },
   description:
     "An educational, fully sourced investment pitch on Joby Aviation (NYSE: JOBY): live SEC financials, scenario DCF, comps, news, risks and a one-page pitch.",
 };
@@ -28,7 +28,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
           <div className="mx-auto flex max-w-6xl flex-col gap-2 px-4 py-3 sm:flex-row sm:items-center sm:justify-between">
             <Link href="/" className="flex items-baseline gap-2">
               <span className="text-lg font-bold tracking-tight text-slate-900 dark:text-white">JOBY</span>
-              <span className="text-sm text-slate-500 dark:text-slate-400">Stock Pitch Builder</span>
+              <span className="text-sm text-slate-500 dark:text-slate-400">Briefing</span>
             </Link>
             <Suspense>
               <Nav />

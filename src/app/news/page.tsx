@@ -2,7 +2,8 @@ import type { Metadata } from "next";
 import { connection } from "next/server";
 import { Suspense } from "react";
 import { NewsTimeline } from "@/components/NewsTimeline";
-import { Badge, Card, PageHeader, Skeleton, SourceLink, Unavailable } from "@/components/ui";
+import { NewsSummary } from "@/components/summaries";
+import { Badge, Card, Collapsible, PageHeader, Skeleton, SourceLink, Unavailable } from "@/components/ui";
 import { getUpcomingCatalysts } from "@/lib/catalysts";
 import { JOBY_CIK } from "@/lib/config";
 import { EIGHT_K_ITEMS } from "@/lib/edgar";
@@ -20,6 +21,9 @@ export default function NewsPage() {
         title="News & catalysts"
         intro="Recent headlines from Yahoo Finance and Google News, merged and de-duplicated, plus Joby's own SEC filings. Each headline is auto-tagged as a catalyst or a risk using visible keyword rules (hover a tag to see why). Treat the tags as a first pass, not a judgment."
       />
+      <Suspense fallback={<Skeleton className="mb-6 h-24" />}>
+        <NewsSummary />
+      </Suspense>
       <div className="grid gap-6 lg:grid-cols-3">
         <div className="min-w-0 space-y-6 lg:col-span-2">
           <Suspense fallback={<Skeleton className="h-[60vh]" />}>
@@ -90,7 +94,7 @@ async function Filings() {
   const res = await safe(() => getRecentMaterialFilings());
   if (!res.ok) return <Unavailable what="SEC filing list" error={res.error} source={{ label: "Joby on EDGAR", url: edgarBrowseUrl(JOBY_CIK) }} />;
   return (
-    <Card title="Recent SEC filings" subtitle="Primary source for material events. 8-K item numbers are decoded.">
+    <Collapsible title="Recent SEC filings" hint="8-K, 10-Q, 10-K and offering filings, with decoded 8-K items">
       <ul className="space-y-2 text-sm">
         {res.data.map((f) => (
           <li key={f.url} className="flex gap-2">
@@ -116,6 +120,6 @@ async function Filings() {
         ))}
       </ul>
       <SourceLink className="mt-3" source={{ label: "All Joby filings on SEC EDGAR", url: edgarBrowseUrl(JOBY_CIK), asOf: new Date().toISOString() }} />
-    </Card>
+    </Collapsible>
   );
 }

@@ -4,11 +4,15 @@ A web app that builds a complete, sourced investment pitch on **Joby Aviation (N
 
 > **Educational project, not investment advice.**
 
-![Valuation page](docs/screenshots/valuation.png)
+**Briefing (home page).** `/` shows the current call: verdict, price target, a status scorecard, what changed, upcoming events and things to watch. The text is written by a Claude Code session in [`content/briefing.md`](content/briefing.md), citing only [`data/snapshot.json`](data/snapshot.json). The other tabs are the live "Details" behind it.
 
-| Overview | Financials | Pitch | Mobile (dark) |
+**Refreshing.** Say *"refresh the Joby briefing"* to Claude Code. It follows [docs/REFRESH.md](docs/REFRESH.md): `npm run snapshot`, compare with the last briefing, change [assumptions](content/assumptions.json) only with logged evidence, rewrite the briefing, archive a dated copy in `content/briefings/`, run `npm run briefing:check`, lint, tests and build, then push to `main`. No API keys are used.
+
+![Briefing page](docs/screenshots/briefing.png)
+
+| Valuation | Financials | Pitch | Mobile (dark) |
 | --- | --- | --- | --- |
-| ![Overview](docs/screenshots/overview.png) | ![Financials](docs/screenshots/financials.png) | ![Pitch](docs/screenshots/pitch.png) | ![Mobile](docs/screenshots/mobile-news.png) |
+| ![Valuation](docs/screenshots/valuation.png) | ![Financials](docs/screenshots/financials.png) | ![Pitch](docs/screenshots/pitch.png) | ![Mobile](docs/screenshots/mobile-briefing.png) |
 
 ## Why this was hard
 
@@ -28,6 +32,10 @@ Valuing Joby was much harder than valuing a typical company, because it doesn't 
 
 ## Pages
 
+0. **Briefing** (`/`): verdict, scorecard, what changed, events timeline, things to watch; warns when the data is more than 14 days old.
+
+Details pages, each led by a live 3-line summary with long tables and charts in collapsible sections:
+
 1. **Overview**: snapshot in the company's own words, price chart (1M/1Y/5Y/Max), market cap, shares, 52-week range, runway.
 2. **Financials**: income statement, balance sheet and cash flow from EDGAR XBRL (annual and quarterly), with charts of cash, burn and share count; runway and dilution math shown.
 3. **Valuation**: editable bear/base/bull DCF, probability-weighted target, sensitivity grid, tornado, reverse DCF, live comps. See [docs/VALUATION.md](docs/VALUATION.md).
@@ -44,9 +52,12 @@ npm install && npm run dev
 Open http://localhost:3000. No API keys are needed. Optionally set `SEC_USER_AGENT="Your Name you@example.com"` (see `.env.example`); the SEC asks automated clients to identify themselves.
 
 ```bash
-npm test            # unit tests: DCF, probability weighting, runway, dilution, parsing
+npm test            # unit tests: DCF, probability weighting, runway, dilution, parsing, snapshot, briefing
 npm run lint
 npm run build
+npm run snapshot          # fetch fresh data into data/snapshot.json
+npm run snapshot:check    # validate it (sources, dates, 60-day news window, staleness)
+npm run briefing:check    # lint content/briefing.md; every URL must be in the snapshot
 ```
 
 Deploy: import the repo into Vercel (free tier) with no configuration. Set `SIMULATE_OUTAGE=all` (or `sec`, `yahoo`, `news`) locally to see how each page degrades when a source is down.
@@ -78,10 +89,14 @@ Next.js 16 (App Router, Cache Components) · TypeScript · Tailwind CSS v4 · Re
 ## Repo map
 
 ```
-src/lib/        data sources (edgar, yahoo, news, filings), valuation math, metrics
-src/app/        one folder per page
-content/pitch.md   your editable pitch
-docs/VALUATION.md  plain-language valuation walkthrough
+src/lib/        data sources (edgar, yahoo, news, filings), valuation math, metrics, snapshot, briefing parser
+src/app/        one folder per page (/ is the Briefing)
+content/briefing.md      current briefing; content/briefings/ holds dated copies
+content/assumptions.json scenario assumptions + changelog
+content/pitch.md         editable one-page pitch
+data/snapshot.json       the facts a briefing may cite (npm run snapshot)
+docs/REFRESH.md          refresh procedure for Claude Code
+docs/VALUATION.md        plain-language valuation walkthrough
 tests/          Vitest unit tests
-scripts/screenshots.mjs  regenerates the README screenshots
+scripts/        snapshot, snapshot-check, briefing-check, screenshots
 ```

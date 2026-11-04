@@ -1,69 +1,19 @@
+import assumptions from "../../content/assumptions.json";
 import type { ScenarioInputs } from "./valuation";
 
 /**
- * Default scenario assumptions. These are MY assumptions, not company guidance or
- * facts; each one is explained below and editable in the UI. The live, sourced
- * inputs (cash, debt, shares, price, burn) come from SEC EDGAR and Yahoo instead.
+ * Default scenario assumptions live in content/assumptions.json so a briefing
+ * refresh can change them (with a logged reason) without touching code. They are
+ * MY assumptions, not company guidance or facts; each is explained below and
+ * editable in the UI. Live, sourced inputs (cash, debt, shares, price, burn) come
+ * from SEC EDGAR and Yahoo instead.
  *
  * `preLaunchBurnM` is filled in at runtime from the trailing-four-quarter
  * free-cash-flow burn reported in Joby's filings.
  */
-export const DEFAULT_SCENARIOS: Omit<ScenarioInputs, "preLaunchBurnM">[] = [
-  {
-    id: "bear",
-    name: "Bear",
-    probability: 0.25,
-    launchYear: 2029,
-    fleetAtLaunch: 10,
-    fleetAtScale: 200,
-    yearsToScale: 8,
-    revenuePerAircraftM: 1.8,
-    ebitdaMarginAtScale: 0.15,
-    costPerAircraftM: 3.0,
-    taxRate: 0.21,
-    discountRate: 0.18,
-    terminalMethod: "multiple",
-    exitMultiple: 8,
-    terminalGrowth: 0.02,
-    futureDilution: 0.5,
-  },
-  {
-    id: "base",
-    name: "Base",
-    probability: 0.5,
-    launchYear: 2027,
-    fleetAtLaunch: 20,
-    fleetAtScale: 800,
-    yearsToScale: 8,
-    revenuePerAircraftM: 3.0,
-    ebitdaMarginAtScale: 0.3,
-    costPerAircraftM: 2.0,
-    taxRate: 0.21,
-    discountRate: 0.15,
-    terminalMethod: "multiple",
-    exitMultiple: 12,
-    terminalGrowth: 0.03,
-    futureDilution: 0.2,
-  },
-  {
-    id: "bull",
-    name: "Bull",
-    probability: 0.25,
-    launchYear: 2027,
-    fleetAtLaunch: 40,
-    fleetAtScale: 2500,
-    yearsToScale: 8,
-    revenuePerAircraftM: 4.0,
-    ebitdaMarginAtScale: 0.35,
-    costPerAircraftM: 1.5,
-    taxRate: 0.21,
-    discountRate: 0.13,
-    terminalMethod: "multiple",
-    exitMultiple: 15,
-    terminalGrowth: 0.04,
-    futureDilution: 0.15,
-  },
-];
+export const DEFAULT_SCENARIOS = assumptions.scenarios as Omit<ScenarioInputs, "preLaunchBurnM">[];
+export const ASSUMPTIONS_AS_OF: string = assumptions.asOf;
+export const ASSUMPTIONS_CHANGELOG: { date: string; change: string; reason: string; sources: string[] }[] = assumptions.changelog;
 
 /** Scenario narratives shown above the inputs. */
 export const SCENARIO_STORIES: Record<ScenarioInputs["id"], string> = {

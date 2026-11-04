@@ -10,11 +10,12 @@ const out = new URL("../docs/screenshots/", import.meta.url);
 await mkdir(out, { recursive: true });
 
 const shots = [
-  { path: "/", file: "overview.png", viewport: { width: 1280, height: 860 } },
+  { path: "/", file: "briefing.png", viewport: { width: 1280, height: 1000 } },
+  { path: "/overview", file: "overview.png", viewport: { width: 1280, height: 860 } },
   { path: "/financials", file: "financials.png", viewport: { width: 1280, height: 900 } },
   { path: "/valuation", file: "valuation.png", viewport: { width: 1280, height: 1100 }, scrollTo: "text=Implied value per share" },
   { path: "/pitch", file: "pitch.png", viewport: { width: 1280, height: 1000 } },
-  { path: "/news", file: "mobile-news.png", viewport: { width: 390, height: 844 }, mobile: true, scheme: "dark" },
+  { path: "/", file: "mobile-briefing.png", viewport: { width: 390, height: 844 }, mobile: true, scheme: "dark" },
 ];
 
 const browser = await chromium.launch();

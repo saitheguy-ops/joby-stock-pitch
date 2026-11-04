@@ -1,4 +1,4 @@
-import { cacheLife } from "next/cache";
+import { cacheFor } from "./cache";
 import { JOBY_CIK } from "./config";
 import {
   annualDurations,
@@ -166,7 +166,7 @@ export function combine(a: Point[], b: Point[], fn: (x: number, y: number) => nu
 /** Joby's financial statements from SEC EDGAR XBRL (companyfacts). Cached for hours. */
 export async function getFinancials(cik: string = JOBY_CIK): Promise<Financials> {
   "use cache";
-  cacheLife("hours");
+  cacheFor("hours");
   const facts = await secJson<CompanyFacts>(edgarCompanyFactsUrl(cik));
   const build = (defs: Def[]) => defs.map((d) => buildItem(facts, d)).filter((x): x is LineItem => x !== null);
 
@@ -216,6 +216,8 @@ export interface Filing {
   form: string;
   filed: string;
   reportDate: string;
+  /** EDGAR acceptance time (UTC). Filings accepted after 5:30pm ET get the next day's filing date. */
+  acceptedAt: string | null;
   accn: string;
   primaryDoc: string;
   description: string;
@@ -231,6 +233,7 @@ interface Submissions {
       accessionNumber: string[];
       filingDate: string[];
       reportDate: string[];
+      acceptanceDateTime?: string[];
       form: string[];
       primaryDocument: string[];
       primaryDocDescription: string[];
@@ -242,13 +245,14 @@ interface Submissions {
 /** Recent filings list from data.sec.gov/submissions. Cached for hours. */
 export async function getFilings(cik: string = JOBY_CIK): Promise<Filing[]> {
   "use cache";
-  cacheLife("hours");
+  cacheFor("hours");
   const s = await secJson<Submissions>(`https://data.sec.gov/submissions/CIK${cik}.json`);
   const r = s.filings.recent;
   return r.accessionNumber.slice(0, 250).map((accn, i) => ({
     form: r.form[i],
     filed: r.filingDate[i],
     reportDate: r.reportDate[i],
+    acceptedAt: r.acceptanceDateTime?.[i] || null,
     accn,
     primaryDoc: r.primaryDocument[i],
     description: r.primaryDocDescription[i],

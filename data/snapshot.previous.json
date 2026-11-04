@@ -1,0 +1,3167 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-11-04T19:10:41.305Z",
+  "ticker": "JOBY",
+  "sourcesStatus": [
+    {
+      "name": "Yahoo quote",
+      "ok": true
+    },
+    {
+      "name": "SEC EDGAR companyfacts",
+      "ok": true
+    },
+    {
+      "name": "SEC latest 10-Q/10-K text",
+      "ok": true
+    },
+    {
+      "name": "Valuation model (EDGAR + Yahoo)",
+      "ok": true
+    },
+    {
+      "name": "Yahoo profile/calendar/analysts",
+      "ok": true
+    },
+    {
+      "name": "News (Yahoo + Google News)",
+      "ok": true
+    },
+    {
+      "name": "SEC EDGAR submissions",
+      "ok": true
+    },
+    {
+      "name": "News feed: Yahoo Finance",
+      "ok": true
+    },
+    {
+      "name": "News feed: Google News",
+      "ok": true
+    },
+    {
+      "name": "Yahoo 1Y daily history JOBY",
+      "ok": true
+    },
+    {
+      "name": "Yahoo 1Y daily history SPY",
+      "ok": true
+    },
+    {
+      "name": "Yahoo 1Y daily history ACHR",
+      "ok": true
+    },
+    {
+      "name": "Yahoo 1Y daily history BETA",
+      "ok": true
+    },
+    {
+      "name": "Yahoo 1Y daily history EVEX",
+      "ok": true
+    },
+    {
+      "name": "Yahoo 1Y daily history EH",
+      "ok": true
+    },
+    {
+      "name": "Yahoo 1Y daily history EVTL",
+      "ok": true
+    },
+    {
+      "name": "Yahoo 1Y daily history HOVR",
+      "ok": true
+    }
+  ],
+  "price": {
+    "value": 5.105,
+    "change": 0.2550001,
+    "changePct": 5.2577343,
+    "marketCap": 5086082048,
+    "fiftyTwoWeekLow": 4.43,
+    "fiftyTwoWeekHigh": 17.1,
+    "marketState": "REGULAR",
+    "source": {
+      "label": "Yahoo Finance quote (NYSE)",
+      "url": "https://finance.yahoo.com/quote/JOBY/",
+      "asOf": "2026-11-04T19:10:26.000Z"
+    }
+  },
+  "performance": [
+    {
+      "ticker": "JOBY",
+      "name": "Joby Aviation",
+      "role": "subject",
+      "lastClose": 5.105000019073486,
+      "lastDate": "2026-11-04",
+      "returns": {
+        "1W": 0.004921278689546282,
+        "1M": -0.11678203568045276,
+        "3M": -0.37970834714210555,
+        "YTD": -0.6132575687243371,
+        "1Y": -0.6541327953989996
+      },
+      "source": {
+        "label": "Yahoo Finance daily adjusted closes, JOBY",
+        "url": "https://finance.yahoo.com/quote/JOBY/history/",
+        "asOf": "2026-11-04"
+      }
+    },
+    {
+      "ticker": "SPY",
+      "name": "S&P 500 ETF (SPY)",
+      "role": "benchmark",
+      "lastClose": 768.6500244140625,
+      "lastDate": "2026-11-04",
+      "returns": {
+        "1W": -0.004738994906321348,
+        "1M": -0.01340025168021175,
+        "3M": 0.002600610657074176,
+        "YTD": 0.1359891423299393,
+        "1Y": 0.1506172334175937
+      },
+      "source": {
+        "label": "Yahoo Finance daily adjusted closes, SPY",
+        "url": "https://finance.yahoo.com/quote/SPY/history/",
+        "asOf": "2026-11-04"
+      }
+    },
+    {
+      "ticker": "ACHR",
+      "name": "Piloted eVTOL air taxi (Midnight)",
+      "role": "peer",
+      "lastClose": 4.139900207519531,
+      "lastDate": "2026-11-04",
+      "returns": {
+        "1W": -0.0461059765053331,
+        "1M": -0.10969889836262325,
+        "3M": -0.20843208557904946,
+        "YTD": -0.4494813539867233,
+        "1Y": -0.566956064246123
+      },
+      "source": {
+        "label": "Yahoo Finance daily adjusted closes, ACHR",
+        "url": "https://finance.yahoo.com/quote/ACHR/history/",
+        "asOf": "2026-11-04"
+      }
+    },
+    {
+      "ticker": "BETA",
+      "name": "Electric CTOL/eVTOL (ALIA)",
+      "role": "peer",
+      "lastClose": 25.399999618530273,
+      "lastDate": "2026-11-04",
+      "returns": {
+        "1W": 0.27127128130490896,
+        "1M": 0.21531100871457576,
+        "3M": 0.11795776347583398,
+        "YTD": -0.09961005165324743,
+        "1Y": -0.2944444550408257
+      },
+      "source": {
+        "label": "Yahoo Finance daily adjusted closes, BETA",
+        "url": "https://finance.yahoo.com/quote/BETA/history/",
+        "asOf": "2026-11-04"
+      }
+    },
+    {
+      "ticker": "EVEX",
+      "name": "eVTOL developer majority-owned by Embraer",
+      "role": "peer",
+      "lastClose": 1.7050000429153442,
+      "lastDate": "2026-11-04",
+      "returns": {
+        "1W": 0.03963418157770149,
+        "1M": -0.0029239737544372035,
+        "3M": -0.34923659641629556,
+        "YTD": -0.5726816945262858,
+        "1Y": -0.5716080314712523
+      },
+      "source": {
+        "label": "Yahoo Finance daily adjusted closes, EVEX",
+        "url": "https://finance.yahoo.com/quote/EVEX/history/",
+        "asOf": "2026-11-04"
+      }
+    },
+    {
+      "ticker": "EH",
+      "name": "Autonomous passenger eVTOL (China)",
+      "role": "peer",
+      "lastClose": 4.099999904632568,
+      "lastDate": "2026-11-04",
+      "returns": {
+        "1W": 0.11413038865661429,
+        "1M": 0,
+        "3M": -0.230769237650991,
+        "YTD": -0.6889226244537718,
+        "1Y": -0.7576832218590268
+      },
+      "source": {
+        "label": "Yahoo Finance daily adjusted closes, EH",
+        "url": "https://finance.yahoo.com/quote/EH/history/",
+        "asOf": "2026-11-04"
+      }
+    },
+    {
+      "ticker": "EVTL",
+      "name": "Piloted eVTOL (VX4/Valo), UK",
+      "role": "peer",
+      "lastClose": 0.4050000011920929,
+      "lastDate": "2026-11-04",
+      "returns": {
+        "1W": -0.019370427724675565,
+        "1M": -0.27678571523604345,
+        "3M": -0.6785714251924804,
+        "YTD": -0.9240150080695521,
+        "1Y": -0.9047058820724487
+      },
+      "source": {
+        "label": "Yahoo Finance daily adjusted closes, EVTL",
+        "url": "https://finance.yahoo.com/quote/EVTL/history/",
+        "asOf": "2026-11-04"
+      }
+    },
+    {
+      "ticker": "HOVR",
+      "name": "Hybrid-electric VTOL (Cavorite X7), Canada",
+      "role": "peer",
+      "lastClose": 1.1749999523162842,
+      "lastDate": "2026-11-04",
+      "returns": {
+        "1W": -0.09615384968074836,
+        "1M": -0.2656250407453621,
+        "3M": -0.39743593662369714,
+        "YTD": -0.20068032010369752,
+        "1Y": -0.44575470955442265
+      },
+      "source": {
+        "label": "Yahoo Finance daily adjusted closes, HOVR",
+        "url": "https://finance.yahoo.com/quote/HOVR/history/",
+        "asOf": "2026-11-04"
+      }
+    }
+  ],
+  "metrics": {
+    "balanceSheetDate": "2026-06-30",
+    "cashAndInvestments": {
+      "value": 2263826000,
+      "source": {
+        "label": "SEC 10-Q · balance sheet as of 2026-06-30 · filed 2026-08-06",
+        "url": "https://www.sec.gov/Archives/edgar/data/1819848/000181984826000435/0001819848-26-000435-index.htm",
+        "asOf": "2026-06-30"
+      }
+    },
+    "debt": {
+      "value": 701874000,
+      "source": {
+        "label": "SEC 10-Q · balance sheet as of 2026-06-30 · filed 2026-08-06",
+        "url": "https://www.sec.gov/Archives/edgar/data/1819848/000181984826000435/0001819848-26-000435-index.htm",
+        "asOf": "2026-06-30"
+      }
+    },
+    "quarterlyBurn": {
+      "value": 201782000,
+      "source": {
+        "label": "SEC 10-Q · cash flow 2026-03-31 to 2026-06-30 (derived from YTD) · filed 2026-08-06",
+        "url": "https://www.sec.gov/Archives/edgar/data/1819848/000181984826000435/0001819848-26-000435-index.htm",
+        "asOf": "2026-06-30"
+      }
+    },
+    "avgQuarterlyBurnTTM": {
+      "value": 185832500,
+      "source": {
+        "label": "SEC 10-Q/10-K cash-flow statements · 4 quarters 2025-06-30 to 2026-06-30 (quarters derived from YTD)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1819848/000181984826000435/0001819848-26-000435-index.htm",
+        "asOf": "2026-06-30"
+      }
+    },
+    "annualBurnTTM": {
+      "value": 743330000,
+      "source": {
+        "label": "SEC cash-flow statements · trailing 4 quarters to 2026-06-30",
+        "url": "https://www.sec.gov/Archives/edgar/data/1819848/000181984826000435/0001819848-26-000435-index.htm",
+        "asOf": "2026-06-30"
+      }
+    },
+    "runway": {
+      "quartersAtLatestBurn": 11.219167220069183,
+      "quartersAtAvgBurn": 12.182077946537877,
+      "endDateAtLatestBurn": "2029-04-19",
+      "proFormaQuarters": 8.989037674321793,
+      "proFormaCash": 1813826000,
+      "adjustments": [
+        {
+          "label": "Pending Resonant Sciences acquisition (cash portion)",
+          "cashImpact": -450000000,
+          "explanation": "On Aug 8, 2026 Joby agreed to buy Strix Holdings (Resonant Sciences) for a $500M base price, paid in cash except ~$50M of stock to management. Base price is subject to closing adjustments; check later filings for whether and when it closed.",
+          "source": {
+            "label": "SEC 8-K filed 2026-08-11 · Item 1.01 Stock Purchase Agreement",
+            "url": "https://www.sec.gov/Archives/edgar/data/1819848/000162828026055505/joby-20260808.htm",
+            "asOf": "2026-08-11"
+          }
+        }
+      ],
+      "source": {
+        "label": "SEC 10-Q · cash flow 2026-03-31 to 2026-06-30 (derived from YTD) · filed 2026-08-06",
+        "url": "https://www.sec.gov/Archives/edgar/data/1819848/000181984826000435/0001819848-26-000435-index.htm",
+        "asOf": "2026-06-30"
+      }
+    },
+    "shares": {
+      "latest": {
+        "value": 989124237,
+        "source": {
+          "label": "SEC 10-Q cover page · shares outstanding as of 2026-08-03 · filed 2026-08-06",
+          "url": "https://www.sec.gov/Archives/edgar/data/1819848/000181984826000435/0001819848-26-000435-index.htm",
+          "asOf": "2026-08-03"
+        }
+      },
+      "history": [
+        {
+          "date": "2021-08-10",
+          "shares": 603887944,
+          "source": {
+            "label": "SEC 10-Q cover page (filed 2021-08-13)",
+            "url": "https://www.sec.gov/Archives/edgar/data/1819848/000119312521246181/0001193125-21-246181-index.htm",
+            "asOf": "2021-08-10"
+          }
+        },
+        {
+          "date": "2021-11-08",
+          "shares": 603894394,
+          "source": {
+            "label": "SEC 10-Q cover page (filed 2021-11-15)",
+            "url": "https://www.sec.gov/Archives/edgar/data/1819848/000095017021004418/0000950170-21-004418-index.htm",
+            "asOf": "2021-11-08"
+          }
+        },
+        {
+          "date": "2022-03-15",
+          "shares": 605796764,
+          "source": {
+            "label": "SEC 10-K cover page (filed 2022-03-28)",
+            "url": "https://www.sec.gov/Archives/edgar/data/1819848/000095017022004706/0000950170-22-004706-index.htm",
+            "asOf": "2022-03-15"
+          }
+        },
+        {
+          "date": "2022-05-10",
+          "shares": 606458106,
+          "source": {
+            "label": "SEC 10-Q cover page (filed 2022-05-13)",
+            "url": "https://www.sec.gov/Archives/edgar/data/1819848/000095017022009870/0000950170-22-009870-index.htm",
+            "asOf": "2022-05-10"
+          }
+        },
+        {
+          "date": "2022-08-09",
+          "shares": 607568358,
+          "source": {
+            "label": "SEC 10-Q cover page (filed 2022-08-12)",
+            "url": "https://www.sec.gov/Archives/edgar/data/1819848/000181984822000085/0001819848-22-000085-index.htm",
+            "asOf": "2022-08-09"
+          }
+        },
+        {
+          "date": "2022-11-02",
+          "shares": 621731378,
+          "source": {
+            "label": "SEC 10-Q cover page (filed 2022-11-04)",
+            "url": "https://www.sec.gov/Archives/edgar/data/1819848/000181984822000187/0001819848-22-000187-index.htm",
+            "asOf": "2022-11-02"
+          }
+        },
+        {
+          "date": "2023-02-21",
+          "shares": 628585600,
+          "source": {
+            "label": "SEC 10-K cover page (filed 2023-03-01)",
+            "url": "https://www.sec.gov/Archives/edgar/data/1819848/000181984823000059/0001819848-23-000059-index.htm",
+            "asOf": "2023-02-21"
+          }
+        },
+        {
+          "date": "2023-05-03",
+          "shares": 630978702,
+          "source": {
+            "label": "SEC 10-Q cover page (filed 2023-05-05)",
+            "url": "https://www.sec.gov/Archives/edgar/data/1819848/000181984823000169/0001819848-23-000169-index.htm",
+            "asOf": "2023-05-03"
+          }
+        },
+        {
+          "date": "2023-08-01",
+          "shares": 693799351,
+          "source": {
+            "label": "SEC 10-Q cover page (filed 2023-08-04)",
+            "url": "https://www.sec.gov/Archives/edgar/data/1819848/000181984823000321/0001819848-23-000321-index.htm",
+            "asOf": "2023-08-01"
+          }
+        },
+        {
+          "date": "2023-10-31",
+          "shares": 696319445,
+          "source": {
+            "label": "SEC 10-Q cover page (filed 2023-11-06)",
+            "url": "https://www.sec.gov/Archives/edgar/data/1819848/000181984823000425/0001819848-23-000425-index.htm",
+            "asOf": "2023-10-31"
+          }
+        },
+        {
+          "date": "2024-02-21",
+          "shares": 702857098,
+          "source": {
+            "label": "SEC 10-K cover page (filed 2024-02-27)",
+            "url": "https://www.sec.gov/Archives/edgar/data/1819848/000181984824000125/0001819848-24-000125-index.htm",
+            "asOf": "2024-02-21"
+          }
+        },
+        {
+          "date": "2024-05-03",
+          "shares": 708440711,
+          "source": {
+            "label": "SEC 10-Q cover page (filed 2024-05-08)",
+            "url": "https://www.sec.gov/Archives/edgar/data/1819848/000181984824000270/0001819848-24-000270-index.htm",
+            "asOf": "2024-05-03"
+          }
+        },
+        {
+          "date": "2024-08-05",
+          "shares": 716142677,
+          "source": {
+            "label": "SEC 10-Q cover page (filed 2024-08-08)",
+            "url": "https://www.sec.gov/Archives/edgar/data/1819848/000181984824000372/0001819848-24-000372-index.htm",
+            "asOf": "2024-08-05"
+          }
+        },
+        {
+          "date": "2024-11-04",
+          "shares": 765085553,
+          "source": {
+            "label": "SEC 10-Q cover page (filed 2024-11-06)",
+            "url": "https://www.sec.gov/Archives/edgar/data/1819848/000181984824000474/0001819848-24-000474-index.htm",
+            "asOf": "2024-11-04"
+          }
+        },
+        {
+          "date": "2025-02-24",
+          "shares": 787816925,
+          "source": {
+            "label": "SEC 10-K cover page (filed 2025-02-27)",
+            "url": "https://www.sec.gov/Archives/edgar/data/1819848/000181984825000196/0001819848-25-000196-index.htm",
+            "asOf": "2025-02-24"
+          }
+        },
+        {
+          "date": "2025-05-05",
+          "shares": 791798076,
+          "source": {
+            "label": "SEC 10-Q cover page (filed 2025-05-08)",
+            "url": "https://www.sec.gov/Archives/edgar/data/1819848/000181984825000338/0001819848-25-000338-index.htm",
+            "asOf": "2025-05-05"
+          }
+        },
+        {
+          "date": "2025-08-04",
+          "shares": 855981489,
+          "source": {
+            "label": "SEC 10-Q cover page (filed 2025-08-07)",
+            "url": "https://www.sec.gov/Archives/edgar/data/1819848/000181984825000499/0001819848-25-000499-index.htm",
+            "asOf": "2025-08-04"
+          }
+        },
+        {
+          "date": "2025-11-03",
+          "shares": 911783173,
+          "source": {
+            "label": "SEC 10-Q cover page (filed 2025-11-06)",
+            "url": "https://www.sec.gov/Archives/edgar/data/1819848/000181984825000596/0001819848-25-000596-index.htm",
+            "asOf": "2025-11-03"
+          }
+        },
+        {
+          "date": "2026-02-23",
+          "shares": 979334237,
+          "source": {
+            "label": "SEC 10-K cover page (filed 2026-02-27)",
+            "url": "https://www.sec.gov/Archives/edgar/data/1819848/000181984826000160/0001819848-26-000160-index.htm",
+            "asOf": "2026-02-23"
+          }
+        },
+        {
+          "date": "2026-05-04",
+          "shares": 983642852,
+          "source": {
+            "label": "SEC 10-Q cover page (filed 2026-05-06)",
+            "url": "https://www.sec.gov/Archives/edgar/data/1819848/000181984826000324/0001819848-26-000324-index.htm",
+            "asOf": "2026-05-04"
+          }
+        },
+        {
+          "date": "2026-08-03",
+          "shares": 989124237,
+          "source": {
+            "label": "SEC 10-Q cover page (filed 2026-08-06)",
+            "url": "https://www.sec.gov/Archives/edgar/data/1819848/000181984826000435/0001819848-26-000435-index.htm",
+            "asOf": "2026-08-03"
+          }
+        }
+      ],
+      "dilutionSinceFirst": 0.6379267823237087,
+      "dilutionPerYear": 0.10415417729194099,
+      "dilutionLast12m": 0.24921273110039732
+    },
+    "certification": {
+      "statements": [
+        "As the first eVTOL aircraft developer to receive a signed, stage 4 G-1 certification basis which was subsequently published in final form in the Federal Register, we believe we are well positioned to be the first eVTOL manufacturer to earn standard airworthiness certification from the Federal Aviation Administration (“FAA”).",
+        "We have multiple special airworthiness certificates already issued by the FAA for our fleet of pre-type certification aircraft.",
+        "We anticipate initial operations in the U.S. under the eVTOL Integration Pilot Program (“eIPP”) to be followed by operations in selected high-density metropolitan areas where traffic congestion is particularly acute and operating conditions are suitable for early eVTOL operations.",
+        "We signed a revised, stage 4 “G-1” certification basis for our aircraft with the FAA in July 2022, which was published in final form in the Federal Register in March 2024.",
+        "Reaching this milestone marks a key step towards certifying any new aircraft in the U.S. We think of the FAA type certification process in five stages and have made significant progress towards certification.",
+        "We have completed or substantially completed three of these five stages, are approximately 75% complete in the fourth stage and are making steady progress through the fifth stage."
+      ],
+      "source": {
+        "label": "SEC 10-Q for period ending 2026-06-30 (filed 2026-08-06)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1819848/000181984826000435/joby-20260630.htm",
+        "asOf": "2026-08-06"
+      }
+    },
+    "filingMilestones": {
+      "statements": [
+        "We are targeting carrying our first passengers in 2026.",
+        "The evidentiary hearing is scheduled for January 2027, with the Administrative Law Judge’s Initial Determination expected on May 14, 2027."
+      ],
+      "source": {
+        "label": "SEC 10-Q for period ending 2026-06-30 (filed 2026-08-06)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1819848/000181984826000435/joby-20260630.htm",
+        "asOf": "2026-08-06"
+      }
+    },
+    "legal": {
+      "statements": [
+        "On March 10, 2026, Archer filed a Section 337 complaint with the U.S. International Trade Commission (ITC) seeking an Exclusion Order to block Joby from importing electric aircraft, power systems, and related components into the United States that allegedly infringe 5 Archer patents.",
+        "The evidentiary hearing is scheduled for January 2027, with the Administrative Law Judge’s Initial Determination expected on May 14, 2027.",
+        "The ITC’s final decision, which can affirm, reverse, or modify the Administrative Law Judge’s Initial Determination, is scheduled to be issued on September 14, 2027.",
+        "On November 18, 2025, we filed a complaint in the Superior Court of the State of California for the County of Santa Cruz against Archer Aviation, Inc. (“Archer”) and George Kivork alleging, among other things, breach of contract, misappropriation of trade secrets, and interference with contract and prospective economic advantage related to the improper acquisition, retention, and use of our confidential and proprietary business information and trade secrets.",
+        "On March 9, 2026, Archer filed counterclaims against us alleging false advertising and unfair competition."
+      ],
+      "source": {
+        "label": "SEC 10-Q for period ending 2026-06-30 (filed 2026-08-06)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1819848/000181984826000435/joby-20260630.htm",
+        "asOf": "2026-08-06"
+      }
+    }
+  },
+  "valuation": {
+    "assumptionsFile": "content/assumptions.json",
+    "assumptionsAsOf": "2026-11-04",
+    "company": {
+      "firstForecastYear": 2027,
+      "cashAndInvestmentsM": 2263.826,
+      "debtM": 701.874,
+      "stubBurnM": 403.564,
+      "sharesM": 989.124237,
+      "currentPrice": 5.105
+    },
+    "inputSources": {
+      "price": {
+        "label": "Yahoo Finance · Quote as of 2026-11-04 19:10 UTC",
+        "url": "https://finance.yahoo.com/quote/JOBY/",
+        "asOf": "2026-11-04T19:10:26.000Z"
+      },
+      "cash": {
+        "label": "SEC 10-Q · balance sheet as of 2026-06-30 · filed 2026-08-06",
+        "url": "https://www.sec.gov/Archives/edgar/data/1819848/000181984826000435/0001819848-26-000435-index.htm",
+        "asOf": "2026-06-30"
+      },
+      "debt": {
+        "label": "SEC 10-Q · balance sheet as of 2026-06-30 · filed 2026-08-06",
+        "url": "https://www.sec.gov/Archives/edgar/data/1819848/000181984826000435/0001819848-26-000435-index.htm",
+        "asOf": "2026-06-30"
+      },
+      "shares": {
+        "label": "SEC 10-Q cover page · shares outstanding as of 2026-08-03 · filed 2026-08-06",
+        "url": "https://www.sec.gov/Archives/edgar/data/1819848/000181984826000435/0001819848-26-000435-index.htm",
+        "asOf": "2026-08-03"
+      },
+      "burn": {
+        "label": "SEC cash-flow statements · trailing 4 quarters to 2026-06-30",
+        "url": "https://www.sec.gov/Archives/edgar/data/1819848/000181984826000435/0001819848-26-000435-index.htm",
+        "asOf": "2026-06-30"
+      },
+      "latestBurn": {
+        "label": "SEC 10-Q · cash flow 2026-03-31 to 2026-06-30 (derived from YTD) · filed 2026-08-06",
+        "url": "https://www.sec.gov/Archives/edgar/data/1819848/000181984826000435/0001819848-26-000435-index.htm",
+        "asOf": "2026-06-30"
+      }
+    },
+    "scenarios": [
+      {
+        "id": "bear",
+        "name": "Bear",
+        "probability": 0.25,
+        "inputs": {
+          "launchYear": 2029,
+          "fleetAtLaunch": 10,
+          "fleetAtScale": 200,
+          "yearsToScale": 8,
+          "revenuePerAircraftM": 1.8,
+          "ebitdaMarginAtScale": 0.15,
+          "costPerAircraftM": 3,
+          "taxRate": 0.21,
+          "discountRate": 0.18,
+          "terminalMethod": "multiple",
+          "exitMultiple": 8,
+          "terminalGrowth": 0.02,
+          "futureDilution": 0.5,
+          "preLaunchBurnM": 743
+        },
+        "pricePerShare": 0
+      },
+      {
+        "id": "base",
+        "name": "Base",
+        "probability": 0.5,
+        "inputs": {
+          "launchYear": 2027,
+          "fleetAtLaunch": 20,
+          "fleetAtScale": 800,
+          "yearsToScale": 8,
+          "revenuePerAircraftM": 3,
+          "ebitdaMarginAtScale": 0.3,
+          "costPerAircraftM": 2,
+          "taxRate": 0.21,
+          "discountRate": 0.15,
+          "terminalMethod": "multiple",
+          "exitMultiple": 12,
+          "terminalGrowth": 0.03,
+          "futureDilution": 0.2,
+          "preLaunchBurnM": 743
+        },
+        "pricePerShare": 0.9985305002177528
+      },
+      {
+        "id": "bull",
+        "name": "Bull",
+        "probability": 0.25,
+        "inputs": {
+          "launchYear": 2027,
+          "fleetAtLaunch": 40,
+          "fleetAtScale": 2500,
+          "yearsToScale": 8,
+          "revenuePerAircraftM": 4,
+          "ebitdaMarginAtScale": 0.35,
+          "costPerAircraftM": 1.5,
+          "taxRate": 0.21,
+          "discountRate": 0.13,
+          "terminalMethod": "multiple",
+          "exitMultiple": 15,
+          "terminalGrowth": 0.04,
+          "futureDilution": 0.15,
+          "preLaunchBurnM": 743
+        },
+        "pricePerShare": 14.758940739589791
+      }
+    ],
+    "weighted": {
+      "weights": [
+        {
+          "id": "bear",
+          "weight": 0.25,
+          "price": 0
+        },
+        {
+          "id": "base",
+          "weight": 0.5,
+          "price": 0.9985305002177528
+        },
+        {
+          "id": "bull",
+          "weight": 0.25,
+          "price": 14.758940739589791
+        }
+      ],
+      "target": 4.189000435006324,
+      "low": 0,
+      "high": 14.758940739589791,
+      "upside": -0.17943184426908443
+    },
+    "recommendation": "SELL",
+    "rule": "Probability-weighted upside > +15% = BUY, < −15% = SELL, otherwise HOLD",
+    "impliedFleetAtScale": 2613.9825582504272,
+    "topDrivers": [
+      {
+        "label": "Fleet at scale",
+        "swing": 1.8273383123168392
+      },
+      {
+        "label": "EBITDA margin",
+        "swing": 1.6667240566911063
+      },
+      {
+        "label": "Launch year",
+        "swing": 1.6615939287932748
+      },
+      {
+        "label": "Years to scale",
+        "swing": 1.6302837814789004
+      }
+    ]
+  },
+  "analysts": {
+    "mean": 10.00889,
+    "low": 4,
+    "high": 18,
+    "count": 9,
+    "source": {
+      "label": "Yahoo Finance analyst price targets",
+      "url": "https://finance.yahoo.com/quote/JOBY/analysis/",
+      "asOf": "2026-11-04T19:10:41.922Z"
+    }
+  },
+  "news": [
+    {
+      "title": "Air Force Raises Joby's Autonomy Bet to $37M on a 33-Year-Old Caravan",
+      "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxON1Y5SlgxUEU0bjlVbGpZVkVHY2ZfNVIzMmZlcDg4UXo3dGxscXZIVUVJVVhrTFNucGxULUhKYTROQWtncXI1NjNjVWhFcERkT01QZnpxTmc2anhQaVpWSURGMTlIZHZxcjNzdHJJNGptVFJ2VUY2Ujg3SGJGakJwRGEzSXJrTlE?oc=5",
+      "publisher": "DroneXL",
+      "publishedAt": "2026-11-04T17:57:00.000Z",
+      "feed": "Google News",
+      "tag": "context",
+      "matched": [],
+      "jobySpecific": true,
+      "reaction": {
+        "eventDateET": "2026-11-04",
+        "afterClose": false,
+        "sameDaySession": "2026-11-04",
+        "sameDay": 0.05257734421754323,
+        "spySameDay": 0.018956783046247816,
+        "nextDaySession": null,
+        "nextDay": null,
+        "spyNextDay": null,
+        "firstReaction": 0.05257734421754323,
+        "partial": true,
+        "source": {
+          "label": "Yahoo Finance daily adjusted closes, JOBY and SPY",
+          "url": "https://finance.yahoo.com/quote/JOBY/history/",
+          "asOf": "2026-11-04"
+        }
+      },
+      "source": {
+        "label": "DroneXL via Google News",
+        "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxON1Y5SlgxUEU0bjlVbGpZVkVHY2ZfNVIzMmZlcDg4UXo3dGxscXZIVUVJVVhrTFNucGxULUhKYTROQWtncXI1NjNjVWhFcERkT01QZnpxTmc2anhQaVpWSURGMTlIZHZxcjNzdHJJNGptVFJ2VUY2Ujg3SGJGakJwRGEzSXJrTlE?oc=5",
+        "asOf": "2026-11-04T17:57:00.000Z"
+      }
+    },
+    {
+      "title": "Joby Secures $37 Million In U.S. Air Force Funding For Autonomy Stack",
+      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPa3NoUkxIaDgzSm5rcDlCV1JtRnhMbnMtemxRdFpWZmRTX21HNWNLN1UyN1ZURzZNQ3FUT05lSFVHbTRBVFlnbnh2Vms1Z2dPQi00eXJPczF3T2EwQkdudkt0SDR3Y09MQWtqN3pCbEE3SWRXemxMREZ6ZEw4UUhnYy1FSlZOUHl2Z2VFR2s1NE5qcnVrbldZV3p2RjdvODlBMHN2VEphdlpiU08ySE1oelJNQUplVmc?oc=5",
+      "publisher": "Aviation Week",
+      "publishedAt": "2026-11-04T17:36:39.000Z",
+      "feed": "Google News",
+      "tag": "catalyst",
+      "matched": [
+        "funding/investment"
+      ],
+      "jobySpecific": true,
+      "reaction": {
+        "eventDateET": "2026-11-04",
+        "afterClose": false,
+        "sameDaySession": "2026-11-04",
+        "sameDay": 0.05257734421754323,
+        "spySameDay": 0.018956783046247816,
+        "nextDaySession": null,
+        "nextDay": null,
+        "spyNextDay": null,
+        "firstReaction": 0.05257734421754323,
+        "partial": true,
+        "source": {
+          "label": "Yahoo Finance daily adjusted closes, JOBY and SPY",
+          "url": "https://finance.yahoo.com/quote/JOBY/history/",
+          "asOf": "2026-11-04"
+        }
+      },
+      "source": {
+        "label": "Aviation Week via Google News",
+        "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPa3NoUkxIaDgzSm5rcDlCV1JtRnhMbnMtemxRdFpWZmRTX21HNWNLN1UyN1ZURzZNQ3FUT05lSFVHbTRBVFlnbnh2Vms1Z2dPQi00eXJPczF3T2EwQkdudkt0SDR3Y09MQWtqN3pCbEE3SWRXemxMREZ6ZEw4UUhnYy1FSlZOUHl2Z2VFR2s1NE5qcnVrbldZV3p2RjdvODlBMHN2VEphdlpiU08ySE1oelJNQUplVmc?oc=5",
+        "asOf": "2026-11-04T17:36:39.000Z"
+      }
+    },
+    {
+      "title": "All eyes on Joby Aviation earnings amid Dubai launch timeline By Investing.com",
+      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPajhhNkNtXzFNbXN4UlVueGNYUmxYZENhTWRtbFRkaEdpbkxkN3BDdnBGLWQyVHZSNTd5Ukx4dDhIZEx4MEhfY2ZkcFVJWi1WZVYxY3NRTUVYeXFQUzNxa3FfMmxwU3lhVjhJelVVYTRKcV9JT29lMTd3YXRvdVNmdDVWTXNkdm1xd1doMXdJYmRvNC1yTnh5R1AwanAzVHdWR3ZlaVliZFFsenJ2WmZySjc3ZFI4TE9kYXdQVUhNVQ?oc=5",
+      "publisher": "Investing.com South Africa",
+      "publishedAt": "2026-11-04T16:42:04.000Z",
+      "feed": "Google News",
+      "tag": "catalyst",
+      "matched": [
+        "launch/start"
+      ],
+      "jobySpecific": true,
+      "reaction": {
+        "eventDateET": "2026-11-04",
+        "afterClose": false,
+        "sameDaySession": "2026-11-04",
+        "sameDay": 0.05257734421754323,
+        "spySameDay": 0.018956783046247816,
+        "nextDaySession": null,
+        "nextDay": null,
+        "spyNextDay": null,
+        "firstReaction": 0.05257734421754323,
+        "partial": true,
+        "source": {
+          "label": "Yahoo Finance daily adjusted closes, JOBY and SPY",
+          "url": "https://finance.yahoo.com/quote/JOBY/history/",
+          "asOf": "2026-11-04"
+        }
+      },
+      "source": {
+        "label": "Investing.com South Africa via Google News",
+        "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPajhhNkNtXzFNbXN4UlVueGNYUmxYZENhTWRtbFRkaEdpbkxkN3BDdnBGLWQyVHZSNTd5Ukx4dDhIZEx4MEhfY2ZkcFVJWi1WZVYxY3NRTUVYeXFQUzNxa3FfMmxwU3lhVjhJelVVYTRKcV9JT29lMTd3YXRvdVNmdDVWTXNkdm1xd1doMXdJYmRvNC1yTnh5R1AwanAzVHdWR3ZlaVliZFFsenJ2WmZySjc3ZFI4TE9kYXdQVUhNVQ?oc=5",
+        "asOf": "2026-11-04T16:42:04.000Z"
+      }
+    },
+    {
+      "title": "Air Force deepens partnership with Joby with $37M in committed spending",
+      "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxORGM5VmVndHBjWm45LW5Pa0FDak51dnNPYXFYRmRBd3FaMFVLTjF1ZVNWYnM3WHFqWHBaX24wT3Bfa1pXR19pV0hvRGdZSFZPZWsxNG1HbVZRVmo1SWY4dzcyVmluREN3X1hweElGYU9QaTVZM2VkSF9xcklOSS1xc254cEVVcUw5VVQxVl9BNld2dlZ4WnRTaHh4VHBIOFM2OVB0WkNUOEZCOEZKcUI4MnlpLU1HUmVRbFdWdEFsMXM2Q0ZVZHZYb0tSRm5XM2kyaU1ZdnB0cVlja3Y5V2FoR1loV3V1SW01R1VZdG9jS1FIY28?oc=5",
+      "publisher": "Springfield News-Sun",
+      "publishedAt": "2026-11-04T15:56:58.000Z",
+      "feed": "Google News",
+      "tag": "catalyst",
+      "matched": [
+        "contract/partnership"
+      ],
+      "jobySpecific": true,
+      "reaction": {
+        "eventDateET": "2026-11-04",
+        "afterClose": false,
+        "sameDaySession": "2026-11-04",
+        "sameDay": 0.05257734421754323,
+        "spySameDay": 0.018956783046247816,
+        "nextDaySession": null,
+        "nextDay": null,
+        "spyNextDay": null,
+        "firstReaction": 0.05257734421754323,
+        "partial": true,
+        "source": {
+          "label": "Yahoo Finance daily adjusted closes, JOBY and SPY",
+          "url": "https://finance.yahoo.com/quote/JOBY/history/",
+          "asOf": "2026-11-04"
+        }
+      },
+      "source": {
+        "label": "Springfield News-Sun via Google News",
+        "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxORGM5VmVndHBjWm45LW5Pa0FDak51dnNPYXFYRmRBd3FaMFVLTjF1ZVNWYnM3WHFqWHBaX24wT3Bfa1pXR19pV0hvRGdZSFZPZWsxNG1HbVZRVmo1SWY4dzcyVmluREN3X1hweElGYU9QaTVZM2VkSF9xcklOSS1xc254cEVVcUw5VVQxVl9BNld2dlZ4WnRTaHh4VHBIOFM2OVB0WkNUOEZCOEZKcUI4MnlpLU1HUmVRbFdWdEFsMXM2Q0ZVZHZYb0tSRm5XM2kyaU1ZdnB0cVlja3Y5V2FoR1loV3V1SW01R1VZdG9jS1FIY28?oc=5",
+        "asOf": "2026-11-04T15:56:58.000Z"
+      }
+    },
+    {
+      "title": "Joby Aviation Rises 4% on Expanded $37 Million Air Force Autonomy Contracts: “Reducing Risk to Aircrews”",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/joby-aviation-rises-4-expanded-153614729.html",
+      "publisher": "TIKR",
+      "publishedAt": "2026-11-04T15:36:14.000Z",
+      "feed": "Yahoo Finance",
+      "tag": "catalyst",
+      "matched": [
+        "contract/partnership",
+        "expansion/milestone",
+        "positive price move"
+      ],
+      "jobySpecific": true,
+      "reaction": {
+        "eventDateET": "2026-11-04",
+        "afterClose": false,
+        "sameDaySession": "2026-11-04",
+        "sameDay": 0.05257734421754323,
+        "spySameDay": 0.018956783046247816,
+        "nextDaySession": null,
+        "nextDay": null,
+        "spyNextDay": null,
+        "firstReaction": 0.05257734421754323,
+        "partial": true,
+        "source": {
+          "label": "Yahoo Finance daily adjusted closes, JOBY and SPY",
+          "url": "https://finance.yahoo.com/quote/JOBY/history/",
+          "asOf": "2026-11-04"
+        }
+      },
+      "source": {
+        "label": "TIKR via Yahoo Finance",
+        "url": "https://finance.yahoo.com/markets/stocks/articles/joby-aviation-rises-4-expanded-153614729.html",
+        "asOf": "2026-11-04T15:36:14.000Z"
+      }
+    },
+    {
+      "title": "Joby Reports Additional US Air Force Funding",
+      "url": "https://finance.yahoo.com/technology/articles/joby-reports-additional-us-air-152705205.html",
+      "publisher": "MT Newswires",
+      "publishedAt": "2026-11-04T15:27:05.000Z",
+      "feed": "Yahoo Finance",
+      "tag": "catalyst",
+      "matched": [
+        "funding/investment"
+      ],
+      "jobySpecific": true,
+      "reaction": {
+        "eventDateET": "2026-11-04",
+        "afterClose": false,
+        "sameDaySession": "2026-11-04",
+        "sameDay": 0.05257734421754323,
+        "spySameDay": 0.018956783046247816,
+        "nextDaySession": null,
+        "nextDay": null,
+        "spyNextDay": null,
+        "firstReaction": 0.05257734421754323,
+        "partial": true,
+        "source": {
+          "label": "Yahoo Finance daily adjusted closes, JOBY and SPY",
+          "url": "https://finance.yahoo.com/quote/JOBY/history/",
+          "asOf": "2026-11-04"
+        }
+      },
+      "source": {
+        "label": "MT Newswires via Yahoo Finance",
+        "url": "https://finance.yahoo.com/technology/articles/joby-reports-additional-us-air-152705205.html",
+        "asOf": "2026-11-04T15:27:05.000Z"
+      }
+    },
+    {
+      "title": "Global Advanced Air Mobility Market Forecast and Strategies to 2035 | Capitalize on a $64.39 Billion Market by 2035 as Boeing, Airbus, AutoFlight and Joby Accelerate eVTOL Autonomy",
+      "url": "https://finance.yahoo.com/technology/articles/global-advanced-air-mobility-market-150700551.html",
+      "publisher": "GlobeNewswire",
+      "publishedAt": "2026-11-04T15:07:00.000Z",
+      "feed": "Yahoo Finance",
+      "tag": "context",
+      "matched": [],
+      "jobySpecific": true,
+      "reaction": {
+        "eventDateET": "2026-11-04",
+        "afterClose": false,
+        "sameDaySession": "2026-11-04",
+        "sameDay": 0.05257734421754323,
+        "spySameDay": 0.018956783046247816,
+        "nextDaySession": null,
+        "nextDay": null,
+        "spyNextDay": null,
+        "firstReaction": 0.05257734421754323,
+        "partial": true,
+        "source": {
+          "label": "Yahoo Finance daily adjusted closes, JOBY and SPY",
+          "url": "https://finance.yahoo.com/quote/JOBY/history/",
+          "asOf": "2026-11-04"
+        }
+      },
+      "source": {
+        "label": "GlobeNewswire via Yahoo Finance",
+        "url": "https://finance.yahoo.com/technology/articles/global-advanced-air-mobility-market-150700551.html",
+        "asOf": "2026-11-04T15:07:00.000Z"
+      }
+    },
+    {
+      "title": "US Air Force backs Joby’s autonomous cargo aircraft with $37M commitment",
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPMml3enNZRWFUY3I5WUhvYWw0REkxY3cyeEg4QmJ4UVlXTlotMHRYS1BtczRrY0M1elpqeTc1ZFJxNFlHNmlXTXlzX2xpellsZXdRWnoyNzloRl8yY2dyZWE0RXN2T0ZTWGEtWXNmdHpkNGlMc21BX2JlcTJyUnRoZ3ptMnRwdjVI0gGOAUFVX3lxTE4yTWRVVGRDQl9ZSWJRV2l6VjBYRXF0TWxzMHFlWjJCeHhsOUFKdkxXRTZlbDhWUS12V2ZXWGN0cGFaNzIxa3hiOVpDMFk3VmRneGNXZDdvcFlSSnlDc1VRdDU5ampST1FhbGNmUUtXLU0yU04zQWxlaHpKVmtZWW5NekZmY21kSWNfcXNyS2c?oc=5",
+      "publisher": "AeroTime",
+      "publishedAt": "2026-11-04T14:56:10.000Z",
+      "feed": "Google News",
+      "tag": "context",
+      "matched": [],
+      "jobySpecific": true,
+      "reaction": {
+        "eventDateET": "2026-11-04",
+        "afterClose": false,
+        "sameDaySession": "2026-11-04",
+        "sameDay": 0.05257734421754323,
+        "spySameDay": 0.018956783046247816,
+        "nextDaySession": null,
+        "nextDay": null,
+        "spyNextDay": null,
+        "firstReaction": 0.05257734421754323,
+        "partial": true,
+        "source": {
+          "label": "Yahoo Finance daily adjusted closes, JOBY and SPY",
+          "url": "https://finance.yahoo.com/quote/JOBY/history/",
+          "asOf": "2026-11-04"
+        }
+      },
+      "source": {
+        "label": "AeroTime via Google News",
+        "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPMml3enNZRWFUY3I5WUhvYWw0REkxY3cyeEg4QmJ4UVlXTlotMHRYS1BtczRrY0M1elpqeTc1ZFJxNFlHNmlXTXlzX2xpellsZXdRWnoyNzloRl8yY2dyZWE0RXN2T0ZTWGEtWXNmdHpkNGlMc21BX2JlcTJyUnRoZ3ptMnRwdjVI0gGOAUFVX3lxTE4yTWRVVGRDQl9ZSWJRV2l6VjBYRXF0TWxzMHFlWjJCeHhsOUFKdkxXRTZlbDhWUS12V2ZXWGN0cGFaNzIxa3hiOVpDMFk3VmRneGNXZDdvcFlSSnlDc1VRdDU5ampST1FhbGNmUUtXLU0yU04zQWxlaHpKVmtZWW5NekZmY21kSWNfcXNyS2c?oc=5",
+        "asOf": "2026-11-04T14:56:10.000Z"
+      }
+    },
+    {
+      "title": "Joby Aviation Just Launched Florida Air Taxi Flights. Its November 4 Report Will Show What They Cost",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/joby-aviation-just-launched-florida-145232448.html",
+      "publisher": "TIKR",
+      "publishedAt": "2026-11-04T14:52:32.000Z",
+      "feed": "Yahoo Finance",
+      "tag": "catalyst",
+      "matched": [
+        "launch/start"
+      ],
+      "jobySpecific": true,
+      "reaction": {
+        "eventDateET": "2026-11-04",
+        "afterClose": false,
+        "sameDaySession": "2026-11-04",
+        "sameDay": 0.05257734421754323,
+        "spySameDay": 0.018956783046247816,
+        "nextDaySession": null,
+        "nextDay": null,
+        "spyNextDay": null,
+        "firstReaction": 0.05257734421754323,
+        "partial": true,
+        "source": {
+          "label": "Yahoo Finance daily adjusted closes, JOBY and SPY",
+          "url": "https://finance.yahoo.com/quote/JOBY/history/",
+          "asOf": "2026-11-04"
+        }
+      },
+      "source": {
+        "label": "TIKR via Yahoo Finance",
+        "url": "https://finance.yahoo.com/markets/stocks/articles/joby-aviation-just-launched-florida-145232448.html",
+        "asOf": "2026-11-04T14:52:32.000Z"
+      }
+    },
+    {
+      "title": "Form 4 Joby Aviation: Paul Cahill Sciarra (Director) For: 2 November",
+      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPVVJIUWhocmVvSlY4bmlDNWFReWJ1aWlwcEZuVlZ1S0pTMmZCOHZOMFBweFQ1TUNZRXV0OFJHUU9KdGJnRmNMZldfOG9MZDgzY1Z0LVdfdVhmM0swX2RsdDJpWVdnN0JBeGhfMndnLUtkd3QxMms0UzFuQXpqTk9xVTFJLXlaSjlKQjBIYU9pNnFqbHR6UkpPV0RFdkM2Qk1UQUh1bldHS1NfM1VIZUVyMy0tMzRDb05NWnpJQS1VVWwtNUE?oc=5",
+      "publisher": "Investing.com UK",
+      "publishedAt": "2026-11-04T13:36:00.000Z",
+      "feed": "Google News",
+      "tag": "risk",
+      "matched": [
+        "insider selling"
+      ],
+      "jobySpecific": true,
+      "reaction": {
+        "eventDateET": "2026-11-04",
+        "afterClose": false,
+        "sameDaySession": "2026-11-04",
+        "sameDay": 0.05257734421754323,
+        "spySameDay": 0.018956783046247816,
+        "nextDaySession": null,
+        "nextDay": null,
+        "spyNextDay": null,
+        "firstReaction": 0.05257734421754323,
+        "partial": true,
+        "source": {
+          "label": "Yahoo Finance daily adjusted closes, JOBY and SPY",
+          "url": "https://finance.yahoo.com/quote/JOBY/history/",
+          "asOf": "2026-11-04"
+        }
+      },
+      "source": {
+        "label": "Investing.com UK via Google News",
+        "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPVVJIUWhocmVvSlY4bmlDNWFReWJ1aWlwcEZuVlZ1S0pTMmZCOHZOMFBweFQ1TUNZRXV0OFJHUU9KdGJnRmNMZldfOG9MZDgzY1Z0LVdfdVhmM0swX2RsdDJpWVdnN0JBeGhfMndnLUtkd3QxMms0UzFuQXpqTk9xVTFJLXlaSjlKQjBIYU9pNnFqbHR6UkpPV0RFdkM2Qk1UQUh1bldHS1NfM1VIZUVyMy0tMzRDb05NWnpJQS1VVWwtNUE?oc=5",
+        "asOf": "2026-11-04T13:36:00.000Z"
+      }
+    },
+    {
+      "title": "Joby Aviation director Paul Sciarra sells $310,625 in shares By Investing.com",
+      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOeWZEUklyYmJzXzI4SXQtN0lqaVJNVERFN3U2WmpjY3BMSUdZSjJ1c19fZ05wRzI5dlU2NDhod0dvVEtsdndydW9fZE1sdWM2MG1QQS1zdU5kXzlCRk40MmJrVGt0RlVkYWZIOFBnc3ZZUm04V2Npb2ZYbXh5SU1nclRqTktLX0MxdzM2OXJwb2JmbWI5aTI4QTdaeW5neWY2V01mczc4S3RKS1I1RjFWUUdzTFVENC1LMWRR?oc=5",
+      "publisher": "Investing.com UK",
+      "publishedAt": "2026-11-04T13:32:00.000Z",
+      "feed": "Google News",
+      "tag": "risk",
+      "matched": [
+        "insider selling"
+      ],
+      "jobySpecific": true,
+      "reaction": {
+        "eventDateET": "2026-11-04",
+        "afterClose": false,
+        "sameDaySession": "2026-11-04",
+        "sameDay": 0.05257734421754323,
+        "spySameDay": 0.018956783046247816,
+        "nextDaySession": null,
+        "nextDay": null,
+        "spyNextDay": null,
+        "firstReaction": 0.05257734421754323,
+        "partial": true,
+        "source": {
+          "label": "Yahoo Finance daily adjusted closes, JOBY and SPY",
+          "url": "https://finance.yahoo.com/quote/JOBY/history/",
+          "asOf": "2026-11-04"
+        }
+      },
+      "source": {
+        "label": "Investing.com UK via Google News",
+        "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOeWZEUklyYmJzXzI4SXQtN0lqaVJNVERFN3U2WmpjY3BMSUdZSjJ1c19fZ05wRzI5dlU2NDhod0dvVEtsdndydW9fZE1sdWM2MG1QQS1zdU5kXzlCRk40MmJrVGt0RlVkYWZIOFBnc3ZZUm04V2Npb2ZYbXh5SU1nclRqTktLX0MxdzM2OXJwb2JmbWI5aTI4QTdaeW5neWY2V01mczc4S3RKS1I1RjFWUUdzTFVENC1LMWRR?oc=5",
+        "asOf": "2026-11-04T13:32:00.000Z"
+      }
+    },
+    {
+      "title": "Joby secures additional U.S. Air Force funding for autonomous flight tech",
+      "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQVWVoV1RTaF9ZWk5ubmREU3N0QlBXVjRXMDJhZUJhSkxONmJSbXlLb3dhUGQzZ2NsdG1WVzJQdlJ3dGREUGtlS1VzX2ZRV2RUVnRETTNyT3dTbzZPZ3dlZWQ3MkpDLXJZcktPMWZ6d0RoZm91Z05OaUYyM09jOE5ybU5JemRaZWdmNVB2ZE53SmhjMVc4enJ2d3NSMVFpem5QN3E4ZFNfQ3FJTnRFaEdJUzhMQ3VGRVN0akNPaFplcjI4MlV2WEhpakN0ZXZreWh4?oc=5",
+      "publisher": "TradingView",
+      "publishedAt": "2026-11-04T13:19:55.000Z",
+      "feed": "Google News",
+      "tag": "catalyst",
+      "matched": [
+        "funding/investment"
+      ],
+      "jobySpecific": true,
+      "reaction": {
+        "eventDateET": "2026-11-04",
+        "afterClose": false,
+        "sameDaySession": "2026-11-04",
+        "sameDay": 0.05257734421754323,
+        "spySameDay": 0.018956783046247816,
+        "nextDaySession": null,
+        "nextDay": null,
+        "spyNextDay": null,
+        "firstReaction": 0.05257734421754323,
+        "partial": true,
+        "source": {
+          "label": "Yahoo Finance daily adjusted closes, JOBY and SPY",
+          "url": "https://finance.yahoo.com/quote/JOBY/history/",
+          "asOf": "2026-11-04"
+        }
+      },
+      "source": {
+        "label": "TradingView via Google News",
+        "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQVWVoV1RTaF9ZWk5ubmREU3N0QlBXVjRXMDJhZUJhSkxONmJSbXlLb3dhUGQzZ2NsdG1WVzJQdlJ3dGREUGtlS1VzX2ZRV2RUVnRETTNyT3dTbzZPZ3dlZWQ3MkpDLXJZcktPMWZ6d0RoZm91Z05OaUYyM09jOE5ybU5JemRaZWdmNVB2ZE53SmhjMVc4enJ2d3NSMVFpem5QN3E4ZFNfQ3FJTnRFaEdJUzhMQ3VGRVN0akNPaFplcjI4MlV2WEhpakN0ZXZreWh4?oc=5",
+        "asOf": "2026-11-04T13:19:55.000Z"
+      }
+    },
+    {
+      "title": "Joby Aviation (JOBY) Begins Piloted Electric Air Taxi Flights Across Florida",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/joby-aviation-joby-begins-piloted-131533650.html",
+      "publisher": "Simply Wall St.",
+      "publishedAt": "2026-11-04T13:15:33.000Z",
+      "feed": "Yahoo Finance",
+      "tag": "catalyst",
+      "matched": [
+        "launch/start"
+      ],
+      "jobySpecific": true,
+      "reaction": {
+        "eventDateET": "2026-11-04",
+        "afterClose": false,
+        "sameDaySession": "2026-11-04",
+        "sameDay": 0.05257734421754323,
+        "spySameDay": 0.018956783046247816,
+        "nextDaySession": null,
+        "nextDay": null,
+        "spyNextDay": null,
+        "firstReaction": 0.05257734421754323,
+        "partial": true,
+        "source": {
+          "label": "Yahoo Finance daily adjusted closes, JOBY and SPY",
+          "url": "https://finance.yahoo.com/quote/JOBY/history/",
+          "asOf": "2026-11-04"
+        }
+      },
+      "source": {
+        "label": "Simply Wall St. via Yahoo Finance",
+        "url": "https://finance.yahoo.com/markets/stocks/articles/joby-aviation-joby-begins-piloted-131533650.html",
+        "asOf": "2026-11-04T13:15:33.000Z"
+      }
+    },
+    {
+      "title": "Joby Expands Autonomous Flight Contracts with U.S. Air Force to Nearly $37 Million Following Record Coast-to-Coast Tour",
+      "url": "https://finance.yahoo.com/technology/ai/articles/joby-expands-autonomous-flight-contracts-130000124.html",
+      "publisher": "Business Wire",
+      "publishedAt": "2026-11-04T13:00:00.000Z",
+      "feed": "Yahoo Finance",
+      "tag": "catalyst",
+      "matched": [
+        "contract/partnership",
+        "expansion/milestone"
+      ],
+      "jobySpecific": true,
+      "reaction": {
+        "eventDateET": "2026-11-04",
+        "afterClose": false,
+        "sameDaySession": "2026-11-04",
+        "sameDay": 0.05257734421754323,
+        "spySameDay": 0.018956783046247816,
+        "nextDaySession": null,
+        "nextDay": null,
+        "spyNextDay": null,
+        "firstReaction": 0.05257734421754323,
+        "partial": true,
+        "source": {
+          "label": "Yahoo Finance daily adjusted closes, JOBY and SPY",
+          "url": "https://finance.yahoo.com/quote/JOBY/history/",
+          "asOf": "2026-11-04"
+        }
+      },
+      "source": {
+        "label": "Business Wire via Yahoo Finance",
+        "url": "https://finance.yahoo.com/technology/ai/articles/joby-expands-autonomous-flight-contracts-130000124.html",
+        "asOf": "2026-11-04T13:00:00.000Z"
+      }
+    },
+    {
+      "title": "Joby Aviation Director Paul Sciarra Offloads 62,500 Shares at $4.97 Each",
+      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNdDNOTGlYR3VkSUVSZXpPTDdLLUxMb1BUS0l3dXVDNjhVZzlxcGpnZ2phdXRIdzdsdk4yQVBTUng5dmpQWUZTYjhVRU9RMGQ3U2dsSlZmUGdBVGlTVlA2XzFzY1pndWUxTzNuN0ZJS3lta0JJV3ptTmNMVzd4TWhVYVM3SkliQTI1OVlDT1YtVmNmUFRSQ0lWdjdLWnhVdW9GQ21uUmM2dW84WmRNZ0kzNHhpUk9iaW8?oc=5",
+      "publisher": "Kalkine Media",
+      "publishedAt": "2026-11-04T10:58:13.000Z",
+      "feed": "Google News",
+      "tag": "risk",
+      "matched": [
+        "insider selling"
+      ],
+      "jobySpecific": true,
+      "reaction": {
+        "eventDateET": "2026-11-04",
+        "afterClose": false,
+        "sameDaySession": "2026-11-04",
+        "sameDay": 0.05257734421754323,
+        "spySameDay": 0.018956783046247816,
+        "nextDaySession": null,
+        "nextDay": null,
+        "spyNextDay": null,
+        "firstReaction": 0.05257734421754323,
+        "partial": true,
+        "source": {
+          "label": "Yahoo Finance daily adjusted closes, JOBY and SPY",
+          "url": "https://finance.yahoo.com/quote/JOBY/history/",
+          "asOf": "2026-11-04"
+        }
+      },
+      "source": {
+        "label": "Kalkine Media via Google News",
+        "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNdDNOTGlYR3VkSUVSZXpPTDdLLUxMb1BUS0l3dXVDNjhVZzlxcGpnZ2phdXRIdzdsdk4yQVBTUng5dmpQWUZTYjhVRU9RMGQ3U2dsSlZmUGdBVGlTVlA2XzFzY1pndWUxTzNuN0ZJS3lta0JJV3ptTmNMVzd4TWhVYVM3SkliQTI1OVlDT1YtVmNmUFRSQ0lWdjdLWnhVdW9GQ21uUmM2dW84WmRNZ0kzNHhpUk9iaW8?oc=5",
+        "asOf": "2026-11-04T10:58:13.000Z"
+      }
+    },
+    {
+      "title": "Joby Aviation Q3 Earnings to Test Production Ramp as CEO Flags Demand Outstripping Supply",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9OTEk0eXhPMEVSa29iRV92amdUREo4M19oVmpoMDNfOXREbXJmMkwzYUd0NEZoZlpGeUduTEVnOGZ1TXNGTnFjWTduWU9XZnJRQURlNE9kTEUtLXNjOFhtSDQ3TW8xUnpFS1RnNG9SbnZNSVZjUEE?oc=5",
+      "publisher": "BigGo Finance",
+      "publishedAt": "2026-11-04T09:06:00.000Z",
+      "feed": "Google News",
+      "tag": "context",
+      "matched": [],
+      "jobySpecific": true,
+      "reaction": {
+        "eventDateET": "2026-11-04",
+        "afterClose": false,
+        "sameDaySession": "2026-11-04",
+        "sameDay": 0.05257734421754323,
+        "spySameDay": 0.018956783046247816,
+        "nextDaySession": null,
+        "nextDay": null,
+        "spyNextDay": null,
+        "firstReaction": 0.05257734421754323,
+        "partial": true,
+        "source": {
+          "label": "Yahoo Finance daily adjusted closes, JOBY and SPY",
+          "url": "https://finance.yahoo.com/quote/JOBY/history/",
+          "asOf": "2026-11-04"
+        }
+      },
+      "source": {
+        "label": "BigGo Finance via Google News",
+        "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9OTEk0eXhPMEVSa29iRV92amdUREo4M19oVmpoMDNfOXREbXJmMkwzYUd0NEZoZlpGeUduTEVnOGZ1TXNGTnFjWTduWU9XZnJRQURlNE9kTEUtLXNjOFhtSDQ3TW8xUnpFS1RnNG9SbnZNSVZjUEE?oc=5",
+        "asOf": "2026-11-04T09:06:00.000Z"
+      }
+    },
+    {
+      "title": "Joby Aviation's Demand Exceeds Supply: Q3 Will Show How Fast It's Scaling - Joby Aviation (NYSE:JOBY)",
+      "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNVWRRZHpNSzJxOVVOY0ZtX3hNYnNmdTlkc0UzVE9WbzNfUEZGSnp4bDBxWmtiTjFHd2pjMjRRaUEtamgyUV9uWmczRDZTUjVfVWhKbE1qNVRUVjVkbUJYVzBZZHpKYXFuMHhkMklzOXk2dDhETklobmNaRERxYXhyZGI1N0pkRVNTWTlRMUhfaFhTTGhoOUdfNEJhVnl6TFBDNlJxdWRLVjhlaTZQaU1iVkdHM21UdmFtUS01Nk9sUktnbGJhTkZKYkhB?oc=5",
+      "publisher": "Benzinga",
+      "publishedAt": "2026-11-04T08:49:14.000Z",
+      "feed": "Google News",
+      "tag": "context",
+      "matched": [],
+      "jobySpecific": true,
+      "reaction": {
+        "eventDateET": "2026-11-04",
+        "afterClose": false,
+        "sameDaySession": "2026-11-04",
+        "sameDay": 0.05257734421754323,
+        "spySameDay": 0.018956783046247816,
+        "nextDaySession": null,
+        "nextDay": null,
+        "spyNextDay": null,
+        "firstReaction": 0.05257734421754323,
+        "partial": true,
+        "source": {
+          "label": "Yahoo Finance daily adjusted closes, JOBY and SPY",
+          "url": "https://finance.yahoo.com/quote/JOBY/history/",
+          "asOf": "2026-11-04"
+        }
+      },
+      "source": {
+        "label": "Benzinga via Google News",
+        "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNVWRRZHpNSzJxOVVOY0ZtX3hNYnNmdTlkc0UzVE9WbzNfUEZGSnp4bDBxWmtiTjFHd2pjMjRRaUEtamgyUV9uWmczRDZTUjVfVWhKbE1qNVRUVjVkbUJYVzBZZHpKYXFuMHhkMklzOXk2dDhETklobmNaRERxYXhyZGI1N0pkRVNTWTlRMUhfaFhTTGhoOUdfNEJhVnl6TFBDNlJxdWRLVjhlaTZQaU1iVkdHM21UdmFtUS01Nk9sUktnbGJhTkZKYkhB?oc=5",
+        "asOf": "2026-11-04T08:49:14.000Z"
+      }
+    },
+    {
+      "title": "JOBY Stock In Focus: ARK Invest Analysts See Autonomous eVTOLs Matching Taxi Fares Ahead Of Joby Aviation Earnings",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/joby-stock-focus-ark-invest-052855688.html",
+      "publisher": "Stocktwits",
+      "publishedAt": "2026-11-04T05:28:55.000Z",
+      "feed": "Yahoo Finance",
+      "tag": "risk",
+      "matched": [
+        "competitor ahead"
+      ],
+      "jobySpecific": true,
+      "reaction": {
+        "eventDateET": "2026-11-04",
+        "afterClose": false,
+        "sameDaySession": "2026-11-04",
+        "sameDay": 0.05257734421754323,
+        "spySameDay": 0.018956783046247816,
+        "nextDaySession": null,
+        "nextDay": null,
+        "spyNextDay": null,
+        "firstReaction": 0.05257734421754323,
+        "partial": true,
+        "source": {
+          "label": "Yahoo Finance daily adjusted closes, JOBY and SPY",
+          "url": "https://finance.yahoo.com/quote/JOBY/history/",
+          "asOf": "2026-11-04"
+        }
+      },
+      "source": {
+        "label": "Stocktwits via Yahoo Finance",
+        "url": "https://finance.yahoo.com/markets/stocks/articles/joby-stock-focus-ark-invest-052855688.html",
+        "asOf": "2026-11-04T05:28:55.000Z"
+      }
+    },
+    {
+      "title": "Joby vs. Archer: Who Could Earn Air Taxi Passenger Revenue First?",
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNbGJtM2loMUx0eGR6bGhTM1NHZjU2OUJBNV9CSU1haEduR19MMEg0S2tsN1dwa1VLaXRYMlRfNXoxRDVoTXd5V0RwbTVuZlI3UEsza05jNWNZaVdOTnFweGFDSDZWUnlFUUNRZlFveGF1UWpWbkY4TGxIcGZYd05UTExZX05MQ0F5ZmlaQkQ1ZEU5SW9vcHhqRk9SdGdITHdmRGgydF9oYTM?oc=5",
+      "publisher": "The Motley Fool",
+      "publishedAt": "2026-11-03T20:23:00.000Z",
+      "feed": "Google News",
+      "tag": "context",
+      "matched": [],
+      "jobySpecific": true,
+      "reaction": {
+        "eventDateET": "2026-11-03",
+        "afterClose": false,
+        "sameDaySession": "2026-11-03",
+        "sameDay": 0.008316000484173136,
+        "spySameDay": 0.0029916235514395595,
+        "nextDaySession": "2026-11-04",
+        "nextDay": 0.05257734421754323,
+        "spyNextDay": 0.018956783046247816,
+        "firstReaction": 0.008316000484173136,
+        "partial": true,
+        "source": {
+          "label": "Yahoo Finance daily adjusted closes, JOBY and SPY",
+          "url": "https://finance.yahoo.com/quote/JOBY/history/",
+          "asOf": "2026-11-04"
+        }
+      },
+      "source": {
+        "label": "The Motley Fool via Google News",
+        "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNbGJtM2loMUx0eGR6bGhTM1NHZjU2OUJBNV9CSU1haEduR19MMEg0S2tsN1dwa1VLaXRYMlRfNXoxRDVoTXd5V0RwbTVuZlI3UEsza05jNWNZaVdOTnFweGFDSDZWUnlFUUNRZlFveGF1UWpWbkY4TGxIcGZYd05UTExZX05MQ0F5ZmlaQkQ1ZEU5SW9vcHhqRk9SdGdITHdmRGgydF9oYTM?oc=5",
+        "asOf": "2026-11-03T20:23:00.000Z"
+      }
+    },
+    {
+      "title": "Joby Aviation Reports Q3 Earnings Tomorrow – Who Owns JOBY Stock?",
+      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPcjZVMjAyTEJFakRPWGdQZDRmTDlMVzlfNjN3WVF6LXhVU2xQYWlrRzByMXVrdGtEbEd5TWc4RHBTbkhRZWZudUVfd21fbG5rVDhzYnUzNEVyLWFUNW9jYW9aTksyRzAzai1oZlQ2a05JMGloRGxMeFFJRDVIOUllZGxudlJjdE43Ymt3X05xWmFhZTVicDdR?oc=5",
+      "publisher": "TipRanks",
+      "publishedAt": "2026-11-03T20:06:38.000Z",
+      "feed": "Google News",
+      "tag": "context",
+      "matched": [],
+      "jobySpecific": true,
+      "reaction": {
+        "eventDateET": "2026-11-03",
+        "afterClose": false,
+        "sameDaySession": "2026-11-03",
+        "sameDay": 0.008316000484173136,
+        "spySameDay": 0.0029916235514395595,
+        "nextDaySession": "2026-11-04",
+        "nextDay": 0.05257734421754323,
+        "spyNextDay": 0.018956783046247816,
+        "firstReaction": 0.008316000484173136,
+        "partial": true,
+        "source": {
+          "label": "Yahoo Finance daily adjusted closes, JOBY and SPY",
+          "url": "https://finance.yahoo.com/quote/JOBY/history/",
+          "asOf": "2026-11-04"
+        }
+      },
+      "source": {
+        "label": "TipRanks via Google News",
+        "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPcjZVMjAyTEJFakRPWGdQZDRmTDlMVzlfNjN3WVF6LXhVU2xQYWlrRzByMXVrdGtEbEd5TWc4RHBTbkhRZWZudUVfd21fbG5rVDhzYnUzNEVyLWFUNW9jYW9aTksyRzAzai1oZlQ2a05JMGloRGxMeFFJRDVIOUllZGxudlJjdE43Ymt3X05xWmFhZTVicDdR?oc=5",
+        "asOf": "2026-11-03T20:06:38.000Z"
+      }
+    },
+    {
+      "title": "Does The Move In Joby Stock Change Anything?",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/does-move-joby-stock-change-131806287.html",
+      "publisher": "Trefis",
+      "publishedAt": "2026-11-03T13:18:06.000Z",
+      "feed": "Yahoo Finance",
+      "tag": "context",
+      "matched": [],
+      "jobySpecific": true,
+      "reaction": {
+        "eventDateET": "2026-11-03",
+        "afterClose": false,
+        "sameDaySession": "2026-11-03",
+        "sameDay": 0.008316000484173136,
+        "spySameDay": 0.0029916235514395595,
+        "nextDaySession": "2026-11-04",
+        "nextDay": 0.05257734421754323,
+        "spyNextDay": 0.018956783046247816,
+        "firstReaction": 0.008316000484173136,
+        "partial": true,
+        "source": {
+          "label": "Yahoo Finance daily adjusted closes, JOBY and SPY",
+          "url": "https://finance.yahoo.com/quote/JOBY/history/",
+          "asOf": "2026-11-04"
+        }
+      },
+      "source": {
+        "label": "Trefis via Yahoo Finance",
+        "url": "https://finance.yahoo.com/markets/stocks/articles/does-move-joby-stock-change-131806287.html",
+        "asOf": "2026-11-03T13:18:06.000Z"
+      }
+    },
+    {
+      "title": "Form 144 Joby Aviation For: 2 November By Investing.com",
+      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOYVMyRDRvLVhxVVJ6encxQWs4eEJfZGMyY1Q2WDJNZWRkNTNvMmhsaUQ4bHpDY0Z4WkJrX2JXTjIwbjMxV0E4cm1meEhyRE1DSl94QXFEckl5OFhmaWszZldhWjd3SFlWcDZMUEdxUjNyMmVabE15dTUtTEFVTlNyTkdFOVljWTQ3dnYzdS1ZcFM3MnE2ZVl2LUFfdGYwcE0?oc=5",
+      "publisher": "Investing.com India",
+      "publishedAt": "2026-11-03T02:52:15.000Z",
+      "feed": "Google News",
+      "tag": "risk",
+      "matched": [
+        "insider selling"
+      ],
+      "jobySpecific": true,
+      "reaction": {
+        "eventDateET": "2026-11-02",
+        "afterClose": true,
+        "sameDaySession": "2026-11-02",
+        "sameDay": -0.018367377721681843,
+        "spySameDay": -0.004790127636589259,
+        "nextDaySession": "2026-11-03",
+        "nextDay": 0.008316000484173136,
+        "spyNextDay": 0.0029916235514395595,
+        "firstReaction": 0.008316000484173136,
+        "partial": false,
+        "source": {
+          "label": "Yahoo Finance daily adjusted closes, JOBY and SPY",
+          "url": "https://finance.yahoo.com/quote/JOBY/history/",
+          "asOf": "2026-11-03"
+        }
+      },
+      "source": {
+        "label": "Investing.com India via Google News",
+        "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOYVMyRDRvLVhxVVJ6encxQWs4eEJfZGMyY1Q2WDJNZWRkNTNvMmhsaUQ4bHpDY0Z4WkJrX2JXTjIwbjMxV0E4cm1meEhyRE1DSl94QXFEckl5OFhmaWszZldhWjd3SFlWcDZMUEdxUjNyMmVabE15dTUtTEFVTlNyTkdFOVljWTQ3dnYzdS1ZcFM3MnE2ZVl2LUFfdGYwcE0?oc=5",
+        "asOf": "2026-11-03T02:52:15.000Z"
+      }
+    },
+    {
+      "title": "JOBY Gears Up to Report Q3 Earnings: What's in Store for the Stock?",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/joby-gears-report-q3-earnings-162800424.html",
+      "publisher": "Zacks",
+      "publishedAt": "2026-11-02T16:28:00.000Z",
+      "feed": "Yahoo Finance",
+      "tag": "context",
+      "matched": [],
+      "jobySpecific": true,
+      "reaction": {
+        "eventDateET": "2026-11-02",
+        "afterClose": false,
+        "sameDaySession": "2026-11-02",
+        "sameDay": -0.018367377721681843,
+        "spySameDay": -0.004790127636589259,
+        "nextDaySession": "2026-11-03",
+        "nextDay": 0.008316000484173136,
+        "spyNextDay": 0.0029916235514395595,
+        "firstReaction": -0.018367377721681843,
+        "partial": false,
+        "source": {
+          "label": "Yahoo Finance daily adjusted closes, JOBY and SPY",
+          "url": "https://finance.yahoo.com/quote/JOBY/history/",
+          "asOf": "2026-11-03"
+        }
+      },
+      "source": {
+        "label": "Zacks via Yahoo Finance",
+        "url": "https://finance.yahoo.com/markets/stocks/articles/joby-gears-report-q3-earnings-162800424.html",
+        "asOf": "2026-11-02T16:28:00.000Z"
+      }
+    },
+    {
+      "title": "Joby Aviation Launches Electric Air Taxi Flights Across Florida",
+      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOZ1FsY05SWGNicEQ0b2NWRUdKeFRlOHhxVnlRdW9wa0Y2WUxtZTZWMGMwWHQzSmR5ZS12MXVqN0JBRW9QSUlZTjl5ZUViVUtWd05pakp6dGdaOTlrelFaQUI5S080VEJvZWNoZ1gwYUZ6MkkwQ2xTNTJNQ25aRzZrbzRlbVFtd2ZRUEk4R3pwQlRVZVBMYnJISERuUXVMQTJ0TjdJLWJ6SXl0a0E?oc=5",
+      "publisher": "General Aviation News",
+      "publishedAt": "2026-11-02T14:34:30.000Z",
+      "feed": "Google News",
+      "tag": "catalyst",
+      "matched": [
+        "launch/start"
+      ],
+      "jobySpecific": true,
+      "reaction": {
+        "eventDateET": "2026-11-02",
+        "afterClose": false,
+        "sameDaySession": "2026-11-02",
+        "sameDay": -0.018367377721681843,
+        "spySameDay": -0.004790127636589259,
+        "nextDaySession": "2026-11-03",
+        "nextDay": 0.008316000484173136,
+        "spyNextDay": 0.0029916235514395595,
+        "firstReaction": -0.018367377721681843,
+        "partial": false,
+        "source": {
+          "label": "Yahoo Finance daily adjusted closes, JOBY and SPY",
+          "url": "https://finance.yahoo.com/quote/JOBY/history/",
+          "asOf": "2026-11-03"
+        }
+      },
+      "source": {
+        "label": "General Aviation News via Google News",
+        "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOZ1FsY05SWGNicEQ0b2NWRUdKeFRlOHhxVnlRdW9wa0Y2WUxtZTZWMGMwWHQzSmR5ZS12MXVqN0JBRW9QSUlZTjl5ZUViVUtWd05pakp6dGdaOTlrelFaQUI5S080VEJvZWNoZ1gwYUZ6MkkwQ2xTNTJNQ25aRzZrbzRlbVFtd2ZRUEk4R3pwQlRVZVBMYnJISERuUXVMQTJ0TjdJLWJ6SXl0a0E?oc=5",
+        "asOf": "2026-11-02T14:34:30.000Z"
+      }
+    },
+    {
+      "title": "Beta Technologies Beat Archer and Joby to an FAA First. Here's Why I'd Still Rather Own Archer.",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/beta-technologies-beat-archer-joby-133500120.html",
+      "publisher": "Motley Fool",
+      "publishedAt": "2026-11-02T13:35:00.000Z",
+      "feed": "Yahoo Finance",
+      "tag": "risk",
+      "matched": [
+        "competitor ahead"
+      ],
+      "jobySpecific": true,
+      "reaction": {
+        "eventDateET": "2026-11-02",
+        "afterClose": false,
+        "sameDaySession": "2026-11-02",
+        "sameDay": -0.018367377721681843,
+        "spySameDay": -0.004790127636589259,
+        "nextDaySession": "2026-11-03",
+        "nextDay": 0.008316000484173136,
+        "spyNextDay": 0.0029916235514395595,
+        "firstReaction": -0.018367377721681843,
+        "partial": false,
+        "source": {
+          "label": "Yahoo Finance daily adjusted closes, JOBY and SPY",
+          "url": "https://finance.yahoo.com/quote/JOBY/history/",
+          "asOf": "2026-11-03"
+        }
+      },
+      "source": {
+        "label": "Motley Fool via Yahoo Finance",
+        "url": "https://finance.yahoo.com/markets/stocks/articles/beta-technologies-beat-archer-joby-133500120.html",
+        "asOf": "2026-11-02T13:35:00.000Z"
+      }
+    },
+    {
+      "title": "Joby Launches Florida Air Taxi Flights Under White House Program as Archer Fight Narrows",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/joby-launches-florida-air-taxi-131853477.html",
+      "publisher": "TIKR",
+      "publishedAt": "2026-11-02T13:18:53.000Z",
+      "feed": "Yahoo Finance",
+      "tag": "catalyst",
+      "matched": [
+        "launch/start"
+      ],
+      "jobySpecific": true,
+      "reaction": {
+        "eventDateET": "2026-11-02",
+        "afterClose": false,
+        "sameDaySession": "2026-11-02",
+        "sameDay": -0.018367377721681843,
+        "spySameDay": -0.004790127636589259,
+        "nextDaySession": "2026-11-03",
+        "nextDay": 0.008316000484173136,
+        "spyNextDay": 0.0029916235514395595,
+        "firstReaction": -0.018367377721681843,
+        "partial": false,
+        "source": {
+          "label": "Yahoo Finance daily adjusted closes, JOBY and SPY",
+          "url": "https://finance.yahoo.com/quote/JOBY/history/",
+          "asOf": "2026-11-03"
+        }
+      },
+      "source": {
+        "label": "TIKR via Yahoo Finance",
+        "url": "https://finance.yahoo.com/markets/stocks/articles/joby-launches-florida-air-taxi-131853477.html",
+        "asOf": "2026-11-02T13:18:53.000Z"
+      }
+    },
+    {
+      "title": "Joby Launches Electric Air Taxi Flights Across Florida Under FAA eVTOL Pilot Program",
+      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQSkVxazREZ0lMNng2UUdGaWFhZk0xMHZIT2VrdTlmckVNTGlOTFBkU2hzd19rd2MtajA1OGVFa2Ywb1Y1M2xrRFBvRGNHQ3RLY0V5MGRYUWkzNU1OeEtjcEFULWRiaklFejY2YWtrclc3SVp1R0prU3ZWdVhHNDFZSXRXNWJCQllKbjN4aWNJVEptUkVPWXhrRkRqaVdjdFNIcVVJNFRSeXBTNU9EMzZuWTl5emRod3M3N0E?oc=5",
+      "publisher": "UASweekly.com",
+      "publishedAt": "2026-11-02T13:17:14.000Z",
+      "feed": "Google News",
+      "tag": "catalyst",
+      "matched": [
+        "launch/start"
+      ],
+      "jobySpecific": true,
+      "reaction": {
+        "eventDateET": "2026-11-02",
+        "afterClose": false,
+        "sameDaySession": "2026-11-02",
+        "sameDay": -0.018367377721681843,
+        "spySameDay": -0.004790127636589259,
+        "nextDaySession": "2026-11-03",
+        "nextDay": 0.008316000484173136,
+        "spyNextDay": 0.0029916235514395595,
+        "firstReaction": -0.018367377721681843,
+        "partial": false,
+        "source": {
+          "label": "Yahoo Finance daily adjusted closes, JOBY and SPY",
+          "url": "https://finance.yahoo.com/quote/JOBY/history/",
+          "asOf": "2026-11-03"
+        }
+      },
+      "source": {
+        "label": "UASweekly.com via Google News",
+        "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQSkVxazREZ0lMNng2UUdGaWFhZk0xMHZIT2VrdTlmckVNTGlOTFBkU2hzd19rd2MtajA1OGVFa2Ywb1Y1M2xrRFBvRGNHQ3RLY0V5MGRYUWkzNU1OeEtjcEFULWRiaklFejY2YWtrclc3SVp1R0prU3ZWdVhHNDFZSXRXNWJCQllKbjN4aWNJVEptUkVPWXhrRkRqaVdjdFNIcVVJNFRSeXBTNU9EMzZuWTl5emRod3M3N0E?oc=5",
+        "asOf": "2026-11-02T13:17:14.000Z"
+      }
+    },
+    {
+      "title": "Joby Aviation Tampa",
+      "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNR3hiMnpJMlJHd20yZDJ0Ui1WZktzRDdodkJVQXluM1VjUFRjUjh6ZmRSNHo2c0R4XzNyR0g5VVB4ekJJeUEzYjRGdFpJVGt4YlAxU1FIa2JtRkUwUUNPMUlkVi1leHR4dGZPLXhtaEZyVmdRWC1pbjhwTlFuRW41RlFaR3hBOS1vQ293d0duVGphYkNJV0xXa0sxSkJyX0Fkak9PTVJiNTktWnRyOW9ZUmM0SkRtQmdTNV9ZQ192emJiU19WWkF1M2R3?oc=5",
+      "publisher": "Florida Politics",
+      "publishedAt": "2026-11-01T07:00:00.000Z",
+      "feed": "Google News",
+      "tag": "context",
+      "matched": [],
+      "jobySpecific": true,
+      "reaction": {
+        "eventDateET": "2026-11-01",
+        "afterClose": true,
+        "sameDaySession": null,
+        "sameDay": null,
+        "spySameDay": null,
+        "nextDaySession": "2026-11-02",
+        "nextDay": -0.018367377721681843,
+        "spyNextDay": -0.004790127636589259,
+        "firstReaction": -0.018367377721681843,
+        "partial": false,
+        "source": {
+          "label": "Yahoo Finance daily adjusted closes, JOBY and SPY",
+          "url": "https://finance.yahoo.com/quote/JOBY/history/",
+          "asOf": "2026-11-02"
+        }
+      },
+      "source": {
+        "label": "Florida Politics via Google News",
+        "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNR3hiMnpJMlJHd20yZDJ0Ui1WZktzRDdodkJVQXluM1VjUFRjUjh6ZmRSNHo2c0R4XzNyR0g5VVB4ekJJeUEzYjRGdFpJVGt4YlAxU1FIa2JtRkUwUUNPMUlkVi1leHR4dGZPLXhtaEZyVmdRWC1pbjhwTlFuRW41RlFaR3hBOS1vQ293d0duVGphYkNJV0xXa0sxSkJyX0Fkak9PTVJiNTktWnRyOW9ZUmM0SkRtQmdTNV9ZQ192emJiU19WWkF1M2R3?oc=5",
+        "asOf": "2026-11-01T07:00:00.000Z"
+      }
+    },
+    {
+      "title": "What Joby Aviation Stock's Florida Air Taxi Flights Mean For Shareholders",
+      "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNNGpzeW4xc2kwY25VaktjMjFDWUxieUd1LWM0OFhlNjU5WGZlTkkxSlg1S0xJQThOd1J3Mm5RcUt3bEVSb1hGZTkyUlBGc1RTVUVyTGdvbTkyaWdPbndZeTZsVnF1VF96Z1lLd21Gbll1V05sbnNRMHBEeXJjeWl2SEU5TFdSWVpjbGhvYmlhdlBzS2o2Ty1DWGRodC1hc1pmYWhhN01mM1owaHlwRjlKRG5nTWRHTXJrWldsbmw2T2lBOGEwN2JUZ0Z5UDNBV0l20gHWAUFVX3lxTE1vMlBKSzgtenE3YnEwQWIxZzJ5X2lPQXVtZWR6bVlLV0lMempXM1NiR3p2d2JaVEttRXF5VzlwSWpPT19tcnZFMlFDUlV6dHBrMEllVUNrc2JURWRTa3J6TEFYT1RGa0hJN1NBdExjaGp0MlRjX0QwRFRyb1NMX3IwazRTV3hIV3dYaUtWR0Q3Qi15NFFBVDVFMm0wdHNpWURHRXhSN3lCdWZ4bHhIdnZ3Y2ZDSkhJVjE1VTUteUJPQkRQNnl6NkJUUTlWV2dhaWNuQUxOZEE?oc=5",
+      "publisher": "Simply Wall St",
+      "publishedAt": "2026-10-31T23:35:36.000Z",
+      "feed": "Google News",
+      "tag": "context",
+      "matched": [],
+      "jobySpecific": true,
+      "reaction": {
+        "eventDateET": "2026-10-31",
+        "afterClose": true,
+        "sameDaySession": null,
+        "sameDay": null,
+        "spySameDay": null,
+        "nextDaySession": "2026-11-02",
+        "nextDay": -0.018367377721681843,
+        "spyNextDay": -0.004790127636589259,
+        "firstReaction": -0.018367377721681843,
+        "partial": false,
+        "source": {
+          "label": "Yahoo Finance daily adjusted closes, JOBY and SPY",
+          "url": "https://finance.yahoo.com/quote/JOBY/history/",
+          "asOf": "2026-11-02"
+        }
+      },
+      "source": {
+        "label": "Simply Wall St via Google News",
+        "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNNGpzeW4xc2kwY25VaktjMjFDWUxieUd1LWM0OFhlNjU5WGZlTkkxSlg1S0xJQThOd1J3Mm5RcUt3bEVSb1hGZTkyUlBGc1RTVUVyTGdvbTkyaWdPbndZeTZsVnF1VF96Z1lLd21Gbll1V05sbnNRMHBEeXJjeWl2SEU5TFdSWVpjbGhvYmlhdlBzS2o2Ty1DWGRodC1hc1pmYWhhN01mM1owaHlwRjlKRG5nTWRHTXJrWldsbmw2T2lBOGEwN2JUZ0Z5UDNBV0l20gHWAUFVX3lxTE1vMlBKSzgtenE3YnEwQWIxZzJ5X2lPQXVtZWR6bVlLV0lMempXM1NiR3p2d2JaVEttRXF5VzlwSWpPT19tcnZFMlFDUlV6dHBrMEllVUNrc2JURWRTa3J6TEFYT1RGa0hJN1NBdExjaGp0MlRjX0QwRFRyb1NMX3IwazRTV3hIV3dYaUtWR0Q3Qi15NFFBVDVFMm0wdHNpWURHRXhSN3lCdWZ4bHhIdnZ3Y2ZDSkhJVjE1VTUteUJPQkRQNnl6NkJUUTlWV2dhaWNuQUxOZEE?oc=5",
+        "asOf": "2026-10-31T23:35:36.000Z"
+      }
+    },
+    {
+      "title": "Joby and Beta Kick Off Florida eIPP Flights",
+      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQSHpFSWY3RXNUWHkwN1lMeU01b2IxVjAyRUZkTEw5aGdRZ25xTmRTb3oxT1I2Z0JCMjhmdnViWXRTbmQxVVFmbmtCcDNTOW9GMGNYRTZXM0VGTExqdDE2ZUZ4UFVhbTVTZldSc0JKYW9GS1AxamZvR1BzVTMtVDdlRU1CVEdxTnJoSnFCT2ZPYklILUhTSHJYanpvRUxUSF93dExMRlF3?oc=5",
+      "publisher": "Aviation International News",
+      "publishedAt": "2026-10-31T17:41:49.000Z",
+      "feed": "Google News",
+      "tag": "catalyst",
+      "matched": [
+        "launch/start"
+      ],
+      "jobySpecific": true,
+      "reaction": {
+        "eventDateET": "2026-10-31",
+        "afterClose": true,
+        "sameDaySession": null,
+        "sameDay": null,
+        "spySameDay": null,
+        "nextDaySession": "2026-11-02",
+        "nextDay": -0.018367377721681843,
+        "spyNextDay": -0.004790127636589259,
+        "firstReaction": -0.018367377721681843,
+        "partial": false,
+        "source": {
+          "label": "Yahoo Finance daily adjusted closes, JOBY and SPY",
+          "url": "https://finance.yahoo.com/quote/JOBY/history/",
+          "asOf": "2026-11-02"
+        }
+      },
+      "source": {
+        "label": "Aviation International News via Google News",
+        "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQSHpFSWY3RXNUWHkwN1lMeU01b2IxVjAyRUZkTEw5aGdRZ25xTmRTb3oxT1I2Z0JCMjhmdnViWXRTbmQxVVFmbmtCcDNTOW9GMGNYRTZXM0VGTExqdDE2ZUZ4UFVhbTVTZldSc0JKYW9GS1AxamZvR1BzVTMtVDdlRU1CVEdxTnJoSnFCT2ZPYklILUhTSHJYanpvRUxUSF93dExMRlF3?oc=5",
+        "asOf": "2026-10-31T17:41:49.000Z"
+      }
+    },
+    {
+      "title": "Joby’s electric air taxi retraces the first airline route from St. Pete to Tampa",
+      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxObjF2OHJaRVlDazMtR2lyYWVwRm1TdG5FUlFiWFpHbTJ1SGdwT1JBc1dGVHBpOXRsU0oxekFqM0lJazFZbjVwZWhyNkxwQWI5aXRwT2I2OXlOZlctbFNOY2IwNlNrdUV6LWxLenBZcERtMnZxbjRvdzZNdHd2aTZrSHktb190ZnRxS0xWajltZ3pfMUJhY2x6UVNxc1pKTG1XbXNWUGUwR1dxZ2JLa1dIU3BlYmdNX1dUbUFmTGtoQjM?oc=5",
+      "publisher": "Florida Politics",
+      "publishedAt": "2026-10-31T11:49:22.000Z",
+      "feed": "Google News",
+      "tag": "context",
+      "matched": [],
+      "jobySpecific": true,
+      "reaction": {
+        "eventDateET": "2026-10-31",
+        "afterClose": true,
+        "sameDaySession": null,
+        "sameDay": null,
+        "spySameDay": null,
+        "nextDaySession": "2026-11-02",
+        "nextDay": -0.018367377721681843,
+        "spyNextDay": -0.004790127636589259,
+        "firstReaction": -0.018367377721681843,
+        "partial": false,
+        "source": {
+          "label": "Yahoo Finance daily adjusted closes, JOBY and SPY",
+          "url": "https://finance.yahoo.com/quote/JOBY/history/",
+          "asOf": "2026-11-02"
+        }
+      },
+      "source": {
+        "label": "Florida Politics via Google News",
+        "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxObjF2OHJaRVlDazMtR2lyYWVwRm1TdG5FUlFiWFpHbTJ1SGdwT1JBc1dGVHBpOXRsU0oxekFqM0lJazFZbjVwZWhyNkxwQWI5aXRwT2I2OXlOZlctbFNOY2IwNlNrdUV6LWxLenBZcERtMnZxbjRvdzZNdHd2aTZrSHktb190ZnRxS0xWajltZ3pfMUJhY2x6UVNxc1pKTG1XbXNWUGUwR1dxZ2JLa1dIU3BlYmdNX1dUbUFmTGtoQjM?oc=5",
+        "asOf": "2026-10-31T11:49:22.000Z"
+      }
+    },
+    {
+      "title": "Betting on Archer Aviation or Joby Aviation Being the Tesla of eVTOLs? They Could End Up More Like Lucid.",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/betting-archer-aviation-joby-aviation-052000148.html",
+      "publisher": "Motley Fool",
+      "publishedAt": "2026-10-31T05:20:00.000Z",
+      "feed": "Yahoo Finance",
+      "tag": "context",
+      "matched": [],
+      "jobySpecific": true,
+      "reaction": {
+        "eventDateET": "2026-10-31",
+        "afterClose": true,
+        "sameDaySession": null,
+        "sameDay": null,
+        "spySameDay": null,
+        "nextDaySession": "2026-11-02",
+        "nextDay": -0.018367377721681843,
+        "spyNextDay": -0.004790127636589259,
+        "firstReaction": -0.018367377721681843,
+        "partial": false,
+        "source": {
+          "label": "Yahoo Finance daily adjusted closes, JOBY and SPY",
+          "url": "https://finance.yahoo.com/quote/JOBY/history/",
+          "asOf": "2026-11-02"
+        }
+      },
+      "source": {
+        "label": "Motley Fool via Yahoo Finance",
+        "url": "https://finance.yahoo.com/markets/stocks/articles/betting-archer-aviation-joby-aviation-052000148.html",
+        "asOf": "2026-10-31T05:20:00.000Z"
+      }
+    },
+    {
+      "title": "Joby Launches Piloted Air Taxi Trials Across Florida as JOBY Shares Slip 3.35%",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE13M2hWMDBzR002QTVlZTVCVV9KSGEyanVyZ0RGcXRBMEhyQmV4c0RBT1VXb1F4eXZqQU9vQnM3Y1VsTW1rVkIwSFBhLTdLNTM3ZXBpTjQ1Zy1NRmNyU1dsN3pGVGtLWjExM1VzVjlJbUpHV192R3c?oc=5",
+      "publisher": "BigGo Finance",
+      "publishedAt": "2026-10-31T03:55:00.000Z",
+      "feed": "Google News",
+      "tag": "mixed",
+      "matched": [
+        "launch/start",
+        "delay"
+      ],
+      "jobySpecific": true,
+      "reaction": {
+        "eventDateET": "2026-10-30",
+        "afterClose": true,
+        "sameDaySession": "2026-10-30",
+        "sameDay": -0.03543303760668293,
+        "spySameDay": -0.01772904090171079,
+        "nextDaySession": "2026-11-02",
+        "nextDay": -0.018367377721681843,
+        "spyNextDay": -0.004790127636589259,
+        "firstReaction": -0.018367377721681843,
+        "partial": false,
+        "source": {
+          "label": "Yahoo Finance daily adjusted closes, JOBY and SPY",
+          "url": "https://finance.yahoo.com/quote/JOBY/history/",
+          "asOf": "2026-11-02"
+        }
+      },
+      "source": {
+        "label": "BigGo Finance via Google News",
+        "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE13M2hWMDBzR002QTVlZTVCVV9KSGEyanVyZ0RGcXRBMEhyQmV4c0RBT1VXb1F4eXZqQU9vQnM3Y1VsTW1rVkIwSFBhLTdLNTM3ZXBpTjQ1Zy1NRmNyU1dsN3pGVGtLWjExM1VzVjlJbUpHV192R3c?oc=5",
+        "asOf": "2026-10-31T03:55:00.000Z"
+      }
+    },
+    {
+      "title": "Florida launches first eVTOL flight trials as Joby tests its electric air taxis",
+      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPaUw0VXF4M1pjYWRIdkwxNG9qTms0U2RHa25RMHNnckxmdnQ0SC1EM1pCYWI5Mkc5OW1VVkJTaWZDUU4zRl9wTnM3M2NsbjM0Y1dtUmhpT0gwdHAxbGpEZWpESzVDZ2FubDZsemNhdEQ2WlV0M0ZUNnZZWC00ZXd1LUpoUlFhR1ZtenRRa21hUE1WaXR3Wk1jRXV5VTEwQQ?oc=5",
+      "publisher": "Interesting Engineering",
+      "publishedAt": "2026-10-31T03:31:00.000Z",
+      "feed": "Google News",
+      "tag": "catalyst",
+      "matched": [
+        "launch/start"
+      ],
+      "jobySpecific": true,
+      "reaction": {
+        "eventDateET": "2026-10-30",
+        "afterClose": true,
+        "sameDaySession": "2026-10-30",
+        "sameDay": -0.03543303760668293,
+        "spySameDay": -0.01772904090171079,
+        "nextDaySession": "2026-11-02",
+        "nextDay": -0.018367377721681843,
+        "spyNextDay": -0.004790127636589259,
+        "firstReaction": -0.018367377721681843,
+        "partial": false,
+        "source": {
+          "label": "Yahoo Finance daily adjusted closes, JOBY and SPY",
+          "url": "https://finance.yahoo.com/quote/JOBY/history/",
+          "asOf": "2026-11-02"
+        }
+      },
+      "source": {
+        "label": "Interesting Engineering via Google News",
+        "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPaUw0VXF4M1pjYWRIdkwxNG9qTms0U2RHa25RMHNnckxmdnQ0SC1EM1pCYWI5Mkc5OW1VVkJTaWZDUU4zRl9wTnM3M2NsbjM0Y1dtUmhpT0gwdHAxbGpEZWpESzVDZ2FubDZsemNhdEQ2WlV0M0ZUNnZZWC00ZXd1LUpoUlFhR1ZtenRRa21hUE1WaXR3Wk1jRXV5VTEwQQ?oc=5",
+        "asOf": "2026-10-31T03:31:00.000Z"
+      }
+    },
+    {
+      "title": "Joby Aviation (JOBY) Stock Looks Priced For Perfection On Sales",
+      "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQMkVqWkNsUnVCdzUxRVRJSW1zZVp2SlNNSEo5T2Y4WElIbWo5WTVkT1djMGhOUzZ1QTR4ZXJfano4MXdaMldjb09IN2Y1dFlQLWpaVFFWRF9oOVJCMVZhYUtDRFJJWmVUdVphdmRGMmhXOUJBSHplVHZIM0h6SGNZLS02SFVVbDVKdl9HU3lnVHh3ZGUyYzFYSnFQNkNscGs3b3ZpY191aTZZbGE5b2NXN1pYWGRSVm44T0JNcXlxRzNMUlJaTG9RbGZUUG11dF8wZnfSAdcBQVVfeXFMT3FyRkVRSUFzYTdKOFhzYW9UeHpIdEFyVnJfZkh4cDVGY2I4T0x3LS15Zm9jZTJlTjRmZWx6NEk4T1V0VGkxU3lqbXpYZkU0MHZFakIyYUZNcmFTa2NkVm14NC0xMGZyR3EzenV4Vlp3YVR3YnZmU0pDeUdmZWp6NS0xYzNvX21OTlphMVhqNVY1V3VPa01CSWZXVnZBaFlVem02WGRKd1ZNeWsyblp2NzV6NXllV3lDNzQ2aWIyNFpKRjhaVzB0VWpRVVF0enRPakpCRlZ2RDg?oc=5",
+      "publisher": "Simply Wall St",
+      "publishedAt": "2026-10-30T21:50:15.000Z",
+      "feed": "Google News",
+      "tag": "context",
+      "matched": [],
+      "jobySpecific": true,
+      "reaction": {
+        "eventDateET": "2026-10-30",
+        "afterClose": true,
+        "sameDaySession": "2026-10-30",
+        "sameDay": -0.03543303760668293,
+        "spySameDay": -0.01772904090171079,
+        "nextDaySession": "2026-11-02",
+        "nextDay": -0.018367377721681843,
+        "spyNextDay": -0.004790127636589259,
+        "firstReaction": -0.018367377721681843,
+        "partial": false,
+        "source": {
+          "label": "Yahoo Finance daily adjusted closes, JOBY and SPY",
+          "url": "https://finance.yahoo.com/quote/JOBY/history/",
+          "asOf": "2026-11-02"
+        }
+      },
+      "source": {
+        "label": "Simply Wall St via Google News",
+        "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQMkVqWkNsUnVCdzUxRVRJSW1zZVp2SlNNSEo5T2Y4WElIbWo5WTVkT1djMGhOUzZ1QTR4ZXJfano4MXdaMldjb09IN2Y1dFlQLWpaVFFWRF9oOVJCMVZhYUtDRFJJWmVUdVphdmRGMmhXOUJBSHplVHZIM0h6SGNZLS02SFVVbDVKdl9HU3lnVHh3ZGUyYzFYSnFQNkNscGs3b3ZpY191aTZZbGE5b2NXN1pYWGRSVm44T0JNcXlxRzNMUlJaTG9RbGZUUG11dF8wZnfSAdcBQVVfeXFMT3FyRkVRSUFzYTdKOFhzYW9UeHpIdEFyVnJfZkh4cDVGY2I4T0x3LS15Zm9jZTJlTjRmZWx6NEk4T1V0VGkxU3lqbXpYZkU0MHZFakIyYUZNcmFTa2NkVm14NC0xMGZyR3EzenV4Vlp3YVR3YnZmU0pDeUdmZWp6NS0xYzNvX21OTlphMVhqNVY1V3VPa01CSWZXVnZBaFlVem02WGRKd1ZNeWsyblp2NzV6NXllV3lDNzQ2aWIyNFpKRjhaVzB0VWpRVVF0enRPakpCRlZ2RDg?oc=5",
+        "asOf": "2026-10-30T21:50:15.000Z"
+      }
+    },
+    {
+      "title": "Joby Begins Florida Air Taxi Demonstrations as Shares Fall 3.4%",
+      "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9JYmRHMkl4bUh6QzY1UTQ4bnBrRnZGdEpyVWNPeWxoNjcxaFlwSGRNS2h3d3hSN3BGbjgzOGMzRWVyN3NGTGxYVUx5czd1SDRnalY4UVJscFA?oc=5",
+      "publisher": "www.tokenpost.com",
+      "publishedAt": "2026-10-30T21:36:36.000Z",
+      "feed": "Google News",
+      "tag": "mixed",
+      "matched": [
+        "launch/start",
+        "negative price move"
+      ],
+      "jobySpecific": true,
+      "reaction": {
+        "eventDateET": "2026-10-30",
+        "afterClose": true,
+        "sameDaySession": "2026-10-30",
+        "sameDay": -0.03543303760668293,
+        "spySameDay": -0.01772904090171079,
+        "nextDaySession": "2026-11-02",
+        "nextDay": -0.018367377721681843,
+        "spyNextDay": -0.004790127636589259,
+        "firstReaction": -0.018367377721681843,
+        "partial": false,
+        "source": {
+          "label": "Yahoo Finance daily adjusted closes, JOBY and SPY",
+          "url": "https://finance.yahoo.com/quote/JOBY/history/",
+          "asOf": "2026-11-02"
+        }
+      },
+      "source": {
+        "label": "www.tokenpost.com via Google News",
+        "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9JYmRHMkl4bUh6QzY1UTQ4bnBrRnZGdEpyVWNPeWxoNjcxaFlwSGRNS2h3d3hSN3BGbjgzOGMzRWVyN3NGTGxYVUx5czd1SDRnalY4UVJscFA?oc=5",
+        "asOf": "2026-10-30T21:36:36.000Z"
+      }
+    },
+    {
+      "title": "Joby Flies Florida's 1914 Airline Route, Still Without a Fare",
+      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNLUZHZlJ4eHRTaDVUckNEMnQ5dWJhMWtUU0JwdU5qeHpUN29VaHFJLWlrb3k5VVZjQnRFWGF2LUI2d1FpWUdMZjd5WnNtN05jRDZvVTROTElJM1drTEswU3d2SFhTMDNGT3Rqbi1jVGFpUnRvRVhRX05RQUMyUlhoS1hEdw?oc=5",
+      "publisher": "DroneXL",
+      "publishedAt": "2026-10-30T19:46:00.000Z",
+      "feed": "Google News",
+      "tag": "context",
+      "matched": [],
+      "jobySpecific": true,
+      "reaction": {
+        "eventDateET": "2026-10-30",
+        "afterClose": false,
+        "sameDaySession": "2026-10-30",
+        "sameDay": -0.03543303760668293,
+        "spySameDay": -0.01772904090171079,
+        "nextDaySession": "2026-11-02",
+        "nextDay": -0.018367377721681843,
+        "spyNextDay": -0.004790127636589259,
+        "firstReaction": -0.03543303760668293,
+        "partial": false,
+        "source": {
+          "label": "Yahoo Finance daily adjusted closes, JOBY and SPY",
+          "url": "https://finance.yahoo.com/quote/JOBY/history/",
+          "asOf": "2026-11-02"
+        }
+      },
+      "source": {
+        "label": "DroneXL via Google News",
+        "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNLUZHZlJ4eHRTaDVUckNEMnQ5dWJhMWtUU0JwdU5qeHpUN29VaHFJLWlrb3k5VVZjQnRFWGF2LUI2d1FpWUdMZjd5WnNtN05jRDZvVTROTElJM1drTEswU3d2SFhTMDNGT3Rqbi1jVGFpUnRvRVhRX05RQUMyUlhoS1hEdw?oc=5",
+        "asOf": "2026-10-30T19:46:00.000Z"
+      }
+    },
+    {
+      "title": "Joby Aviation, Inc. Launches Piloted Electric Air Taxi Flights Across Florida",
+      "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQVEtBMHVmR3NVY3ZBWUlDOUR5Y3VhQmo2NDdFbE0xU2otUXd2ZlIwc1N5VFR5NWEzdnllenNteHFuaG1BNmdaSHo1U1BsRllISlJSdjNHejBPRXRmUi1uS3VneTFxNFptUmF6b0g2Mmw0SzE4Z1VKelpLZ1ZnRHQ2RkRGRjFSLThJVElwd3kyVWRPSVlvbzAyWkNabXRlaktzTFhidWJyUXNXSFhpUkE3SEcxejRfUldnaHdnZUYzY21PSjlQNGQ4?oc=5",
+      "publisher": "marketscreener.com",
+      "publishedAt": "2026-10-30T19:20:40.000Z",
+      "feed": "Google News",
+      "tag": "catalyst",
+      "matched": [
+        "launch/start"
+      ],
+      "jobySpecific": true,
+      "reaction": {
+        "eventDateET": "2026-10-30",
+        "afterClose": false,
+        "sameDaySession": "2026-10-30",
+        "sameDay": -0.03543303760668293,
+        "spySameDay": -0.01772904090171079,
+        "nextDaySession": "2026-11-02",
+        "nextDay": -0.018367377721681843,
+        "spyNextDay": -0.004790127636589259,
+        "firstReaction": -0.03543303760668293,
+        "partial": false,
+        "source": {
+          "label": "Yahoo Finance daily adjusted closes, JOBY and SPY",
+          "url": "https://finance.yahoo.com/quote/JOBY/history/",
+          "asOf": "2026-11-02"
+        }
+      },
+      "source": {
+        "label": "marketscreener.com via Google News",
+        "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQVEtBMHVmR3NVY3ZBWUlDOUR5Y3VhQmo2NDdFbE0xU2otUXd2ZlIwc1N5VFR5NWEzdnllenNteHFuaG1BNmdaSHo1U1BsRllISlJSdjNHejBPRXRmUi1uS3VneTFxNFptUmF6b0g2Mmw0SzE4Z1VKelpLZ1ZnRHQ2RkRGRjFSLThJVElwd3kyVWRPSVlvbzAyWkNabXRlaktzTFhidWJyUXNXSFhpUkE3SEcxejRfUldnaHdnZUYzY21PSjlQNGQ4?oc=5",
+        "asOf": "2026-10-30T19:20:40.000Z"
+      }
+    },
+    {
+      "title": "Joby Aviation Launches Week of Electric Air Taxi Flights Across Florida",
+      "url": "https://finance.yahoo.com/technology/articles/joby-aviation-launches-week-electric-190754570.html",
+      "publisher": "MT Newswires",
+      "publishedAt": "2026-10-30T19:07:54.000Z",
+      "feed": "Yahoo Finance",
+      "tag": "catalyst",
+      "matched": [
+        "launch/start"
+      ],
+      "jobySpecific": true,
+      "reaction": {
+        "eventDateET": "2026-10-30",
+        "afterClose": false,
+        "sameDaySession": "2026-10-30",
+        "sameDay": -0.03543303760668293,
+        "spySameDay": -0.01772904090171079,
+        "nextDaySession": "2026-11-02",
+        "nextDay": -0.018367377721681843,
+        "spyNextDay": -0.004790127636589259,
+        "firstReaction": -0.03543303760668293,
+        "partial": false,
+        "source": {
+          "label": "Yahoo Finance daily adjusted closes, JOBY and SPY",
+          "url": "https://finance.yahoo.com/quote/JOBY/history/",
+          "asOf": "2026-11-02"
+        }
+      },
+      "source": {
+        "label": "MT Newswires via Yahoo Finance",
+        "url": "https://finance.yahoo.com/technology/articles/joby-aviation-launches-week-electric-190754570.html",
+        "asOf": "2026-10-30T19:07:54.000Z"
+      }
+    },
+    {
+      "title": "Joby Aviation's Dubai Launch Is the 1 Catalyst That Could Reverse a 73% Drop. Here's the Timeline -- and the Risk.",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/joby-aviations-dubai-launch-1-190500873.html",
+      "publisher": "Motley Fool",
+      "publishedAt": "2026-10-30T19:05:00.000Z",
+      "feed": "Yahoo Finance",
+      "tag": "mixed",
+      "matched": [
+        "launch/start",
+        "negative price move"
+      ],
+      "jobySpecific": true,
+      "reaction": {
+        "eventDateET": "2026-10-30",
+        "afterClose": false,
+        "sameDaySession": "2026-10-30",
+        "sameDay": -0.03543303760668293,
+        "spySameDay": -0.01772904090171079,
+        "nextDaySession": "2026-11-02",
+        "nextDay": -0.018367377721681843,
+        "spyNextDay": -0.004790127636589259,
+        "firstReaction": -0.03543303760668293,
+        "partial": false,
+        "source": {
+          "label": "Yahoo Finance daily adjusted closes, JOBY and SPY",
+          "url": "https://finance.yahoo.com/quote/JOBY/history/",
+          "asOf": "2026-11-02"
+        }
+      },
+      "source": {
+        "label": "Motley Fool via Yahoo Finance",
+        "url": "https://finance.yahoo.com/markets/stocks/articles/joby-aviations-dubai-launch-1-190500873.html",
+        "asOf": "2026-10-30T19:05:00.000Z"
+      }
+    },
+    {
+      "title": "Joby Aviation begins week of electric air taxi flights in Florida",
+      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNSGxfUlJEbVFWM2l1UjBXaU5hNldjTEh6SENBYzRuS05LNWdZN2xBcFphVS1oT3Rrazg4d3ZYazU1NkdNVG1fa2VQUmMyaEtuV2hqbzZ3Z2xvTFV4dlg2UEZzS21USUx0VU53YjR4bDlVSmk3a0ctODYxZkhhV1d3SGs3RHJRWk41bXlNUERmdHpDSWJ0cDZWeXozWGs3VDhXYmdNNDl3bWtBdEtYZktCOWZWLXdoVXA1VEQ1YXZrNA?oc=5",
+      "publisher": "Investing.com",
+      "publishedAt": "2026-10-30T17:41:31.000Z",
+      "feed": "Google News",
+      "tag": "catalyst",
+      "matched": [
+        "launch/start"
+      ],
+      "jobySpecific": true,
+      "reaction": {
+        "eventDateET": "2026-10-30",
+        "afterClose": false,
+        "sameDaySession": "2026-10-30",
+        "sameDay": -0.03543303760668293,
+        "spySameDay": -0.01772904090171079,
+        "nextDaySession": "2026-11-02",
+        "nextDay": -0.018367377721681843,
+        "spyNextDay": -0.004790127636589259,
+        "firstReaction": -0.03543303760668293,
+        "partial": false,
+        "source": {
+          "label": "Yahoo Finance daily adjusted closes, JOBY and SPY",
+          "url": "https://finance.yahoo.com/quote/JOBY/history/",
+          "asOf": "2026-11-02"
+        }
+      },
+      "source": {
+        "label": "Investing.com via Google News",
+        "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNSGxfUlJEbVFWM2l1UjBXaU5hNldjTEh6SENBYzRuS05LNWdZN2xBcFphVS1oT3Rrazg4d3ZYazU1NkdNVG1fa2VQUmMyaEtuV2hqbzZ3Z2xvTFV4dlg2UEZzS21USUx0VU53YjR4bDlVSmk3a0ctODYxZkhhV1d3SGs3RHJRWk41bXlNUERmdHpDSWJ0cDZWeXozWGs3VDhXYmdNNDl3bWtBdEtYZktCOWZWLXdoVXA1VEQ1YXZrNA?oc=5",
+        "asOf": "2026-10-30T17:41:31.000Z"
+      }
+    },
+    {
+      "title": "Joby Brings Its Vertical Takeoff and Landing Air Taxi to Florida :: Joby Aero, Inc. (JOBY)",
+      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNRm15aGU4ejRwSWJyOFNqNE5NU21ESXFnMUxkMEFMQThvd0JseEhZZnVUNE9tdHBnSzVmTl9xWDBtQml2dzFsYldxUUZ5QkJ0dEVyamdfVXVKWmhXZ1BZeGo2NEoyWFVETzh3aVQ3RGd5VnlCaHd4N3AzTTNUVEp1cTZnM2NDcjZ0czMybjVkTFE2aG4zM3NHOWlmdUV3UUNBTm1uSFFmRXpiVkFHVmFyOU9aUHNEcXpuT3FTdWwxSQ?oc=5",
+      "publisher": "Joby Aviation",
+      "publishedAt": "2026-10-30T17:15:10.000Z",
+      "feed": "Google News",
+      "tag": "context",
+      "matched": [],
+      "jobySpecific": true,
+      "reaction": {
+        "eventDateET": "2026-10-30",
+        "afterClose": false,
+        "sameDaySession": "2026-10-30",
+        "sameDay": -0.03543303760668293,
+        "spySameDay": -0.01772904090171079,
+        "nextDaySession": "2026-11-02",
+        "nextDay": -0.018367377721681843,
+        "spyNextDay": -0.004790127636589259,
+        "firstReaction": -0.03543303760668293,
+        "partial": false,
+        "source": {
+          "label": "Yahoo Finance daily adjusted closes, JOBY and SPY",
+          "url": "https://finance.yahoo.com/quote/JOBY/history/",
+          "asOf": "2026-11-02"
+        }
+      },
+      "source": {
+        "label": "Joby Aviation via Google News",
+        "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNRm15aGU4ejRwSWJyOFNqNE5NU21ESXFnMUxkMEFMQThvd0JseEhZZnVUNE9tdHBnSzVmTl9xWDBtQml2dzFsYldxUUZ5QkJ0dEVyamdfVXVKWmhXZ1BZeGo2NEoyWFVETzh3aVQ3RGd5VnlCaHd4N3AzTTNUVEp1cTZnM2NDcjZ0czMybjVkTFE2aG4zM3NHOWlmdUV3UUNBTm1uSFFmRXpiVkFHVmFyOU9aUHNEcXpuT3FTdWwxSQ?oc=5",
+        "asOf": "2026-10-30T17:15:10.000Z"
+      }
+    },
+    {
+      "title": "Joby Aviation begins week of eVTOL flights across Florida",
+      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQUkt2a3ZHWGFJcWM2bGhLQThZdmtlaFFhQk8wUFNhOU4yRTRoVHg1cEZnNzhBbWRxa2N2NF9XNHJiaDNHZnhKQTh2MzU2aG95SDY2bkRVYzM0WVpCaGp4WHloLTVpSXFzbnpGY1dfNlE5WXpPQ3RQck1jRTFzVloxZFNpSXlPcmMtZjZHWjdXdXpPTkl3cHotZEROREgtQVl6bE5LWGprZ2MzdXVPSE9jcjJuai1RbVU?oc=5",
+      "publisher": "StreetInsider",
+      "publishedAt": "2026-10-30T17:03:42.000Z",
+      "feed": "Google News",
+      "tag": "catalyst",
+      "matched": [
+        "launch/start"
+      ],
+      "jobySpecific": true,
+      "reaction": {
+        "eventDateET": "2026-10-30",
+        "afterClose": false,
+        "sameDaySession": "2026-10-30",
+        "sameDay": -0.03543303760668293,
+        "spySameDay": -0.01772904090171079,
+        "nextDaySession": "2026-11-02",
+        "nextDay": -0.018367377721681843,
+        "spyNextDay": -0.004790127636589259,
+        "firstReaction": -0.03543303760668293,
+        "partial": false,
+        "source": {
+          "label": "Yahoo Finance daily adjusted closes, JOBY and SPY",
+          "url": "https://finance.yahoo.com/quote/JOBY/history/",
+          "asOf": "2026-11-02"
+        }
+      },
+      "source": {
+        "label": "StreetInsider via Google News",
+        "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQUkt2a3ZHWGFJcWM2bGhLQThZdmtlaFFhQk8wUFNhOU4yRTRoVHg1cEZnNzhBbWRxa2N2NF9XNHJiaDNHZnhKQTh2MzU2aG95SDY2bkRVYzM0WVpCaGp4WHloLTVpSXFzbnpGY1dfNlE5WXpPQ3RQck1jRTFzVloxZFNpSXlPcmMtZjZHWjdXdXpPTkl3cHotZEROREgtQVl6bE5LWGprZ2MzdXVPSE9jcjJuai1RbVU?oc=5",
+        "asOf": "2026-10-30T17:03:42.000Z"
+      }
+    },
+    {
+      "title": "Joby Brings Its Vertical Takeoff and Landing Air Taxi to Florida",
+      "url": "https://finance.yahoo.com/technology/articles/joby-brings-vertical-takeoff-landing-170200185.html",
+      "publisher": "Business Wire",
+      "publishedAt": "2026-10-30T17:02:00.000Z",
+      "feed": "Yahoo Finance",
+      "tag": "context",
+      "matched": [],
+      "jobySpecific": true,
+      "reaction": {
+        "eventDateET": "2026-10-30",
+        "afterClose": false,
+        "sameDaySession": "2026-10-30",
+        "sameDay": -0.03543303760668293,
+        "spySameDay": -0.01772904090171079,
+        "nextDaySession": "2026-11-02",
+        "nextDay": -0.018367377721681843,
+        "spyNextDay": -0.004790127636589259,
+        "firstReaction": -0.03543303760668293,
+        "partial": false,
+        "source": {
+          "label": "Yahoo Finance daily adjusted closes, JOBY and SPY",
+          "url": "https://finance.yahoo.com/quote/JOBY/history/",
+          "asOf": "2026-11-02"
+        }
+      },
+      "source": {
+        "label": "Business Wire via Yahoo Finance",
+        "url": "https://finance.yahoo.com/technology/articles/joby-brings-vertical-takeoff-landing-170200185.html",
+        "asOf": "2026-10-30T17:02:00.000Z"
+      }
+    },
+    {
+      "title": "Joby Brings Its Vertical Takeoff and Landing Air Taxi to Florida – Company Announcement",
+      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPRnRNVWx3aTF4WjR1ZXZITlE2YmF6bzVCcU45WkI3Q0NNVzFCNFlXVVNaYkRpUWpyNjdEak10ek9adjJZOW0tV2xCT2FyMkU4NjBUR3I1ZmtZa181aUo3QTd6Z1lXOV9MQVdMNlllaXF5YnNmZkdEeVlFVzZNZGhEdUR4UG9LSHNJa0h5dERILUE4OEhlLUU2bmRXYjc1MXNFVHlOZkNR?oc=5",
+      "publisher": "Financial Times",
+      "publishedAt": "2026-10-30T17:02:00.000Z",
+      "feed": "Google News",
+      "tag": "context",
+      "matched": [],
+      "jobySpecific": true,
+      "reaction": {
+        "eventDateET": "2026-10-30",
+        "afterClose": false,
+        "sameDaySession": "2026-10-30",
+        "sameDay": -0.03543303760668293,
+        "spySameDay": -0.01772904090171079,
+        "nextDaySession": "2026-11-02",
+        "nextDay": -0.018367377721681843,
+        "spyNextDay": -0.004790127636589259,
+        "firstReaction": -0.03543303760668293,
+        "partial": false,
+        "source": {
+          "label": "Yahoo Finance daily adjusted closes, JOBY and SPY",
+          "url": "https://finance.yahoo.com/quote/JOBY/history/",
+          "asOf": "2026-11-02"
+        }
+      },
+      "source": {
+        "label": "Financial Times via Google News",
+        "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPRnRNVWx3aTF4WjR1ZXZITlE2YmF6bzVCcU45WkI3Q0NNVzFCNFlXVVNaYkRpUWpyNjdEak10ek9adjJZOW0tV2xCT2FyMkU4NjBUR3I1ZmtZa181aUo3QTd6Z1lXOV9MQVdMNlllaXF5YnNmZkdEeVlFVzZNZGhEdUR4UG9LSHNJa0h5dERILUE4OEhlLUU2bmRXYjc1MXNFVHlOZkNR?oc=5",
+        "asOf": "2026-10-30T17:02:00.000Z"
+      }
+    },
+    {
+      "title": "Joby Aviation (JOBY) Stock Gets Fair Value Trim As Analyst Views Split On Defense And Risk",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/joby-aviation-joby-stock-gets-131610922.html",
+      "publisher": "Simply Wall St.",
+      "publishedAt": "2026-10-30T13:16:10.000Z",
+      "feed": "Yahoo Finance",
+      "tag": "context",
+      "matched": [],
+      "jobySpecific": true,
+      "reaction": {
+        "eventDateET": "2026-10-30",
+        "afterClose": false,
+        "sameDaySession": "2026-10-30",
+        "sameDay": -0.03543303760668293,
+        "spySameDay": -0.01772904090171079,
+        "nextDaySession": "2026-11-02",
+        "nextDay": -0.018367377721681843,
+        "spyNextDay": -0.004790127636589259,
+        "firstReaction": -0.03543303760668293,
+        "partial": false,
+        "source": {
+          "label": "Yahoo Finance daily adjusted closes, JOBY and SPY",
+          "url": "https://finance.yahoo.com/quote/JOBY/history/",
+          "asOf": "2026-11-02"
+        }
+      },
+      "source": {
+        "label": "Simply Wall St. via Yahoo Finance",
+        "url": "https://finance.yahoo.com/markets/stocks/articles/joby-aviation-joby-stock-gets-131610922.html",
+        "asOf": "2026-10-30T13:16:10.000Z"
+      }
+    },
+    {
+      "title": "Joby's electric air taxi flies the world's first airline route",
+      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNSjFsSldkenB0RE9EOTItYlBRS0NneFBOZjE4alpOTXJkN2pZR2VBNDJtR1ZvLUx4LThRbDN4eWxDbkVWRTFFLU12T3N2RThsNzZOd3FmbERraTM4M1NiVEFxLXhONzA2Rl9RQ3lIeE1aMk9ZT2tTS0ZOLUhlVHJjN2dIeG8?oc=5",
+      "publisher": "Yahoo",
+      "publishedAt": "2026-10-30T12:00:42.000Z",
+      "feed": "Google News",
+      "tag": "context",
+      "matched": [],
+      "jobySpecific": true,
+      "reaction": {
+        "eventDateET": "2026-10-30",
+        "afterClose": false,
+        "sameDaySession": "2026-10-30",
+        "sameDay": -0.03543303760668293,
+        "spySameDay": -0.01772904090171079,
+        "nextDaySession": "2026-11-02",
+        "nextDay": -0.018367377721681843,
+        "spyNextDay": -0.004790127636589259,
+        "firstReaction": -0.03543303760668293,
+        "partial": false,
+        "source": {
+          "label": "Yahoo Finance daily adjusted closes, JOBY and SPY",
+          "url": "https://finance.yahoo.com/quote/JOBY/history/",
+          "asOf": "2026-11-02"
+        }
+      },
+      "source": {
+        "label": "Yahoo via Google News",
+        "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNSjFsSldkenB0RE9EOTItYlBRS0NneFBOZjE4alpOTXJkN2pZR2VBNDJtR1ZvLUx4LThRbDN4eWxDbkVWRTFFLU12T3N2RThsNzZOd3FmbERraTM4M1NiVEFxLXhONzA2Rl9RQ3lIeE1aMk9ZT2tTS0ZOLUhlVHJjN2dIeG8?oc=5",
+        "asOf": "2026-10-30T12:00:42.000Z"
+      }
+    },
+    {
+      "title": "Joby Is Buying a Defense Company. Archer Plans to Buy 3 From Boeing. Here's Which Pivot Makes More Sense.",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/joby-buying-defense-company-archer-100500817.html",
+      "publisher": "Motley Fool",
+      "publishedAt": "2026-10-30T10:05:00.000Z",
+      "feed": "Yahoo Finance",
+      "tag": "context",
+      "matched": [],
+      "jobySpecific": true,
+      "reaction": {
+        "eventDateET": "2026-10-30",
+        "afterClose": false,
+        "sameDaySession": "2026-10-30",
+        "sameDay": -0.03543303760668293,
+        "spySameDay": -0.01772904090171079,
+        "nextDaySession": "2026-11-02",
+        "nextDay": -0.018367377721681843,
+        "spyNextDay": -0.004790127636589259,
+        "firstReaction": -0.03543303760668293,
+        "partial": false,
+        "source": {
+          "label": "Yahoo Finance daily adjusted closes, JOBY and SPY",
+          "url": "https://finance.yahoo.com/quote/JOBY/history/",
+          "asOf": "2026-11-02"
+        }
+      },
+      "source": {
+        "label": "Motley Fool via Yahoo Finance",
+        "url": "https://finance.yahoo.com/markets/stocks/articles/joby-buying-defense-company-archer-100500817.html",
+        "asOf": "2026-10-30T10:05:00.000Z"
+      }
+    },
+    {
+      "title": "Is Joby Aviation (JOBY) Cheap As ARK Buys Ahead Of Its Tampa Bay Air Taxi Flight?",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/joby-aviation-joby-cheap-ark-082045713.html",
+      "publisher": "Simply Wall St.",
+      "publishedAt": "2026-10-30T08:20:45.000Z",
+      "feed": "Yahoo Finance",
+      "tag": "context",
+      "matched": [],
+      "jobySpecific": true,
+      "reaction": {
+        "eventDateET": "2026-10-30",
+        "afterClose": false,
+        "sameDaySession": "2026-10-30",
+        "sameDay": -0.03543303760668293,
+        "spySameDay": -0.01772904090171079,
+        "nextDaySession": "2026-11-02",
+        "nextDay": -0.018367377721681843,
+        "spyNextDay": -0.004790127636589259,
+        "firstReaction": -0.03543303760668293,
+        "partial": false,
+        "source": {
+          "label": "Yahoo Finance daily adjusted closes, JOBY and SPY",
+          "url": "https://finance.yahoo.com/quote/JOBY/history/",
+          "asOf": "2026-11-02"
+        }
+      },
+      "source": {
+        "label": "Simply Wall St. via Yahoo Finance",
+        "url": "https://finance.yahoo.com/markets/stocks/articles/joby-aviation-joby-cheap-ark-082045713.html",
+        "asOf": "2026-10-30T08:20:45.000Z"
+      }
+    },
+    {
+      "title": "Cathie Wood’s ARK Invest Loads Up On Joby Aviation Stock Ahead Of Florida Air Taxi Flight",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/cathie-wood-ark-invest-loads-060104211.html",
+      "publisher": "Stocktwits",
+      "publishedAt": "2026-10-30T06:01:04.000Z",
+      "feed": "Yahoo Finance",
+      "tag": "context",
+      "matched": [],
+      "jobySpecific": true,
+      "reaction": {
+        "eventDateET": "2026-10-30",
+        "afterClose": false,
+        "sameDaySession": "2026-10-30",
+        "sameDay": -0.03543303760668293,
+        "spySameDay": -0.01772904090171079,
+        "nextDaySession": "2026-11-02",
+        "nextDay": -0.018367377721681843,
+        "spyNextDay": -0.004790127636589259,
+        "firstReaction": -0.03543303760668293,
+        "partial": false,
+        "source": {
+          "label": "Yahoo Finance daily adjusted closes, JOBY and SPY",
+          "url": "https://finance.yahoo.com/quote/JOBY/history/",
+          "asOf": "2026-11-02"
+        }
+      },
+      "source": {
+        "label": "Stocktwits via Yahoo Finance",
+        "url": "https://finance.yahoo.com/markets/stocks/articles/cathie-wood-ark-invest-loads-060104211.html",
+        "asOf": "2026-10-30T06:01:04.000Z"
+      }
+    },
+    {
+      "title": "The UAE Just Inspected Archer's and Joby's Aircraft in Person. Here's Why Dubai, Not the FAA, Could Deliver the First Paying Passenger.",
+      "url": "https://finance.yahoo.com/technology/articles/uae-just-inspected-archers-jobys-023500235.html",
+      "publisher": "Motley Fool",
+      "publishedAt": "2026-10-30T02:35:00.000Z",
+      "feed": "Yahoo Finance",
+      "tag": "context",
+      "matched": [],
+      "jobySpecific": true,
+      "reaction": {
+        "eventDateET": "2026-10-29",
+        "afterClose": true,
+        "sameDaySession": "2026-10-29",
+        "sameDay": 0,
+        "spySameDay": -0.0038197255200072,
+        "nextDaySession": "2026-10-30",
+        "nextDay": -0.03543303760668293,
+        "spyNextDay": -0.01772904090171079,
+        "firstReaction": -0.03543303760668293,
+        "partial": false,
+        "source": {
+          "label": "Yahoo Finance daily adjusted closes, JOBY and SPY",
+          "url": "https://finance.yahoo.com/quote/JOBY/history/",
+          "asOf": "2026-10-30"
+        }
+      },
+      "source": {
+        "label": "Motley Fool via Yahoo Finance",
+        "url": "https://finance.yahoo.com/technology/articles/uae-just-inspected-archers-jobys-023500235.html",
+        "asOf": "2026-10-30T02:35:00.000Z"
+      }
+    },
+    {
+      "title": "Joby Aviation (JOBY) Could Be 72% Undervalued As ARK Buys And 2026 Outlook Rises",
+      "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQRFNBQTNPTC1JQmV4c3V3c1MydXNEUXV5TXRsR3B4ckcyR0swZ0JGaHlyNG0tZXZoVW1DSW9EM1B4WFVNemRTTDByNDFubG8xMGp6WEkzQnZRVWxiV3R1RmY5WWxlVnNicXpjeXM0Skg1bU05cEtQaGdqaXBYWkEtb2xjVVlZTzRJTXBraGFRakc0SkNrZ1R2UXFzRzN3S2tjczg2STlWaVNWUnNZV2E4MWhRT1F5QWpuUHd6Yy1jYkpsaEt2bDBNREsyNlNIbXdQLXfSAdcBQVVfeXFMTThnX1BabEs2VVpyWDZKVDNoN3hQTnFxWGx0STlmQW9fajhfYUkxXzhCWjlKdDZiek8wM1N3NTJWVXNvYzQ3dXdWbDRMVFRkUWo4Ui1pQ1dWcTdBeG90dTRieURjbTlxWlltb1ZCeWxaSzZaV2M2dGFiQ184LUxJckxoQTNoN1kzbWRnMnZRb1JXaXNHYXJOY3pDLTFSdklmSjh2ZDBVTjZKUkpTUERUWUZtbXFuZjctV0FxSkVON3JYU1B2azk5MVhzWmhCbjNNZE5xTWpBMU0?oc=5",
+      "publisher": "Simply Wall St",
+      "publishedAt": "2026-10-29T10:41:01.000Z",
+      "feed": "Google News",
+      "tag": "catalyst",
+      "matched": [
+        "positive price move"
+      ],
+      "jobySpecific": true,
+      "reaction": {
+        "eventDateET": "2026-10-29",
+        "afterClose": false,
+        "sameDaySession": "2026-10-29",
+        "sameDay": 0,
+        "spySameDay": -0.0038197255200072,
+        "nextDaySession": "2026-10-30",
+        "nextDay": -0.03543303760668293,
+        "spyNextDay": -0.01772904090171079,
+        "firstReaction": 0,
+        "partial": false,
+        "source": {
+          "label": "Yahoo Finance daily adjusted closes, JOBY and SPY",
+          "url": "https://finance.yahoo.com/quote/JOBY/history/",
+          "asOf": "2026-10-30"
+        }
+      },
+      "source": {
+        "label": "Simply Wall St via Google News",
+        "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQRFNBQTNPTC1JQmV4c3V3c1MydXNEUXV5TXRsR3B4ckcyR0swZ0JGaHlyNG0tZXZoVW1DSW9EM1B4WFVNemRTTDByNDFubG8xMGp6WEkzQnZRVWxiV3R1RmY5WWxlVnNicXpjeXM0Skg1bU05cEtQaGdqaXBYWkEtb2xjVVlZTzRJTXBraGFRakc0SkNrZ1R2UXFzRzN3S2tjczg2STlWaVNWUnNZV2E4MWhRT1F5QWpuUHd6Yy1jYkpsaEt2bDBNREsyNlNIbXdQLXfSAdcBQVVfeXFMTThnX1BabEs2VVpyWDZKVDNoN3hQTnFxWGx0STlmQW9fajhfYUkxXzhCWjlKdDZiek8wM1N3NTJWVXNvYzQ3dXdWbDRMVFRkUWo4Ui1pQ1dWcTdBeG90dTRieURjbTlxWlltb1ZCeWxaSzZaV2M2dGFiQ184LUxJckxoQTNoN1kzbWRnMnZRb1JXaXNHYXJOY3pDLTFSdklmSjh2ZDBVTjZKUkpTUERUWUZtbXFuZjctV0FxSkVON3JYU1B2azk5MVhzWmhCbjNNZE5xTWpBMU0?oc=5",
+        "asOf": "2026-10-29T10:41:01.000Z"
+      }
+    },
+    {
+      "title": "Why Is Joby Aviation (NYSE:JOBY) Under Fresh Scrutiny as Its Report Approaches?",
+      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNT2tya2prYnRFMnE5TjM4TVhxUmZrQS1nWXdPYzk4WE90RVBvdE5TbmFHYUp4STk1MU0tZWd0V2RUX3oxTURUVlkwMEgzTWw1dWFrSGpHZExYeDBucldxM1FwUEFReENsTk55aUhaRDd5b29iWXpJbmNaQ0s3UXF2cFNzc3NXaWZfZ1ZqSFY3c0JrVURsVWhTZG1QNkdPYnhYWElkWmlScUZBWEFpWVNQOVVYcXZuRmZDUHpr?oc=5",
+      "publisher": "Kalkine Media",
+      "publishedAt": "2026-10-29T06:44:00.000Z",
+      "feed": "Google News",
+      "tag": "context",
+      "matched": [],
+      "jobySpecific": true,
+      "reaction": {
+        "eventDateET": "2026-10-29",
+        "afterClose": false,
+        "sameDaySession": "2026-10-29",
+        "sameDay": 0,
+        "spySameDay": -0.0038197255200072,
+        "nextDaySession": "2026-10-30",
+        "nextDay": -0.03543303760668293,
+        "spyNextDay": -0.01772904090171079,
+        "firstReaction": 0,
+        "partial": false,
+        "source": {
+          "label": "Yahoo Finance daily adjusted closes, JOBY and SPY",
+          "url": "https://finance.yahoo.com/quote/JOBY/history/",
+          "asOf": "2026-10-30"
+        }
+      },
+      "source": {
+        "label": "Kalkine Media via Google News",
+        "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNT2tya2prYnRFMnE5TjM4TVhxUmZrQS1nWXdPYzk4WE90RVBvdE5TbmFHYUp4STk1MU0tZWd0V2RUX3oxTURUVlkwMEgzTWw1dWFrSGpHZExYeDBucldxM1FwUEFReENsTk55aUhaRDd5b29iWXpJbmNaQ0s3UXF2cFNzc3NXaWZfZ1ZqSFY3c0JrVURsVWhTZG1QNkdPYnhYWElkWmlScUZBWEFpWVNQOVVYcXZuRmZDUHpr?oc=5",
+        "asOf": "2026-10-29T06:44:00.000Z"
+      }
+    },
+    {
+      "title": "Cathie Wood Dumps More AMD, Buys Joby and Archer",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/cathie-wood-dumps-more-amd-172934990.html",
+      "publisher": "GuruFocus.com",
+      "publishedAt": "2026-10-28T17:29:34.000Z",
+      "feed": "Yahoo Finance",
+      "tag": "context",
+      "matched": [],
+      "jobySpecific": true,
+      "reaction": {
+        "eventDateET": "2026-10-28",
+        "afterClose": false,
+        "sameDaySession": "2026-10-28",
+        "sameDay": 0.013971994336583471,
+        "spySameDay": 0.003443110602771249,
+        "nextDaySession": "2026-10-29",
+        "nextDay": 0,
+        "spyNextDay": -0.0038197255200072,
+        "firstReaction": 0.013971994336583471,
+        "partial": false,
+        "source": {
+          "label": "Yahoo Finance daily adjusted closes, JOBY and SPY",
+          "url": "https://finance.yahoo.com/quote/JOBY/history/",
+          "asOf": "2026-10-29"
+        }
+      },
+      "source": {
+        "label": "GuruFocus.com via Yahoo Finance",
+        "url": "https://finance.yahoo.com/markets/stocks/articles/cathie-wood-dumps-more-amd-172934990.html",
+        "asOf": "2026-10-28T17:29:34.000Z"
+      }
+    },
+    {
+      "title": "ACHR vs. JOBY: Which eVTOL Stock Offers Stronger Growth Potential?",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/achr-vs-joby-evtol-stock-135900081.html",
+      "publisher": "Zacks",
+      "publishedAt": "2026-10-28T13:59:00.000Z",
+      "feed": "Yahoo Finance",
+      "tag": "context",
+      "matched": [],
+      "jobySpecific": true,
+      "reaction": {
+        "eventDateET": "2026-10-28",
+        "afterClose": false,
+        "sameDaySession": "2026-10-28",
+        "sameDay": 0.013971994336583471,
+        "spySameDay": 0.003443110602771249,
+        "nextDaySession": "2026-10-29",
+        "nextDay": 0,
+        "spyNextDay": -0.0038197255200072,
+        "firstReaction": 0.013971994336583471,
+        "partial": false,
+        "source": {
+          "label": "Yahoo Finance daily adjusted closes, JOBY and SPY",
+          "url": "https://finance.yahoo.com/quote/JOBY/history/",
+          "asOf": "2026-10-29"
+        }
+      },
+      "source": {
+        "label": "Zacks via Yahoo Finance",
+        "url": "https://finance.yahoo.com/markets/stocks/articles/achr-vs-joby-evtol-stock-135900081.html",
+        "asOf": "2026-10-28T13:59:00.000Z"
+      }
+    },
+    {
+      "title": "The Pentagon Is Now the eVTOL Industry's Biggest Customer. Here's How Much Revenue That's Actually Worth to Archer and Joby.",
+      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQdTVZakZZMXk1VEZTMXhEZUR1STNDNHNXWkxQeFBJeFV4VGhaeVNUeHItMEpxdXpQYldEVzNTOUJGTnloZHlGRzFSVjBrRWVQWlNLM25PaG81N3RfVWxXYVA5emVvSkZUVWp6LWNKWlktY0hWTG9UejNFRmZ6MV9zdTRJUUZLS1JFclFnOS05RkVlSERzQUd2OHpBWGRvdw?oc=5",
+      "publisher": "Yahoo Finance",
+      "publishedAt": "2026-10-28T10:10:00.000Z",
+      "feed": "Google News",
+      "tag": "context",
+      "matched": [],
+      "jobySpecific": true,
+      "reaction": {
+        "eventDateET": "2026-10-28",
+        "afterClose": false,
+        "sameDaySession": "2026-10-28",
+        "sameDay": 0.013971994336583471,
+        "spySameDay": 0.003443110602771249,
+        "nextDaySession": "2026-10-29",
+        "nextDay": 0,
+        "spyNextDay": -0.0038197255200072,
+        "firstReaction": 0.013971994336583471,
+        "partial": false,
+        "source": {
+          "label": "Yahoo Finance daily adjusted closes, JOBY and SPY",
+          "url": "https://finance.yahoo.com/quote/JOBY/history/",
+          "asOf": "2026-10-29"
+        }
+      },
+      "source": {
+        "label": "Yahoo Finance via Google News",
+        "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQdTVZakZZMXk1VEZTMXhEZUR1STNDNHNXWkxQeFBJeFV4VGhaeVNUeHItMEpxdXpQYldEVzNTOUJGTnloZHlGRzFSVjBrRWVQWlNLM25PaG81N3RfVWxXYVA5emVvSkZUVWp6LWNKWlktY0hWTG9UejNFRmZ6MV9zdTRJUUZLS1JFclFnOS05RkVlSERzQUd2OHpBWGRvdw?oc=5",
+        "asOf": "2026-10-28T10:10:00.000Z"
+      }
+    },
+    {
+      "title": "Joby Aviation Stock Just Hit a 52-Week Low. History Says This Happens Next",
+      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQUjB0QXdDcl9mREJTdHNOVkhoNzh4U2VDcmVSNWZRaU1rRktJMTJyQ21yUWtUZDBlT2NsRHdyNkZ5UTNXdlRXUlc0enNuMXZDclYzMTBBSHhuQm41dTMxWHlPcFZzODhoUk1vb3J3TE1obndpdUo0M05UbVBtWVV2SG9IMGRrc3BXZ0JJQjJOVUFuQm1WMDlxbA?oc=5",
+      "publisher": "Yahoo Finance",
+      "publishedAt": "2026-10-26T21:50:23.000Z",
+      "feed": "Google News",
+      "tag": "context",
+      "matched": [],
+      "jobySpecific": true,
+      "reaction": {
+        "eventDateET": "2026-10-26",
+        "afterClose": true,
+        "sameDaySession": "2026-10-26",
+        "sameDay": -0.0147059177091301,
+        "spySameDay": 0.007105576038835215,
+        "nextDaySession": "2026-10-27",
+        "nextDay": 0.06823031295462845,
+        "spyNextDay": 0.005605103485520013,
+        "firstReaction": 0.06823031295462845,
+        "partial": false,
+        "source": {
+          "label": "Yahoo Finance daily adjusted closes, JOBY and SPY",
+          "url": "https://finance.yahoo.com/quote/JOBY/history/",
+          "asOf": "2026-10-27"
+        }
+      },
+      "source": {
+        "label": "Yahoo Finance via Google News",
+        "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQUjB0QXdDcl9mREJTdHNOVkhoNzh4U2VDcmVSNWZRaU1rRktJMTJyQ21yUWtUZDBlT2NsRHdyNkZ5UTNXdlRXUlc0enNuMXZDclYzMTBBSHhuQm41dTMxWHlPcFZzODhoUk1vb3J3TE1obndpdUo0M05UbVBtWVV2SG9IMGRrc3BXZ0JJQjJOVUFuQm1WMDlxbA?oc=5",
+        "asOf": "2026-10-26T21:50:23.000Z"
+      }
+    },
+    {
+      "title": "Joby Aviation (JOBY) Stock Appears Expensive After Its 70% Slump",
+      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxONU9ZUjVBbW83OHdxbTV4VEw4S2FZMno1Q05meEhnNGpPMGFpRnR5UWNTZWVyMFh0V21BU1FlQ0xPaXl0Qk9pcTMtRUxlZ0R6T1JwMFlSWkkxa3drdm82SUpqRWpTX2R4TktaLTRwaF92bVZZUEJYZTN5eEJIREJUdUJ6Z3Ayall1X3RtYWRNOXFmM19LZ1pYNndmZFpWUQ?oc=5",
+      "publisher": "Yahoo Finance",
+      "publishedAt": "2026-10-23T07:00:00.000Z",
+      "feed": "Google News",
+      "tag": "risk",
+      "matched": [
+        "negative price move"
+      ],
+      "jobySpecific": true,
+      "reaction": {
+        "eventDateET": "2026-10-23",
+        "afterClose": false,
+        "sameDaySession": "2026-10-23",
+        "sameDay": 0.012766047245027501,
+        "spySameDay": -0.005222853493339064,
+        "nextDaySession": "2026-10-26",
+        "nextDay": -0.0147059177091301,
+        "spyNextDay": 0.007105576038835215,
+        "firstReaction": 0.012766047245027501,
+        "partial": false,
+        "source": {
+          "label": "Yahoo Finance daily adjusted closes, JOBY and SPY",
+          "url": "https://finance.yahoo.com/quote/JOBY/history/",
+          "asOf": "2026-10-26"
+        }
+      },
+      "source": {
+        "label": "Yahoo Finance via Google News",
+        "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxONU9ZUjVBbW83OHdxbTV4VEw4S2FZMno1Q05meEhnNGpPMGFpRnR5UWNTZWVyMFh0V21BU1FlQ0xPaXl0Qk9pcTMtRUxlZ0R6T1JwMFlSWkkxa3drdm82SUpqRWpTX2R4TktaLTRwaF92bVZZUEJYZTN5eEJIREJUdUJ6Z3Ayall1X3RtYWRNOXFmM19LZ1pYNndmZFpWUQ?oc=5",
+        "asOf": "2026-10-23T07:00:00.000Z"
+      }
+    },
+    {
+      "title": "Learn Why The Bull Case For Joby Aviation Stock Could Change Following Hydrogen Aircraft Test",
+      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPbHFSZ01xS3FLOTdKYUUxa0phMlZaMko0UVhaQ2FvWUp5b2g0WldjWGRQWTNQMFY0N3FZN2dSUG9OcWF1RW9wUWNvVlVTNjJwS3dGd3lfWDhGN18zME1iYjhLM2NtbVB2SEVOVTdLUUhDV09WUkZmM0Z0bGxQOUVTSEM0T194clJrVUZ4RU5FYlNfT2s?oc=5",
+      "publisher": "Yahoo Finance",
+      "publishedAt": "2026-10-23T07:00:00.000Z",
+      "feed": "Google News",
+      "tag": "context",
+      "matched": [],
+      "jobySpecific": true,
+      "reaction": {
+        "eventDateET": "2026-10-23",
+        "afterClose": false,
+        "sameDaySession": "2026-10-23",
+        "sameDay": 0.012766047245027501,
+        "spySameDay": -0.005222853493339064,
+        "nextDaySession": "2026-10-26",
+        "nextDay": -0.0147059177091301,
+        "spyNextDay": 0.007105576038835215,
+        "firstReaction": 0.012766047245027501,
+        "partial": false,
+        "source": {
+          "label": "Yahoo Finance daily adjusted closes, JOBY and SPY",
+          "url": "https://finance.yahoo.com/quote/JOBY/history/",
+          "asOf": "2026-10-26"
+        }
+      },
+      "source": {
+        "label": "Yahoo Finance via Google News",
+        "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPbHFSZ01xS3FLOTdKYUUxa0phMlZaMko0UVhaQ2FvWUp5b2g0WldjWGRQWTNQMFY0N3FZN2dSUG9OcWF1RW9wUWNvVlVTNjJwS3dGd3lfWDhGN18zME1iYjhLM2NtbVB2SEVOVTdLUUhDV09WUkZmM0Z0bGxQOUVTSEM0T194clJrVUZ4RU5FYlNfT2s?oc=5",
+        "asOf": "2026-10-23T07:00:00.000Z"
+      }
+    },
+    {
+      "title": "Joby Aviation Could Turn a $10,000 Investment Into This in 3 Years",
+      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQbWYtY0RXMVpQeWx0eFBadE16alctZ3h1UlZKc2t5dUhfZWtDMjRZX29YOGI3NU9wdW9ZSVVRY0Rhd0ZBUHhVOV9TSkFaWWxST2RVd0M5VVBwMFFnTzJEOFE2Ykp0Z2xVSTJjbXpuOVp3LWVQMjExZDJKb0kyVGxMcVJJSTZRdnlzY1Z5cHJVRENKdERMNGFV?oc=5",
+      "publisher": "Yahoo Finance",
+      "publishedAt": "2026-10-21T07:00:00.000Z",
+      "feed": "Google News",
+      "tag": "catalyst",
+      "matched": [
+        "funding/investment"
+      ],
+      "jobySpecific": true,
+      "reaction": {
+        "eventDateET": "2026-10-21",
+        "afterClose": false,
+        "sameDaySession": "2026-10-21",
+        "sameDay": -0.0021505868122021488,
+        "spySameDay": 0.005253285386680906,
+        "nextDaySession": "2026-10-22",
+        "nextDay": 0.012931022522848945,
+        "spyNextDay": -0.011809756387556325,
+        "firstReaction": -0.0021505868122021488,
+        "partial": false,
+        "source": {
+          "label": "Yahoo Finance daily adjusted closes, JOBY and SPY",
+          "url": "https://finance.yahoo.com/quote/JOBY/history/",
+          "asOf": "2026-10-22"
+        }
+      },
+      "source": {
+        "label": "Yahoo Finance via Google News",
+        "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQbWYtY0RXMVpQeWx0eFBadE16alctZ3h1UlZKc2t5dUhfZWtDMjRZX29YOGI3NU9wdW9ZSVVRY0Rhd0ZBUHhVOV9TSkFaWWxST2RVd0M5VVBwMFFnTzJEOFE2Ykp0Z2xVSTJjbXpuOVp3LWVQMjExZDJKb0kyVGxMcVJJSTZRdnlzY1Z5cHJVRENKdERMNGFV?oc=5",
+        "asOf": "2026-10-21T07:00:00.000Z"
+      }
+    },
+    {
+      "title": "Joby Aviation Aircraft: The Best Inventions of 2026",
+      "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE9IRjdaSW8yMnU4ZWJwQW4zTXgtR3Zwd1V2ZTNzUTZETkNWZVVvZFEyYVN3dXJob2QxdUZiOG8tRkRvNVZ1OHNLaVhmOHdvdWhwRHpLZXdqUWxHVEd6MFBZbGhZaERRMG01M2VqUzJsZjVYaWctUFNpa0ZrclI?oc=5",
+      "publisher": "Time Magazine",
+      "publishedAt": "2026-10-15T07:00:00.000Z",
+      "feed": "Google News",
+      "tag": "context",
+      "matched": [],
+      "jobySpecific": true,
+      "reaction": {
+        "eventDateET": "2026-10-15",
+        "afterClose": false,
+        "sameDaySession": "2026-10-15",
+        "sameDay": 0.043383905308624904,
+        "spySameDay": 0.00284563735821175,
+        "nextDaySession": "2026-10-16",
+        "nextDay": -0.031185051382921936,
+        "spyNextDay": -0.011065157971047346,
+        "firstReaction": 0.043383905308624904,
+        "partial": false,
+        "source": {
+          "label": "Yahoo Finance daily adjusted closes, JOBY and SPY",
+          "url": "https://finance.yahoo.com/quote/JOBY/history/",
+          "asOf": "2026-10-16"
+        }
+      },
+      "source": {
+        "label": "Time Magazine via Google News",
+        "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE9IRjdaSW8yMnU4ZWJwQW4zTXgtR3Zwd1V2ZTNzUTZETkNWZVVvZFEyYVN3dXJob2QxdUZiOG8tRkRvNVZ1OHNLaVhmOHdvdWhwRHpLZXdqUWxHVEd6MFBZbGhZaERRMG01M2VqUzJsZjVYaWctUFNpa0ZrclI?oc=5",
+        "asOf": "2026-10-15T07:00:00.000Z"
+      }
+    },
+    {
+      "title": "Joby Aviation to Report Third Quarter 2026 Financial Results",
+      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNbE1XQzBEcDYxd1JYU013SzB5WkczTGlDQ3dQelhxVzF5SjRBbURWLWE1dEVIRVoybHBHWktDcjREUzhIN0tDRE43QnplUkxfRFloRG9aWEZjRGlhUExjTmJsYVdvUDVVNFhuTjg3Ri1HNDdoeG1jRTYzdUtGZjlJcTBMOVZqQy1tZ3kwQmRYNERhVi1INm12SWdB?oc=5",
+      "publisher": "Joby Aviation",
+      "publishedAt": "2026-10-15T07:00:00.000Z",
+      "feed": "Google News",
+      "tag": "context",
+      "matched": [],
+      "jobySpecific": true,
+      "reaction": {
+        "eventDateET": "2026-10-15",
+        "afterClose": false,
+        "sameDaySession": "2026-10-15",
+        "sameDay": 0.043383905308624904,
+        "spySameDay": 0.00284563735821175,
+        "nextDaySession": "2026-10-16",
+        "nextDay": -0.031185051382921936,
+        "spyNextDay": -0.011065157971047346,
+        "firstReaction": 0.043383905308624904,
+        "partial": false,
+        "source": {
+          "label": "Yahoo Finance daily adjusted closes, JOBY and SPY",
+          "url": "https://finance.yahoo.com/quote/JOBY/history/",
+          "asOf": "2026-10-16"
+        }
+      },
+      "source": {
+        "label": "Joby Aviation via Google News",
+        "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNbE1XQzBEcDYxd1JYU013SzB5WkczTGlDQ3dQelhxVzF5SjRBbURWLWE1dEVIRVoybHBHWktDcjREUzhIN0tDRE43QnplUkxfRFloRG9aWEZjRGlhUExjTmJsYVdvUDVVNFhuTjg3Ri1HNDdoeG1jRTYzdUtGZjlJcTBMOVZqQy1tZ3kwQmRYNERhVi1INm12SWdB?oc=5",
+        "asOf": "2026-10-15T07:00:00.000Z"
+      }
+    },
+    {
+      "title": "Joby Could Be Worth Far More If One Piece of the Puzzle Falls Into Place",
+      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNbE9tRWZJUG1waG1MNXB0R2Q0Y3hQR3gtcWJvN3U2NHdsTndpUVZQRVV4TzdFeHIxQ01BRHVzZGlqQVBlWVhGUzhqN2tLeWJfOWhwQjUxaXI3ZUVOU3lIWE9wdWVpMzFNZTloQlNjckpoMHZfVXM0SlJpTTBpTTVGQlZtNzRPbUh3VkFLMGtDd0dER1NfUUliV2lQdFRDTHVnQzZVTDllZjNGRmhQX0g3U1BPdHZ2NFk?oc=5",
+      "publisher": "24/7 Wall St.",
+      "publishedAt": "2026-10-13T07:00:00.000Z",
+      "feed": "Google News",
+      "tag": "risk",
+      "matched": [
+        "negative price move"
+      ],
+      "jobySpecific": true,
+      "reaction": {
+        "eventDateET": "2026-10-13",
+        "afterClose": false,
+        "sameDaySession": "2026-10-13",
+        "sameDay": -0.03696499263731867,
+        "spySameDay": -0.00011562244330465266,
+        "nextDaySession": "2026-10-14",
+        "nextDay": -0.06868680582862641,
+        "spyNextDay": -0.010809673492788385,
+        "firstReaction": -0.03696499263731867,
+        "partial": false,
+        "source": {
+          "label": "Yahoo Finance daily adjusted closes, JOBY and SPY",
+          "url": "https://finance.yahoo.com/quote/JOBY/history/",
+          "asOf": "2026-10-14"
+        }
+      },
+      "source": {
+        "label": "24/7 Wall St. via Google News",
+        "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNbE9tRWZJUG1waG1MNXB0R2Q0Y3hQR3gtcWJvN3U2NHdsTndpUVZQRVV4TzdFeHIxQ01BRHVzZGlqQVBlWVhGUzhqN2tLeWJfOWhwQjUxaXI3ZUVOU3lIWE9wdWVpMzFNZTloQlNjckpoMHZfVXM0SlJpTTBpTTVGQlZtNzRPbUh3VkFLMGtDd0dER1NfUUliV2lQdFRDTHVnQzZVTDllZjNGRmhQX0g3U1BPdHZ2NFk?oc=5",
+        "asOf": "2026-10-13T07:00:00.000Z"
+      }
+    },
+    {
+      "title": "Joby Aviation Stock: Is It a No-Brainer Buy at $5?",
+      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPX1lUaGFQclo1dWNKUVVldzZnVl9BZVpKendueWdEWUNnWnNkTG56MXFFdjlMRVdHcGpIRmlBNUVwd3dWMWNXRUUxN1NvX1NETHRqZTFVZjhzWkFnbWNaTEotSllPTWlqVkRJU2QxOEo2NUJGZ3RJVVRkd0gwQndCMlBHbVFLSVRJX3pRcUhDOG1GaE9BOVdoNg?oc=5",
+      "publisher": "The Motley Fool",
+      "publishedAt": "2026-10-13T07:00:00.000Z",
+      "feed": "Google News",
+      "tag": "context",
+      "matched": [],
+      "jobySpecific": true,
+      "reaction": {
+        "eventDateET": "2026-10-13",
+        "afterClose": false,
+        "sameDaySession": "2026-10-13",
+        "sameDay": -0.03696499263731867,
+        "spySameDay": -0.00011562244330465266,
+        "nextDaySession": "2026-10-14",
+        "nextDay": -0.06868680582862641,
+        "spyNextDay": -0.010809673492788385,
+        "firstReaction": -0.03696499263731867,
+        "partial": false,
+        "source": {
+          "label": "Yahoo Finance daily adjusted closes, JOBY and SPY",
+          "url": "https://finance.yahoo.com/quote/JOBY/history/",
+          "asOf": "2026-10-14"
+        }
+      },
+      "source": {
+        "label": "The Motley Fool via Google News",
+        "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPX1lUaGFQclo1dWNKUVVldzZnVl9BZVpKendueWdEWUNnWnNkTG56MXFFdjlMRVdHcGpIRmlBNUVwd3dWMWNXRUUxN1NvX1NETHRqZTFVZjhzWkFnbWNaTEotSllPTWlqVkRJU2QxOEo2NUJGZ3RJVVRkd0gwQndCMlBHbVFLSVRJX3pRcUhDOG1GaE9BOVdoNg?oc=5",
+        "asOf": "2026-10-13T07:00:00.000Z"
+      }
+    },
+    {
+      "title": "Joby Aviation’s 3,100-mile autonomous flight signals its push beyond electric air taxis",
+      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNdzFuVF9PWWJwaUQ4ekJhX2FnWUdtQUd5UnI0R0FoTFlxZG1rTmo0eTRfcFZHQUJZaWdidTFIeFNWMnFia2JEd01mYXoybloxS25ETFR2akNVM3Z6a291RWE4ZWVuNlRsOHlDdjRTMm54aFFGc1BfT2YzZTJkT3ZJeGhZQXhlYm1ETFotNW1Ic3RCcXlON1FxY1g4MU1LbWJPZFJlYnJaeWhiSEVvRnlSdzQzWk85OEVLeE1naw?oc=5",
+      "publisher": "TechCrunch",
+      "publishedAt": "2026-09-18T07:00:00.000Z",
+      "feed": "Google News",
+      "tag": "context",
+      "matched": [],
+      "jobySpecific": true,
+      "reaction": {
+        "eventDateET": "2026-09-18",
+        "afterClose": false,
+        "sameDaySession": "2026-09-18",
+        "sameDay": -0.011308589824603255,
+        "spySameDay": 0.0012869590529585029,
+        "nextDaySession": "2026-09-21",
+        "nextDay": 0.0473856155679544,
+        "spyNextDay": 0.015504992215651825,
+        "firstReaction": -0.011308589824603255,
+        "partial": false,
+        "source": {
+          "label": "Yahoo Finance daily adjusted closes, JOBY and SPY",
+          "url": "https://finance.yahoo.com/quote/JOBY/history/",
+          "asOf": "2026-09-21"
+        }
+      },
+      "source": {
+        "label": "TechCrunch via Google News",
+        "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNdzFuVF9PWWJwaUQ4ekJhX2FnWUdtQUd5UnI0R0FoTFlxZG1rTmo0eTRfcFZHQUJZaWdidTFIeFNWMnFia2JEd01mYXoybloxS25ETFR2akNVM3Z6a291RWE4ZWVuNlRsOHlDdjRTMm54aFFGc1BfT2YzZTJkT3ZJeGhZQXhlYm1ETFotNW1Ic3RCcXlON1FxY1g4MU1LbWJPZFJlYnJaeWhiSEVvRnlSdzQzWk85OEVLeE1naw?oc=5",
+        "asOf": "2026-09-18T07:00:00.000Z"
+      }
+    },
+    {
+      "title": "Joby Completes First-Ever Fully Autonomous Flight Across the United States",
+      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNal9ZNnN2aEF3eUp1N05MaS0wdTJoNDR6R25ibGJkNlpEQ3VrZFE1NVRfN3ZiZlBsMlpBUF9sOWd5Sl9YNFpyUHJxcUlsQ1J6Z2Jmelg5SlpQVDVWVVlkbi1qeUtrWmIySmM4SzVXTndjMHl1bHYzdXZvR0w4cGR3VEtDQW9pc2l5eTVFLS1xX2NzU2tjQUVtVGZ4NHh2c2ZucnFWaThycUZkdDFI?oc=5",
+      "publisher": "Joby Aviation",
+      "publishedAt": "2026-09-18T07:00:00.000Z",
+      "feed": "Google News",
+      "tag": "context",
+      "matched": [],
+      "jobySpecific": true,
+      "reaction": {
+        "eventDateET": "2026-09-18",
+        "afterClose": false,
+        "sameDaySession": "2026-09-18",
+        "sameDay": -0.011308589824603255,
+        "spySameDay": 0.0012869590529585029,
+        "nextDaySession": "2026-09-21",
+        "nextDay": 0.0473856155679544,
+        "spyNextDay": 0.015504992215651825,
+        "firstReaction": -0.011308589824603255,
+        "partial": false,
+        "source": {
+          "label": "Yahoo Finance daily adjusted closes, JOBY and SPY",
+          "url": "https://finance.yahoo.com/quote/JOBY/history/",
+          "asOf": "2026-09-21"
+        }
+      },
+      "source": {
+        "label": "Joby Aviation via Google News",
+        "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNal9ZNnN2aEF3eUp1N05MaS0wdTJoNDR6R25ibGJkNlpEQ3VrZFE1NVRfN3ZiZlBsMlpBUF9sOWd5Sl9YNFpyUHJxcUlsQ1J6Z2Jmelg5SlpQVDVWVVlkbi1qeUtrWmIySmM4SzVXTndjMHl1bHYzdXZvR0w4cGR3VEtDQW9pc2l5eTVFLS1xX2NzU2tjQUVtVGZ4NHh2c2ZucnFWaThycUZkdDFI?oc=5",
+        "asOf": "2026-09-18T07:00:00.000Z"
+      }
+    },
+    {
+      "title": "Joby Launches eIPP Flights in Texas",
+      "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE9VSlFmc3F6MVRDb2RfMklrLVRKeHpGM3B1NzBFdHdsdzIzQ28wUml4VUZiYUFmUXN1NUFvcWp1VVEzNlQxcEgxZ01fcF83eGlpQ1E2eHdIT3Y0eTgtNGoxZENXeDJrODlnZGZpSmZ5Yy1jNGhPR0oyMw?oc=5",
+      "publisher": "Joby Aviation",
+      "publishedAt": "2026-09-10T07:00:00.000Z",
+      "feed": "Google News",
+      "tag": "catalyst",
+      "matched": [
+        "launch/start"
+      ],
+      "jobySpecific": true,
+      "reaction": {
+        "eventDateET": "2026-09-10",
+        "afterClose": false,
+        "sameDaySession": "2026-09-10",
+        "sameDay": -0.017133976979312404,
+        "spySameDay": -0.005994275703456675,
+        "nextDaySession": "2026-09-11",
+        "nextDay": 0.012678276455073245,
+        "spyNextDay": 0.008524301461116268,
+        "firstReaction": -0.017133976979312404,
+        "partial": false,
+        "source": {
+          "label": "Yahoo Finance daily adjusted closes, JOBY and SPY",
+          "url": "https://finance.yahoo.com/quote/JOBY/history/",
+          "asOf": "2026-09-11"
+        }
+      },
+      "source": {
+        "label": "Joby Aviation via Google News",
+        "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE9VSlFmc3F6MVRDb2RfMklrLVRKeHpGM3B1NzBFdHdsdzIzQ28wUml4VUZiYUFmUXN1NUFvcWp1VVEzNlQxcEgxZ01fcF83eGlpQ1E2eHdIT3Y0eTgtNGoxZENXeDJrODlnZGZpSmZ5Yy1jNGhPR0oyMw?oc=5",
+        "asOf": "2026-09-10T07:00:00.000Z"
+      }
+    },
+    {
+      "title": "Joby Autonomous Aircraft Begins Cross-Country Tour",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPbGN0LWU1Q0hFZ1VjWkR5OERtNmhUQ2F2QXVtZjdkS2ZIWW9TNUhxS0dydWJ0YnFST1gzTlc2U1lUSk5LWFQ0Umk2cThLeTVBc055RmtQeERtRXhRWUZlcUg5QnpiT3gxdldTc2tONThKVTFqazBua2ZrUjFiTUpyZS1va2VNcXNudVFvXw?oc=5",
+      "publisher": "Joby Aviation",
+      "publishedAt": "2026-09-10T07:00:00.000Z",
+      "feed": "Google News",
+      "tag": "catalyst",
+      "matched": [
+        "launch/start"
+      ],
+      "jobySpecific": true,
+      "reaction": {
+        "eventDateET": "2026-09-10",
+        "afterClose": false,
+        "sameDaySession": "2026-09-10",
+        "sameDay": -0.017133976979312404,
+        "spySameDay": -0.005994275703456675,
+        "nextDaySession": "2026-09-11",
+        "nextDay": 0.012678276455073245,
+        "spyNextDay": 0.008524301461116268,
+        "firstReaction": -0.017133976979312404,
+        "partial": false,
+        "source": {
+          "label": "Yahoo Finance daily adjusted closes, JOBY and SPY",
+          "url": "https://finance.yahoo.com/quote/JOBY/history/",
+          "asOf": "2026-09-11"
+        }
+      },
+      "source": {
+        "label": "Joby Aviation via Google News",
+        "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPbGN0LWU1Q0hFZ1VjWkR5OERtNmhUQ2F2QXVtZjdkS2ZIWW9TNUhxS0dydWJ0YnFST1gzTlc2U1lUSk5LWFQ0Umk2cThLeTVBc055RmtQeERtRXhRWUZlcUg5QnpiT3gxdldTc2tONThKVTFqazBua2ZrUjFiTUpyZS1va2VNcXNudVFvXw?oc=5",
+        "asOf": "2026-09-10T07:00:00.000Z"
+      }
+    },
+    {
+      "title": "Joby Launches eIPP Flights in Texas :: Joby Aero, Inc. (JOBY)",
+      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOYmhMbWFkT2loTGt1U0xsdjNfWHNUcnVfY1pCZHl5ODVGOGp4bkUyTWtpT2FHS1JISVByU2EzSVJ6bmZDbjVDUjRhSjVZd0RUeEdiUUNrUG5kWWFsVG51QWFyQ0hBRFhhUmRlOFRJRDlRTUZ5ZDk2RGdmSjVhSmNCSTVPMVRGRmE2YWw0ZTVvTTlPeHZ4WGo2UlpYeUE2SHV5SE9F?oc=5",
+      "publisher": "Joby Aviation",
+      "publishedAt": "2026-09-10T07:00:00.000Z",
+      "feed": "Google News",
+      "tag": "catalyst",
+      "matched": [
+        "launch/start"
+      ],
+      "jobySpecific": true,
+      "reaction": {
+        "eventDateET": "2026-09-10",
+        "afterClose": false,
+        "sameDaySession": "2026-09-10",
+        "sameDay": -0.017133976979312404,
+        "spySameDay": -0.005994275703456675,
+        "nextDaySession": "2026-09-11",
+        "nextDay": 0.012678276455073245,
+        "spyNextDay": 0.008524301461116268,
+        "firstReaction": -0.017133976979312404,
+        "partial": false,
+        "source": {
+          "label": "Yahoo Finance daily adjusted closes, JOBY and SPY",
+          "url": "https://finance.yahoo.com/quote/JOBY/history/",
+          "asOf": "2026-09-11"
+        }
+      },
+      "source": {
+        "label": "Joby Aviation via Google News",
+        "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOYmhMbWFkT2loTGt1U0xsdjNfWHNUcnVfY1pCZHl5ODVGOGp4bkUyTWtpT2FHS1JISVByU2EzSVJ6bmZDbjVDUjRhSjVZd0RUeEdiUUNrUG5kWWFsVG51QWFyQ0hBRFhhUmRlOFRJRDlRTUZ5ZDk2RGdmSjVhSmNCSTVPMVRGRmE2YWw0ZTVvTTlPeHZ4WGo2UlpYeUE2SHV5SE9F?oc=5",
+        "asOf": "2026-09-10T07:00:00.000Z"
+      }
+    }
+  ],
+  "filings": [
+    {
+      "form": "8-K",
+      "items": "8.01,9.01",
+      "itemsDescription": "Other events",
+      "filed": "2026-09-11",
+      "acceptedAt": "2026-09-10T22:42:09.000Z",
+      "reportDate": "2026-09-10",
+      "url": "https://www.sec.gov/Archives/edgar/data/1819848/000162828026061440/joby-20260910.htm",
+      "reaction": {
+        "eventDateET": "2026-09-10",
+        "afterClose": true,
+        "sameDaySession": "2026-09-10",
+        "sameDay": -0.017133976979312404,
+        "spySameDay": -0.005994275703456675,
+        "nextDaySession": "2026-09-11",
+        "nextDay": 0.012678276455073245,
+        "spyNextDay": 0.008524301461116268,
+        "firstReaction": 0.012678276455073245,
+        "partial": false,
+        "source": {
+          "label": "Yahoo Finance daily adjusted closes, JOBY and SPY",
+          "url": "https://finance.yahoo.com/quote/JOBY/history/",
+          "asOf": "2026-09-11"
+        }
+      },
+      "source": {
+        "label": "SEC 8-K filed 2026-09-11",
+        "url": "https://www.sec.gov/Archives/edgar/data/1819848/000162828026061440/joby-20260910.htm",
+        "asOf": "2026-09-11"
+      }
+    },
+    {
+      "form": "424B7",
+      "items": "",
+      "itemsDescription": "Prospectus supplement (securities offering)",
+      "filed": "2026-09-11",
+      "acceptedAt": "2026-09-10T22:40:38.000Z",
+      "reportDate": "",
+      "url": "https://www.sec.gov/Archives/edgar/data/1819848/000162828026061438/a424b7-jobyresaleprospectu.htm",
+      "reaction": {
+        "eventDateET": "2026-09-10",
+        "afterClose": true,
+        "sameDaySession": "2026-09-10",
+        "sameDay": -0.017133976979312404,
+        "spySameDay": -0.005994275703456675,
+        "nextDaySession": "2026-09-11",
+        "nextDay": 0.012678276455073245,
+        "spyNextDay": 0.008524301461116268,
+        "firstReaction": 0.012678276455073245,
+        "partial": false,
+        "source": {
+          "label": "Yahoo Finance daily adjusted closes, JOBY and SPY",
+          "url": "https://finance.yahoo.com/quote/JOBY/history/",
+          "asOf": "2026-09-11"
+        }
+      },
+      "source": {
+        "label": "SEC 424B7 filed 2026-09-11",
+        "url": "https://www.sec.gov/Archives/edgar/data/1819848/000162828026061438/a424b7-jobyresaleprospectu.htm",
+        "asOf": "2026-09-11"
+      }
+    },
+    {
+      "form": "8-K",
+      "items": "5.02,9.01",
+      "itemsDescription": "Officer/director change",
+      "filed": "2026-09-09",
+      "acceptedAt": "2026-09-09T20:10:08.000Z",
+      "reportDate": "2026-09-02",
+      "url": "https://www.sec.gov/Archives/edgar/data/1819848/000181984826000453/joby-20260902.htm",
+      "reaction": {
+        "eventDateET": "2026-09-09",
+        "afterClose": true,
+        "sameDaySession": "2026-09-09",
+        "sameDay": -0.061403518556215175,
+        "spySameDay": -0.004647717444469568,
+        "nextDaySession": "2026-09-10",
+        "nextDay": -0.017133976979312404,
+        "spyNextDay": -0.005994275703456675,
+        "firstReaction": -0.017133976979312404,
+        "partial": false,
+        "source": {
+          "label": "Yahoo Finance daily adjusted closes, JOBY and SPY",
+          "url": "https://finance.yahoo.com/quote/JOBY/history/",
+          "asOf": "2026-09-10"
+        }
+      },
+      "source": {
+        "label": "SEC 8-K filed 2026-09-09",
+        "url": "https://www.sec.gov/Archives/edgar/data/1819848/000181984826000453/joby-20260902.htm",
+        "asOf": "2026-09-09"
+      }
+    }
+  ],
+  "events": [
+    {
+      "date": "2026-01-01",
+      "precision": "year",
+      "when": "2026",
+      "title": "We are targeting carrying our first passengers in 2026.",
+      "kind": "filing",
+      "past": false,
+      "source": {
+        "label": "SEC 10-Q for period ending 2026-06-30 (filed 2026-08-06)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1819848/000181984826000435/joby-20260630.htm",
+        "asOf": "2026-08-06"
+      }
+    },
+    {
+      "date": "2026-11-04",
+      "precision": "day",
+      "when": "Nov 4, 2026, 4:00 PM ET",
+      "title": "Quarterly earnings release; consensus revenue ≈ $40.4M",
+      "kind": "earnings",
+      "past": false,
+      "source": {
+        "label": "Yahoo Finance earnings calendar",
+        "url": "https://finance.yahoo.com/quote/JOBY/",
+        "asOf": "2026-11-04T19:10:41.922Z"
+      }
+    },
+    {
+      "date": "2026-11-04",
+      "precision": "day",
+      "when": "November 4",
+      "title": "Joby Aviation Just Launched Florida Air Taxi Flights. Its November 4 Report Will Show What They Cost",
+      "kind": "news",
+      "past": false,
+      "source": {
+        "label": "TIKR via Yahoo Finance",
+        "url": "https://finance.yahoo.com/markets/stocks/articles/joby-aviation-just-launched-florida-145232448.html",
+        "asOf": "2026-11-04T14:52:32.000Z"
+      }
+    },
+    {
+      "date": "2027-01-01",
+      "precision": "month",
+      "when": "January 2027",
+      "title": "The evidentiary hearing is scheduled for January 2027, with the Administrative Law Judge’s Initial Determination expected on May 14, 2027.",
+      "kind": "filing",
+      "past": false,
+      "source": {
+        "label": "SEC 10-Q for period ending 2026-06-30 (filed 2026-08-06)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1819848/000181984826000435/joby-20260630.htm",
+        "asOf": "2026-08-06"
+      }
+    },
+    {
+      "date": "2027-05-14",
+      "precision": "day",
+      "when": "May 14, 2027",
+      "title": "The evidentiary hearing is scheduled for January 2027, with the Administrative Law Judge’s Initial Determination expected on May 14, 2027.",
+      "kind": "filing",
+      "past": false,
+      "source": {
+        "label": "SEC 10-Q for period ending 2026-06-30 (filed 2026-08-06)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1819848/000181984826000435/joby-20260630.htm",
+        "asOf": "2026-08-06"
+      }
+    }
+  ]
+}

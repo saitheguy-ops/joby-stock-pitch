@@ -42,6 +42,8 @@ export interface FilingHighlights {
   business: string[];
 }
 
+const ITC_RE = /International Trade Commission|evidentiary hearing|Initial Determination/;
+
 /** Forward-looking milestones, legal proceedings and liquidity statements from the latest 10-Q or 10-K. */
 export async function getLatestPeriodicHighlights(cik: string = JOBY_CIK): Promise<FilingHighlights> {
   "use cache";
@@ -61,9 +63,11 @@ export async function getLatestPeriodicHighlights(cik: string = JOBY_CIK): Promi
     legal: sentencesMatching(
       text,
       /\bArcher\b[^.]*\b(complaint|lawsuit|International Trade Commission|counterclaims?)\b|\b(complaint|lawsuit|International Trade Commission)\b[^.]*\bArcher\b|evidentiary hearing|Initial Determination/,
-      4,
-    ),
-    liquidity: sentencesMatching(narrative, /\b(sufficient|at least the next twelve months|dilution to stockholders)\b/i, 3),
+      12,
+    )
+      .sort((a, b) => Number(ITC_RE.test(b)) - Number(ITC_RE.test(a)))
+      .slice(0, 5),
+    liquidity: sentencesMatching(narrative, /at least the next twelve months|dilution to stockholders may result|combination of equity and debt financing/i, 3),
     certification: sentencesMatching(narrative, /\b(five stages|stage 4|type certification|eIPP|GCAA|Dubai)\b/, 6),
     business: sentencesMatching(narrative, /\b(designing and testing|routes to market|vertically[- ]integrated|acquired Blade|up to four passengers)\b/, 5),
   };

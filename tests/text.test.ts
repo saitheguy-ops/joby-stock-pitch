@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { decodeEntities, extractMilestoneSentences, extractRiskSummary, htmlToText } from "@/lib/filing-text";
+import { decodeEntities, extractMilestoneSentences, extractRiskSummary, htmlToText, splitSentences } from "@/lib/filing-text";
 import { headlineKey, tagHeadline } from "@/lib/news-tag";
 
 describe("filing text", () => {
@@ -43,11 +43,27 @@ describe("filing text", () => {
   });
 });
 
+describe("sentence splitting", () => {
+  it("does not split on abbreviations such as U.S. and Inc.", () => {
+    expect(splitSentences("Archer filed a complaint with the U.S. International Trade Commission. Joby Aviation, Inc. disagrees.")).toEqual([
+      "Archer filed a complaint with the U.S. International Trade Commission.",
+      "Joby Aviation, Inc. disagrees.",
+    ]);
+  });
+});
+
 describe("headline tagging", () => {
   it("tags catalysts, risks and context", () => {
     expect(tagHeadline("Joby Begins Piloted Electric Air Taxi Flights Across Florida").tag).toBe("catalyst");
     expect(tagHeadline("Joby shares fall after $500 million stock offering").tag).toBe("risk");
     expect(tagHeadline("What to know about Joby Aviation").tag).toBe("context");
+  });
+
+  it("flags insider sales and competitors getting ahead as risks", () => {
+    expect(tagHeadline("Joby Aviation Director Paul Sciarra Offloads 62,500 Shares at $4.97 Each").tag).toBe("risk");
+    expect(tagHeadline("Form 144 Joby Aviation For: 2 November").tag).toBe("risk");
+    expect(tagHeadline("Beta Technologies Beat Archer and Joby to an FAA First").matched).toContain("competitor ahead");
+    expect(tagHeadline("Joby and Beta Kick Off Florida eIPP Flights").tag).toBe("catalyst");
   });
 
   it("explains its decision with matched keywords", () => {

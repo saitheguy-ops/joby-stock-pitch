@@ -10,7 +10,7 @@ const CATALYST: [RegExp, string][] = [
   [/\bcertif(y|ied|ication)\b/i, "certification"],
   [/\b(faa|gcaa|caa)\b.*\b(approv|grant|award|issu)/i, "regulator approval"],
   [/\btype inspection|\btia\b|for[- ]credit/i, "type inspection"],
-  [/\blaunch(es|ed)?\b|\bbegins?\b|\bstarts?\b|\bcommenc/i, "launch/start"],
+  [/\blaunch(es|ed)?\b|\bbegins?\b|\bstarts?\b|\bcommenc|\bkicks? off\b/i, "launch/start"],
   [/\bfirst (passenger|commercial|flight)/i, "first flight/passenger"],
   [/\bcontract|\border(s|ed)?\b|\bagreement\b|\bpartner(ship)?\b|\bdeal\b/i, "contract/partnership"],
   [/\bfunding\b|\binvest(s|ment)\b(?!.*\boffering)/i, "funding/investment"],
@@ -27,6 +27,8 @@ const RISK: [RegExp, string][] = [
   [/\b(falls?|drops?|plunges?|slumps?|sinks?|tumbles?|slides?|downgrade[sd]?|sell[- ]off)\b/i, "negative price move"],
   [/\bloss(es)?\b|\bmiss(es|ed)?\b|\bburn\b/i, "losses/miss"],
   [/\blayoffs?\b|\bcuts?\b|\bwarn(s|ing)?\b|\bshort seller|\bbubble\b/i, "warning/cuts"],
+  [/\b(sells?|sold|offloads?|dumps?)\b.*\bshares\b|\bform (4|144)\b|\binsider sell/i, "insider selling"],
+  [/\b(beats?|ahead of|overtakes?)\s+(archer and\s+)?joby\b/i, "competitor ahead"],
 ];
 
 export interface TagResult {

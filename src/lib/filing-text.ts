@@ -73,7 +73,8 @@ export function extractRiskSummary(text: string): RiskGroup[] {
 export function splitSentences(text: string): string[] {
   return text
     .split("\n")
-    .flatMap((line) => line.split(/(?<=[.!?])\s+(?=[A-Z“"])/))
+    // Split after . ! ? followed by a capital, but not after abbreviations like "U.S." or "Inc.".
+    .flatMap((line) => line.split(/(?<!\b(?:U\.S|Inc|No|Mr|Ms|Dr|Co|Corp|Ltd|vs|e\.g|i\.e|St|Jr)\.)(?<=[.!?])\s+(?=[A-Z“"])/))
     .map((s) => s.trim())
     .filter(Boolean);
 }

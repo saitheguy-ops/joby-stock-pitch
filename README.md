@@ -1,6 +1,6 @@
 # JOBY Stock Pitch Builder
 
-A web app that builds a complete, sourced investment pitch on **Joby Aviation (NYSE: JOBY)**, a pre-revenue eVTOL air-taxi company. It pulls live data from SEC EDGAR, Yahoo Finance and Google News, values the company with an interactive scenario DCF, and produces a one-page, printable pitch. Every number links to its source and date. If a source is down, the app says so instead of guessing.
+A web app that builds a complete, sourced investment pitch on **Joby Aviation (NYSE: JOBY)**, an eVTOL air-taxi company whose core air-taxi business has no revenue yet. It pulls live data from SEC EDGAR, Yahoo Finance and Google News, values the company with an interactive scenario DCF, and produces a one-page, printable pitch. Every number links to its source and date. If a source is down, the app says so instead of guessing.
 
 > **Educational project, not investment advice.**
 
@@ -16,7 +16,7 @@ A web app that builds a complete, sourced investment pitch on **Joby Aviation (N
 
 ## Why this was hard
 
-Valuing Joby was much harder than valuing a typical company, because it doesn't make money yet. Normal tools like the P/E ratio, revenue multiples or a DCF built on today's cash flows don't work when there are no earnings to start from. I had to evaluate it with completely different metrics:
+Valuing Joby was much harder than valuing a typical company, because it isn't profitable and its core air-taxi business hasn't earned any revenue yet. Its small existing revenue (about $53M in 2025, mostly from Blade charter flights) says little about the air-taxi network it's building. Normal tools like the P/E ratio, revenue multiples or a DCF built on today's cash flows don't work when there are no earnings to start from. I had to evaluate it with completely different metrics:
 
 - **Cash runway:** how many quarters Joby can keep operating before it needs more money
 - **Cash burn and dilution:** how fast it spends, and how much existing shareholders get diluted when it raises more
@@ -79,7 +79,7 @@ Next.js 16 (App Router, Cache Components) · TypeScript · Tailwind CSS v4 · Re
 
 ## What I learned
 
-- **Valuing a pre-revenue company is about scenarios, not one forecast.** Joby has almost no revenue, so P/E and EV/Sales say little. A bear/base/bull DCF weighted by probability was the honest way to value it. It also showed how much the answer depends on judgment: $3.69 of my $4.19 target comes from the bull case alone.
+- **Valuing a pre-revenue company is about scenarios, not one forecast.** Joby's air-taxi business has no revenue yet, so P/E and EV/Sales say little. A bear/base/bull DCF weighted by probability was the honest way to value it. It also showed how much the answer depends on judgment: $3.69 of my $4.19 target comes from the bull case alone.
 - **A reverse DCF makes a pitch easier to argue.** Instead of only asking "what is it worth?", I asked "what does today's price assume?" The answer, about 2,640 aircraft in service by 2035, is one concrete number that anyone can debate.
 - **Cash runway and dilution matter as much as the business.** For a company burning about $200M a quarter, the 10-Q's cash balance, the share count on each cover page, and the $750M at-the-market program say a lot about what existing shareholders will own later.
 - **Primary sources beat summaries.** Reading the 10-K risk factors, 10-Qs, 8-Ks and the 424B5 directly taught me where each number comes from, and that every claim in a pitch needs a source and a date.

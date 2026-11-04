@@ -19,7 +19,7 @@ export default function ValuationPage() {
     <>
       <PageHeader
         title="Valuation"
-        intro="Joby has almost no revenue yet, so a P/E or EV/Sales multiple tells you little. Instead this page values it with a scenario DCF: project what the business could earn once certified, subtract the cash it must burn to get there, discount back to today, and weight bear/base/bull outcomes by probability. Comps show how the market prices other listed eVTOL companies."
+        intro="Joby's core air-taxi business has no revenue yet (today's small revenue is mostly charter flights), so a P/E or EV/Sales multiple tells you little. Instead this page values it with a scenario DCF: project what the business could earn once certified, subtract the cash it must burn to get there, discount back to today, and weight bear/base/bull outcomes by probability. Comps show how the market prices other listed eVTOL companies."
       >
         <p className="mt-2 text-xs text-slate-500 dark:text-slate-400">
           Plain-language walkthrough: <a className="underline" href="https://github.com/saitheguy-ops/joby-stock-pitch/blob/main/docs/VALUATION.md" target="_blank" rel="noopener noreferrer">docs/VALUATION.md</a>

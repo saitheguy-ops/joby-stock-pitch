@@ -2,7 +2,8 @@ import type { Metadata } from "next";
 import { connection } from "next/server";
 import { Suspense } from "react";
 import { ValuationModel } from "@/components/ValuationModel";
-import { Badge, Card, InfoTip, PageHeader, Skeleton, SourceLink, Unavailable } from "@/components/ui";
+import { ValuationSummary } from "@/components/summaries";
+import { Badge, Card, Collapsible, InfoTip, PageHeader, Skeleton, SourceLink, Unavailable } from "@/components/ui";
 import { TICKER } from "@/lib/config";
 import { getComps } from "@/lib/comps";
 import { fmtDate, fmtMoney, fmtMoneyM, fmtPrice } from "@/lib/format";
@@ -24,6 +25,9 @@ export default function ValuationPage() {
           Plain-language walkthrough: <a className="underline" href="https://github.com/saitheguy-ops/joby-stock-pitch/blob/main/docs/VALUATION.md" target="_blank" rel="noopener noreferrer">docs/VALUATION.md</a>
         </p>
       </PageHeader>
+      <Suspense fallback={<Skeleton className="mb-6 h-24" />}>
+        <ValuationSummary />
+      </Suspense>
       <div className="space-y-6">
         <Suspense fallback={<Skeleton className="h-[70vh]" />}>
           <ModelSection />
@@ -57,7 +61,7 @@ async function ModelSection() {
   ];
   return (
     <>
-      <Card title="Live inputs (sourced)" subtitle={`Facts from filings and the market, not assumptions. The forecast starts in ${c.firstForecastYear}; cash flows are discounted from the start of that year.`}>
+      <Collapsible title="Live inputs (sourced)" hint={`Price, cash, debt, shares and burn from filings and the market. The forecast starts in ${c.firstForecastYear}.`}>
         <dl className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
           {inputs.map((i) => (
             <div key={i.label} className="min-w-0 rounded-lg border border-slate-200 p-3 dark:border-slate-800">
@@ -72,7 +76,7 @@ async function ModelSection() {
             </div>
           ))}
         </dl>
-      </Card>
+      </Collapsible>
       <ValuationModel company={c} defaults={defaultScenarios(d.annualBurnM)} />
       <Card title="Street context" subtitle="For comparison only; not an input to the model.">
         {prof.ok && prof.data.analystTargetMean !== null ? (
@@ -98,6 +102,7 @@ async function CompsSection() {
   if (!res.ok) return <Unavailable what="Comparable companies" error={res.error} />;
   const rows = res.data.rows;
   return (
+    <Collapsible title="Comps: listed eVTOL / advanced air mobility companies" hint="Market cap, cash, debt, EV and burn for Joby and peers, in USD">
     <Card
       title="Comps: listed eVTOL / advanced air mobility companies"
       subtitle="All values in USD (converted at Yahoo FX rates where companies report in other currencies). EV = market cap + debt − cash. Burn = −(trailing-12-month operating cash flow)."
@@ -169,5 +174,6 @@ async function CompsSection() {
         </p>
       </div>
     </Card>
+    </Collapsible>
   );
 }

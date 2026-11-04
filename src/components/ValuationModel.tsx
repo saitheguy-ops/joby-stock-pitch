@@ -13,7 +13,7 @@ import {
   type ScenarioInputs,
   type ScenarioResult,
 } from "@/lib/valuation";
-import { Badge, Card, InfoTip } from "./ui";
+import { Badge, Card, Collapsible, InfoTip } from "./ui";
 
 const usd = (v: number) => `$${v.toFixed(2)}`;
 const mUsd = (m: number) => {
@@ -92,6 +92,7 @@ export function ValuationModel({ company, defaults }: { company: CompanyInputs; 
       <ScenarioBars results={results} target={weighted.target} current={company.currentPrice} />
 
       {/* ---------- Assumptions ---------- */}
+      <Collapsible title="Assumptions (editable)" hint="Bear / base / bull inputs with plain-language explanations; results above update instantly">
       <Card
         title="Assumptions (editable)"
         subtitle="My assumptions, not company guidance. Hover the (i) for what each one means and why it matters. Results update instantly."
@@ -175,8 +176,10 @@ export function ValuationModel({ company, defaults }: { company: CompanyInputs; 
           </table>
         </div>
       </Card>
+      </Collapsible>
 
       {/* ---------- Scenario detail ---------- */}
+      <Collapsible title={`Projected cash flows (${focused.name} case)`} hint="Year-by-year fleet, revenue, EBITDA, capex, FCF and the EV-to-equity bridge">
       <Card
         title="Scenario detail: projected cash flows"
         subtitle="Free cash flow = EBITDA − tax − capex for new aircraft, discounted to today."
@@ -184,11 +187,14 @@ export function ValuationModel({ company, defaults }: { company: CompanyInputs; 
       >
         <ScenarioDetail s={focused} r={focusedResult} company={company} />
       </Card>
+      </Collapsible>
 
+      <Collapsible title={`Sensitivity and what matters most (${focused.name} case)`} hint="Discount rate × launch year grid, and a tornado of value drivers">
       <div className="grid gap-4 lg:grid-cols-2">
         <SensitivityTable s={focused} company={company} />
         <Tornado s={focused} company={company} />
       </div>
+      </Collapsible>
 
       <ReverseDcf base={scenarios.find((s) => s.id === "base")!} company={company} />
     </div>

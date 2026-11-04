@@ -109,3 +109,66 @@ export function Badge({ children, tone = "neutral" }: { children: ReactNode; ton
   }[tone];
   return <span className={`inline-flex items-center rounded-full px-2 py-0.5 text-xs font-medium ${cls}`}>{children}</span>;
 }
+
+/** Native <details> section for long tables and charts; closed by default to keep pages light. */
+export function Collapsible({
+  title,
+  hint,
+  children,
+  defaultOpen = false,
+}: {
+  title: ReactNode;
+  hint?: ReactNode;
+  children: ReactNode;
+  defaultOpen?: boolean;
+}) {
+  return (
+    <details
+      open={defaultOpen}
+      className="group min-w-0 rounded-xl border border-slate-200 bg-white shadow-sm dark:border-slate-800 dark:bg-slate-900"
+    >
+      <summary className="flex cursor-pointer list-none items-center justify-between gap-3 rounded-xl px-4 py-3 hover:bg-slate-50 sm:px-5 dark:hover:bg-slate-800/60 [&::-webkit-details-marker]:hidden">
+        <span className="min-w-0">
+          <span className="block text-sm font-semibold text-slate-900 dark:text-slate-100">
+            {title}
+          </span>
+          {hint && (
+            <span className="block text-xs text-slate-500 dark:text-slate-400">
+              {hint}
+            </span>
+          )}
+        </span>
+        <span
+          aria-hidden
+          className="shrink-0 text-slate-400 transition group-open:rotate-90"
+        >
+          ▶
+        </span>
+      </summary>
+      <div className="border-t border-slate-100 p-4 sm:p-5 dark:border-slate-800">
+        {children}
+      </div>
+    </details>
+  );
+}
+
+/** Three-line takeaway shown at the top of each Details page. */
+export function KeySummary({ lines }: { lines: ReactNode[] }) {
+  return (
+    <div className="mb-6 rounded-xl border-l-4 border-sky-600 bg-white p-4 shadow-sm dark:border-sky-500 dark:bg-slate-900">
+      <h2 className="text-xs font-semibold uppercase tracking-wide text-slate-500 dark:text-slate-400">
+        In three lines
+      </h2>
+      <ul className="mt-1.5 space-y-1 text-sm text-slate-800 dark:text-slate-200">
+        {lines.slice(0, 3).map((l, i) => (
+          <li key={i} className="flex gap-2">
+            <span aria-hidden className="text-sky-600 dark:text-sky-400">
+              •
+            </span>
+            <span className="min-w-0">{l}</span>
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
+}

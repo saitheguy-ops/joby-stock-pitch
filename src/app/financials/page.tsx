@@ -3,7 +3,8 @@ import { connection } from "next/server";
 import { Suspense } from "react";
 import { BarSeries, LineSeries } from "@/components/charts";
 import { StatementTable } from "@/components/StatementTable";
-import { Card, InfoTip, PageHeader, Skeleton, SourceLink, Stat, Unavailable } from "@/components/ui";
+import { FinancialsSummary } from "@/components/summaries";
+import { Card, Collapsible, InfoTip, PageHeader, Skeleton, SourceLink, Stat, Unavailable } from "@/components/ui";
 import { JOBY_CIK } from "@/lib/config";
 import { getFinancials } from "@/lib/edgar";
 import { lastN } from "@/lib/edgar-parse";
@@ -21,6 +22,9 @@ export default function FinancialsPage() {
         title="Financials"
         intro="Income statement, balance sheet and cash flow straight from Joby's SEC filings (XBRL data via EDGAR). Click any number to open the filing it came from. Joby is pre-certification, so the numbers that matter most are cash, cash burn and share count."
       />
+      <Suspense fallback={<Skeleton className="mb-6 h-24" />}>
+        <FinancialsSummary />
+      </Suspense>
       <Suspense fallback={<Skeleton className="h-[60vh]" />}>
         <FinancialsBody />
       </Suspense>
@@ -86,7 +90,7 @@ async function FinancialsBody() {
         />
       </div>
 
-      <Card title="How runway is calculated" subtitle="Shown so the arithmetic can be checked by hand.">
+      <Collapsible title="How runway is calculated" hint="The arithmetic, pro-forma adjustments and caveats">
         {m.cashAndInvestments && m.quarterlyBurn && m.runwayQuartersLatest !== null ? (
           <div className="space-y-2 text-sm text-slate-700 dark:text-slate-300">
             <p className="tabular">
@@ -123,8 +127,9 @@ async function FinancialsBody() {
         ) : (
           <Unavailable what="Runway inputs" />
         )}
-      </Card>
+      </Collapsible>
 
+      <Collapsible title="Charts: cash, operating burn, share count" hint="Last 16 quarters from SEC filings">
       <div className="grid gap-4 lg:grid-cols-3">
         <Card title="Cash & short-term investments" subtitle="End of each quarter">
           {cashData.length ? <BarSeries data={cashData} kind="money" ariaLabel="Cash and short-term investments by quarter" /> : <Unavailable what="Cash history" />}
@@ -139,9 +144,10 @@ async function FinancialsBody() {
           {m.dilutionSource && <SourceLink source={m.dilutionSource} className="mt-2" />}
         </Card>
       </div>
+      </Collapsible>
 
       {m.dilution && (
-        <Card title="Dilution over time" subtitle="What a long-term holder experienced">
+        <Collapsible title="Dilution over time" hint="Share count on every filing cover page">
           <p className="text-sm text-slate-700 dark:text-slate-300">
             Shares outstanding grew from <strong>{fmtShares(m.dilution.first.shares)}</strong> ({fmtDate(m.dilution.first.date)}) to{" "}
             <strong>{fmtShares(m.dilution.last.shares)}</strong> ({fmtDate(m.dilution.last.date)}), a <strong>{fmtPct(m.dilution.totalPct, 1, true)}</strong> increase or{" "}
@@ -180,18 +186,18 @@ async function FinancialsBody() {
               </tbody>
             </table>
           </div>
-        </Card>
+        </Collapsible>
       )}
 
-      <Card title="Income statement" subtitle="Fiscal years end Dec 31">
+      <Collapsible title="Income statement" hint="Annual and quarterly · fiscal years end Dec 31">
         <StatementTable caption="Income statement" annual={buildView(f.income, "annual", 5)} quarterly={buildView(f.income, "quarterly", 6)} unitNote="$ millions, except per-share; (x) = negative" />
-      </Card>
-      <Card title="Balance sheet">
+      </Collapsible>
+      <Collapsible title="Balance sheet" hint="Annual and quarterly">
         <StatementTable caption="Balance sheet" annual={buildView(f.balance, "annual", 5)} quarterly={buildView(f.balance, "quarterly", 6)} unitNote="$ millions; shares in millions" />
-      </Card>
-      <Card title="Cash flow statement" subtitle={<>Quarter values marked <sup>d</sup> are derived: 10-Qs report cash flow year-to-date, so Q2 = H1 − Q1, Q4 = FY − 9M.</>}>
+      </Collapsible>
+      <Collapsible title="Cash flow statement" hint={<>Quarter values marked <sup>d</sup> are derived: 10-Qs report cash flow year-to-date, so Q2 = H1 − Q1, Q4 = FY − 9M.</>}>
         <StatementTable caption="Cash flow statement" annual={buildView(f.cashflow, "annual", 5)} quarterly={buildView(f.cashflow, "quarterly", 6)} unitNote="$ millions; (x) = outflow" />
-      </Card>
+      </Collapsible>
       <p className="text-xs text-slate-500 dark:text-slate-400">
         Hover a row label to see the XBRL concept; hover or click a value to open the filing. Data: <SourceLink source={sourceAll} />.
       </p>

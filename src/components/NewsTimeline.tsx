@@ -36,7 +36,7 @@ const fmtDay = (iso: string) => new Date(iso).toLocaleDateString("en-US", { week
 export function NewsTimeline({ items }: { items: TimelineItem[] }) {
   const [tag, setTag] = useState<NewsTag | "all">("all");
   const [jobyOnly, setJobyOnly] = useState(true);
-  const [limit, setLimit] = useState(30);
+  const [limit, setLimit] = useState(12);
   const filtered = useMemo(() => items.filter((n) => (tag === "all" || n.tag === tag) && (!jobyOnly || n.jobySpecific)), [items, tag, jobyOnly]);
   const counts = useMemo(() => {
     const base = items.filter((n) => !jobyOnly || n.jobySpecific);
@@ -95,7 +95,7 @@ export function NewsTimeline({ items }: { items: TimelineItem[] }) {
         ))}
       </ol>
       {filtered.length > limit && (
-        <button onClick={() => setLimit((l) => l + 30)} className="no-print mt-4 rounded-md border border-slate-300 px-3 py-1.5 text-xs font-semibold hover:bg-slate-100 dark:border-slate-600 dark:hover:bg-slate-800">
+        <button onClick={() => setLimit((l) => l + 25)} className="no-print mt-4 rounded-md border border-slate-300 px-3 py-1.5 text-xs font-semibold hover:bg-slate-100 dark:border-slate-600 dark:hover:bg-slate-800">
           Show more ({filtered.length - limit} remaining)
         </button>
       )}

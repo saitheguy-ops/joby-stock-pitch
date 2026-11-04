@@ -10,7 +10,8 @@
     "test": "vitest run",
     "typecheck": "next typegen && tsc --noEmit",
     "snapshot": "tsx --conditions=react-server scripts/snapshot.mts",
-    "snapshot:check": "tsx scripts/snapshot-check.mts"
+    "snapshot:check": "tsx scripts/snapshot-check.mts",
+    "briefing:check": "tsx scripts/briefing-check.mts"
   },
   "dependencies": {
     "fast-xml-parser": "^5.12.0",

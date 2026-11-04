@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { connection } from "next/server";
 import { Suspense } from "react";
 import { TagPill } from "@/components/NewsTimeline";
+import { RisksSummary } from "@/components/summaries";
 import { Card, PageHeader, Skeleton, SourceLink, Unavailable } from "@/components/ui";
 import { JOBY_CIK } from "@/lib/config";
 import { getFinancials } from "@/lib/edgar";
@@ -21,6 +22,9 @@ export default function RisksPage() {
         title="Risks & concerns"
         intro="The key risks to the investment case, grouped into themes. Each theme quotes the matching items from the Risk Factors Summary in Joby's latest 10-K (pulled live from SEC EDGAR), adds a hard data point where one exists, and lists recent headlines that touch it."
       />
+      <Suspense fallback={<Skeleton className="mb-6 h-24" />}>
+        <RisksSummary />
+      </Suspense>
       <Suspense fallback={<Skeleton className="h-[70vh]" />}>
         <RisksBody />
       </Suspense>
@@ -88,6 +92,11 @@ async function RisksBody() {
                   </ul>
                 </div>
               )}
+              <details className="mt-3 rounded-md border border-slate-200 dark:border-slate-700">
+                <summary className="cursor-pointer px-3 py-1.5 text-xs font-semibold text-sky-700 dark:text-sky-400">
+                  What the 10-K says ({tb.length}) and recent headlines ({th.length})
+                </summary>
+                <div className="px-3 pb-3">
               {tb.length > 0 && tenKSource && (
                 <div className="mt-3">
                   <h3 className="text-xs font-semibold uppercase tracking-wide text-slate-500 dark:text-slate-400">What the 10-K says</h3>
@@ -121,6 +130,8 @@ async function RisksBody() {
                   <p className="mt-1 text-xs text-slate-500 dark:text-slate-400">{news.ok ? "No matching headlines in the current feeds." : "News feeds unavailable."}</p>
                 )}
               </div>
+                </div>
+              </details>
               <p className="mt-3 rounded-md bg-slate-50 p-2 text-xs text-slate-600 dark:bg-slate-800/60 dark:text-slate-300">
                 <strong>Watch:</strong> {t.watch}
               </p>

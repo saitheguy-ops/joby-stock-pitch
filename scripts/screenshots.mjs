@@ -23,7 +23,7 @@ for (const s of shots) {
   const page = await browser.newPage({
     viewport: s.viewport,
     deviceScaleFactor: 2,
-    colorScheme: s.scheme ?? "light",
+    colorScheme: s.scheme ?? "dark",
     isMobile: !!s.mobile,
     hasTouch: !!s.mobile,
   });

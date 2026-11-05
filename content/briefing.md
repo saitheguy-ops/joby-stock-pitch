@@ -1,9 +1,9 @@
 ---
-date: 2026-11-04
-data_as_of: 2026-11-04T19:25:15.987Z
+date: 2026-11-05
+data_as_of: 2026-11-05T00:00:35.223Z
 verdict: SELL
 price_target: 4.19
-price_at_writing: 5.09
+price_at_writing: 5.05
 previous_verdict: SELL
 previous_price_target: 4.19
 previous_date: 2026-11-04
@@ -11,45 +11,44 @@ previous_date: 2026-11-04
 
 ## Verdict and what changed since last time
 
-- **SELL, target $4.19: unchanged** from the initial pitch (SELL, $4.19). At $5.09, the probability-weighted value implies −17.7% ([Yahoo quote](https://finance.yahoo.com/quote/JOBY/)).
-- This is the first briefing. The week's news (an expanded Air Force contract and the Florida demo flights) is real progress, but it doesn't change any valuation input, so the call stands ([Business Wire](https://finance.yahoo.com/technology/ai/articles/joby-expands-autonomous-flight-contracts-130000124.html)).
-- **Q3 2026 results are due after today's close.** This briefing is written before them; refresh once the 10-Q is filed ([Yahoo calendar](https://finance.yahoo.com/quote/JOBY/)).
+- **SELL, target $4.19: unchanged.** The price closed at $5.05 on Nov 4, so the probability-weighted value implies −17.0% ([Yahoo quote](https://finance.yahoo.com/quote/JOBY/)).
+- **Q3 2026 results came out after the close** (8-K accepted 4:05 PM ET). Headlines report a revenue and EPS beat ([8-K](https://www.sec.gov/Archives/edgar/data/1819848/000181984826000531/joby-20261104.htm), [Business Wire](https://finance.yahoo.com/markets/stocks/articles/joby-reports-third-quarter-2026-210500787.html)).
+- The beat is revenue from before certification, so it doesn't move any valuation input. Q3 cash, burn and share count enter the model when the 10-Q reaches EDGAR; this snapshot still uses the June 30 balance sheet ([10-Q](https://www.sec.gov/Archives/edgar/data/1819848/000181984826000435/0001819848-26-000435-index.htm)).
 
 ## Status scorecard
 
-- **Certification:** stable — the latest 10-Q still says ~75% through stage 4 of 5, and no newer certification disclosure is in this snapshot ([10-Q](https://www.sec.gov/Archives/edgar/data/1819848/000181984826000435/joby-20260630.htm))
-- **Cash runway:** stable — $2.26B vs. $202M Q2 burn ≈ 11.2 quarters (9.0 pro forma for the Resonant deal); next update with Q3 ([10-Q](https://www.sec.gov/Archives/edgar/data/1819848/000181984826000435/0001819848-26-000435-index.htm), [8-K](https://www.sec.gov/Archives/edgar/data/1819848/000162828026055505/joby-20260808.htm))
-- **Dilution:** worsening — shares 989.1M, up +24.9% in the last 12 months vs. +10.4%/yr since 2021 ([10-Q cover](https://www.sec.gov/Archives/edgar/data/1819848/000181984826000435/0001819848-26-000435-index.htm))
-- **Launch timeline:** stable — the target is still "first passengers in 2026", and eIPP demo flights continue, but none carry fares yet ([10-Q](https://www.sec.gov/Archives/edgar/data/1819848/000181984826000435/joby-20260630.htm), [DroneXL](https://news.google.com/rss/articles/CBMigwFBVV95cUxNLUZHZlJ4eHRTaDVUckNEMnQ5dWJhMWtUU0JwdU5qeHpUN29VaHFJLWlrb3k5VVZjQnRFWGF2LUI2d1FpWUdMZjd5WnNtN05jRDZvVTROTElJM1drTEswU3d2SFhTMDNGT3Rqbi1jVGFpUnRvRVhRX05RQUMyUlhoS1hEdw?oc=5))
-- **Partnerships/deals:** improving — the U.S. Air Force expanded its autonomy contracts with Joby to nearly $37M ([Business Wire](https://finance.yahoo.com/technology/ai/articles/joby-expands-autonomous-flight-contracts-130000124.html))
+- **Certification:** stable — no new certification disclosure in this snapshot; the latest 10-Q still says ~75% through stage 4 of 5 ([10-Q](https://www.sec.gov/Archives/edgar/data/1819848/000181984826000435/joby-20260630.htm))
+- **Cash runway:** stable — headlines put Q3 cash at ~$2.2B vs. $2.26B at June 30; runway stays ~11.2 quarters (9.0 pro forma) until the 10-Q gives Q3 burn ([scanx.trade](https://news.google.com/rss/articles/CBMivgFBVV95cUxOVmtQb0dDY2RuRkFiOTVIeUNvSm5vbVBWazI2MmEzS1NQTkMwZ01yR1liMmVvd3VZUWlWVXYxNlNBaDdCYkJoZ1RSUHZBb2tFZktpdGJRME1VcDc5VHdtYjNEMU4xVEN6M0EtZzZwaUctTkZsb3ZPZHZSYlFwSjM5SVh3bFVZc3J5OWI2dFBHTVJOdzNVa0xyM21FMk9pZDREa2NWU05hOEIzS2lITnk2QVltdTZHMlBaajBuOUFB?oc=5), [10-Q](https://www.sec.gov/Archives/edgar/data/1819848/000181984826000435/0001819848-26-000435-index.htm))
+- **Dilution:** stable — no new share count since 989.1M (Aug 3), already up +24.9% over 12 months ([10-Q cover](https://www.sec.gov/Archives/edgar/data/1819848/000181984826000435/0001819848-26-000435-index.htm))
+- **Launch timeline:** stable — the target is still first passengers in 2026, and an MT Newswires headline says Joby raised its 2026 outlook; details aren't in this snapshot ([10-Q](https://www.sec.gov/Archives/edgar/data/1819848/000181984826000435/joby-20260630.htm), [MT Newswires](https://finance.yahoo.com/markets/stocks/articles/joby-aviation-q3-loss-narrows-225736830.html))
+- **Partnerships/deals:** stable — no new deal since the Nov 4 Air Force expansion to ~$37M ([Business Wire](https://finance.yahoo.com/technology/ai/articles/joby-expands-autonomous-flight-contracts-130000124.html))
 
 ## What changed
 
-- **Air Force contracts expanded to ~$37M (Nov 4).** This is non-dilutive and validates the autonomy work, but it is small next to $202M of quarterly burn. The stock is +4.9% intraday vs. SPY +1.8% (session still open) ([Business Wire](https://finance.yahoo.com/technology/ai/articles/joby-expands-autonomous-flight-contracts-130000124.html), [prices](https://finance.yahoo.com/quote/JOBY/history/)).
-- **Piloted demo flights across Florida (Oct 30).** These are operations under the FAA pilot program the 10-Q flagged as the first step before city service. The stock moved −3.5% that day vs. SPY −1.8%: demos without fares did not lift it ([Business Wire](https://finance.yahoo.com/technology/articles/joby-brings-vertical-takeoff-landing-170200185.html), [UASweekly](https://news.google.com/rss/articles/CBMiugFBVV95cUxQSkVxazREZ0lMNng2UUdGaWFhZk0xMHZIT2VrdTlmckVNTGlOTFBkU2hzd19rd2MtajA1OGVFa2Ywb1Y1M2xrRFBvRGNHQ3RLY0V5MGRYUWkzNU1OeEtjcEFULWRiaklFejY2YWtrclc3SVp1R0prU3ZWdVhHNDFZSXRXNWJCQllKbjN4aWNJVEptUkVPWXhrRkRqaVdjdFNIcVVJNFRSeXBTNU9EMzZuWTl5emRod3M3N0E?oc=5), [prices](https://finance.yahoo.com/quote/JOBY/history/)).
-- **Competition: BETA reached an FAA milestone first (Nov 2).** BETA shares are +26.4% over 1W vs. JOBY +0.2%. JOBY moved −1.8% that day ([Motley Fool](https://finance.yahoo.com/markets/stocks/articles/beta-technologies-beat-archer-joby-133500120.html), [BETA prices](https://finance.yahoo.com/quote/BETA/history/)).
-- **Director share sale.** Paul Sciarra sold 62,500 shares at $4.97, a small amount but sold near the lows ([Kalkine Media](https://news.google.com/rss/articles/CBMitwFBVV95cUxNdDNOTGlYR3VkSUVSZXpPTDdLLUxMb1BUS0l3dXVDNjhVZzlxcGpnZ2phdXRIdzdsdk4yQVBTUng5dmpQWUZTYjhVRU9RMGQ3U2dsSlZmUGdBVGlTVlA2XzFzY1pndWUxTzNuN0ZJS3lta0JJV3ptTmNMVzd4TWhVYVM3SkliQTI1OVlDT1YtVmNmUFRSQ0lWdjdLWnhVdW9GQ21uUmM2dW84WmRNZ0kzNHhpUk9iaW8?oc=5)).
-- **The stock hit a 52-week low (late Oct)** and is −61.4% YTD vs. SPY +13.5%. It bounced +6.8% the next session ([Yahoo Finance](https://news.google.com/rss/articles/CBMimAFBVV95cUxQUjB0QXdDcl9mREJTdHNOVkhoNzh4U2VDcmVSNWZRaU1rRktJMTJyQ21yUWtUZDBlT2NsRHdyNkZ5UTNXdlRXUlc0enNuMXZDclYzMTBBSHhuQm41dTMxWHlPcFZzODhoUk1vb3J3TE1obndpdUo0M05UbVBtWVV2SG9IMGRrc3BXZ0JJQjJOVUFuQm1WMDlxbA?oc=5), [prices](https://finance.yahoo.com/quote/JOBY/history/)).
+- **Revenue beat.** About $55M of Q3 revenue was reported vs. a consensus of ≈ $40.4M, up 144% per TipRanks ([scanx.trade](https://news.google.com/rss/articles/CBMivgFBVV95cUxOVmtQb0dDY2RuRkFiOTVIeUNvSm5vbVBWazI2MmEzS1NQTkMwZ01yR1liMmVvd3VZUWlWVXYxNlNBaDdCYkJoZ1RSUHZBb2tFZktpdGJRME1VcDc5VHdtYjNEMU4xVEN6M0EtZzZwaUctTkZsb3ZPZHZSYlFwSjM5SVh3bFVZc3J5OWI2dFBHTVJOdzNVa0xyM21FMk9pZDREa2NWU05hOEIzS2lITnk2QVltdTZHMlBaajBuOUFB?oc=5), [TipRanks](https://news.google.com/rss/articles/CBMif0FVX3lxTE5lOXJzMENZa2RIa1RLdjhhZTIzWXJxNHdKNjlqN1BMSXE1OWxQTUFyOEtuSXRZMzdRcTVrS0ZmMU9MTktERWM0MDRocVpWNmdweUF5dE56bnY0cEtMMk5xbzRUaks0cVdEZjRzaHRGeUd0dXRqNTV0ODlsaEFVdE0?oc=5), [Yahoo calendar](https://finance.yahoo.com/quote/JOBY/)).
+- **EPS beat by $0.03, loss narrowed** ([Investing.com](https://news.google.com/rss/articles/CBMiqwFBVV95cUxPLTRfWVItaFFrQndrUEFWVU0wWGxVYjZYNEFxMHU4VS1XMzR0a25nZHZTN2xWelRUaDhUckNuMzZ4N1BySEVJUmE5UnRMTlNIRkhKZmFYTmY0ejBCR2pvOC1zX1gwZFhKN3p6RnFjRGFnTTdBd2JaTkNtZFNJYnZfX3EyREZkZzF4QXBmZmZUdW80bThkeTh6T19JcXdCYkdFd1FGYlBDbm9rVDg?oc=5), [MT Newswires](https://finance.yahoo.com/markets/stocks/articles/joby-aviation-q3-loss-narrows-225736830.html)). This is good execution, but it comes from today's pre-certification business, not the air-taxi unit economics the valuation depends on ([10-Q](https://www.sec.gov/Archives/edgar/data/1819848/000181984826000435/joby-20260630.htm)).
+- **Stock reaction: no regular-session move yet.** The release came after the close, so the first reaction is the next session, which isn't in this snapshot. A Benzinga headline says the shares popped after the beat ([Benzinga](https://news.google.com/rss/articles/CBMirAFBVV95cUxPMVMxT2R4ZElCTmg5QVlUQVB1NnNRYnpKa3lwclJ0Rk40bzRNaEZ3ZmE0X29WUTZnbmNnSG1rSG96QlZKMnBFdmxacDlKMnhRYlFhYVpWck5fUXhDeTJqX2FNMERxWXg4RGw4WGVSeTN5U3Z0d29DeGtoT0dFeHhsUWZkVzNtYWRIa1ZDLWNBYmY2UFVMVTBBVzRHcjdxRDlhUG9rdGltb0dwVEo4?oc=5), [prices](https://finance.yahoo.com/quote/JOBY/history/)).
+- **Nov 4 regular session:** JOBY closed +4.1% vs. SPY +1.7%, on the Air Force contract news before the results ([prices](https://finance.yahoo.com/quote/JOBY/history/), [Business Wire](https://finance.yahoo.com/technology/ai/articles/joby-expands-autonomous-flight-contracts-130000124.html)).
+- **Coverage is cautious:** Barron's calls the results solid but says Joby's biggest hurdle remains ([Barron's](https://finance.yahoo.com/m/2eadf5b6-63aa-3aba-91d5-5818f1bc1a53/joby-stock-rises-on-solid.html)).
 
 ## What it means for the price
 
-- **Assumptions unchanged.** No snapshot item gives new evidence on fleet size, revenue per aircraft, margin, aircraft cost or launch year. The Air Force money doesn't change burn, and the demo flights carry no fares ([10-Q](https://www.sec.gov/Archives/edgar/data/1819848/000181984826000435/joby-20260630.htm), [Business Wire](https://finance.yahoo.com/technology/ai/articles/joby-expands-autonomous-flight-contracts-130000124.html)).
-- **Supported:** the base case's 2027 scaled launch, since pilot-program flights are under way. **Challenged:** the bull case's fast ramp, given a 25% share-count increase in a year and no disclosed unit economics ([10-Q cover](https://www.sec.gov/Archives/edgar/data/1819848/000181984826000435/0001819848-26-000435-index.htm)).
-- **Valuation:** 25% × $0.00 + 50% × $1.00 + 25% × $14.76 = **$4.19**. The reverse DCF says today's price needs ~2,607 aircraft at scale vs. 800 in my base case ([Yahoo quote](https://finance.yahoo.com/quote/JOBY/), [10-Q](https://www.sec.gov/Archives/edgar/data/1819848/000181984826000435/0001819848-26-000435-index.htm)).
-- **The Street is far more bullish:** 9 analysts average $10.01 (range $4–$18). The gap is mostly how likely you think the bull case is ([Yahoo analysts](https://finance.yahoo.com/quote/JOBY/analysis/)).
+- **Assumptions unchanged.** Nothing in the snapshot gives new evidence on fleet at scale, revenue per certified aircraft, margin, aircraft cost or launch year. The burn input updates automatically once the 10-Q is on EDGAR ([10-Q](https://www.sec.gov/Archives/edgar/data/1819848/000181984826000435/0001819848-26-000435-index.htm)).
+- **Valuation:** 25% × $0.00 + 50% × $1.00 + 25% × $14.76 = **$4.19**. Today's price still needs ~2,590 aircraft at scale vs. 800 in my base case ([Yahoo quote](https://finance.yahoo.com/quote/JOBY/)).
+- **What could move it:** if the 10-Q confirms cash near $2.2B with burn at or below $202M, the funding risk eases slightly, but the call hinges on the bull-case probability, not one quarter's revenue ([scanx.trade](https://news.google.com/rss/articles/CBMivgFBVV95cUxOVmtQb0dDY2RuRkFiOTVIeUNvSm5vbVBWazI2MmEzS1NQTkMwZ01yR1liMmVvd3VZUWlWVXYxNlNBaDdCYkJoZ1RSUHZBb2tFZktpdGJRME1VcDc5VHdtYjNEMU4xVEN6M0EtZzZwaUctTkZsb3ZPZHZSYlFwSjM5SVh3bFVZc3J5OWI2dFBHTVJOdzNVa0xyM21FMk9pZDREa2NWU05hOEIzS2lITnk2QVltdTZHMlBaajBuOUFB?oc=5), [10-Q](https://www.sec.gov/Archives/edgar/data/1819848/000181984826000435/0001819848-26-000435-index.htm)).
+- **The Street:** 9 analysts average $10.01 (range $4–$18); targets haven't updated in this snapshot ([Yahoo analysts](https://finance.yahoo.com/quote/JOBY/analysis/)).
 
 ## Upcoming events
 
-- **Nov 4, 2026, 4:00 PM ET** — Q3 2026 results (consensus revenue ≈ $40.4M) — first look at burn, share count and the Resonant closing ([Yahoo calendar](https://finance.yahoo.com/quote/JOBY/))
-- **2026** — First passengers (company target) — two months left; a miss would pressure the 2027 launch assumption ([10-Q](https://www.sec.gov/Archives/edgar/data/1819848/000181984826000435/joby-20260630.htm))
+- **2026** — First passengers (company target) — eight weeks left; a miss would pressure the 2027 launch assumption ([10-Q](https://www.sec.gov/Archives/edgar/data/1819848/000181984826000435/joby-20260630.htm))
 - **Jan 2027** — ITC evidentiary hearing, Archer v. Joby — an exclusion order could block imported components ([10-Q](https://www.sec.gov/Archives/edgar/data/1819848/000181984826000435/joby-20260630.htm))
 - **May 14, 2027** — ITC initial determination ([10-Q](https://www.sec.gov/Archives/edgar/data/1819848/000181984826000435/joby-20260630.htm))
 - **Sep 14, 2027** — ITC final decision ([10-Q](https://www.sec.gov/Archives/edgar/data/1819848/000181984826000435/joby-20260630.htm))
 
 ## Things to watch
 
-- **Quarterly free-cash-flow burn:** above $250M (Q2: $202M) would cut runway below ~9 quarters → cash runway "worsening" ([10-Q](https://www.sec.gov/Archives/edgar/data/1819848/000181984826000435/0001819848-26-000435-index.htm)).
-- **Share count on the Q3 10-Q cover:** more than 3% above 989.1M signals new equity issuance → dilution assumption up ([10-Q cover](https://www.sec.gov/Archives/edgar/data/1819848/000181984826000435/0001819848-26-000435-index.htm)).
-- **Certification wording:** "stage 4" moving past ~75% complete, or a stage 5 milestone, would turn certification to "improving" ([10-Q](https://www.sec.gov/Archives/edgar/data/1819848/000181984826000435/joby-20260630.htm)).
-- **First paying passengers by Dec 31, 2026:** if this slips, consider moving the base launch year to 2028 ([10-Q](https://www.sec.gov/Archives/edgar/data/1819848/000181984826000435/joby-20260630.htm)).
+- **First full session after Q3:** a move of more than ±10% vs. SPY would signal the market re-rating the story; Nov 4 close $5.05 ([prices](https://finance.yahoo.com/quote/JOBY/history/)).
+- **Q3 10-Q cash and burn:** cash below $2.0B, or quarterly burn above $250M (Q2: $202M), → cash runway "worsening" ([10-Q](https://www.sec.gov/Archives/edgar/data/1819848/000181984826000435/0001819848-26-000435-index.htm), [scanx.trade](https://news.google.com/rss/articles/CBMivgFBVV95cUxOVmtQb0dDY2RuRkFiOTVIeUNvSm5vbVBWazI2MmEzS1NQTkMwZ01yR1liMmVvd3VZUWlWVXYxNlNBaDdCYkJoZ1RSUHZBb2tFZktpdGJRME1VcDc5VHdtYjNEMU4xVEN6M0EtZzZwaUctTkZsb3ZPZHZSYlFwSjM5SVh3bFVZc3J5OWI2dFBHTVJOdzNVa0xyM21FMk9pZDREa2NWU05hOEIzS2lITnk2QVltdTZHMlBaajBuOUFB?oc=5)).
+- **Q3 10-Q share count:** more than 3% above 989.1M signals new equity issuance; also check whether the ~$450M Resonant cash payment has closed ([10-Q cover](https://www.sec.gov/Archives/edgar/data/1819848/000181984826000435/0001819848-26-000435-index.htm), [8-K](https://www.sec.gov/Archives/edgar/data/1819848/000162828026055505/joby-20260808.htm)).
+- **Certification wording:** stage 4 past ~75%, or a stage 5 milestone → certification "improving" ([10-Q](https://www.sec.gov/Archives/edgar/data/1819848/000181984826000435/joby-20260630.htm)).
 - **Price triggers at current assumptions:** below $4.93 → HOLD; below $3.64 → BUY ([Yahoo quote](https://finance.yahoo.com/quote/JOBY/)).

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-04T19:25:15.987Z",
+  "generatedAt": "2026-11-05T00:00:35.223Z",
   "ticker": "JOBY",
   "sourcesStatus": [
     {
@@ -73,17 +73,17 @@
     }
   ],
   "price": {
-    "value": 5.09,
-    "change": 0.24000025,
-    "changePct": 4.9484587,
-    "marketCap": 5071137792,
+    "value": 5.05,
+    "change": 0.2,
+    "changePct": 4.12372,
+    "marketCap": 5031286272,
     "fiftyTwoWeekLow": 4.43,
     "fiftyTwoWeekHigh": 17.1,
-    "marketState": "REGULAR",
+    "marketState": "POST",
     "source": {
       "label": "Yahoo Finance quote (NYSE)",
       "url": "https://finance.yahoo.com/quote/JOBY/",
-      "asOf": "2026-11-04T19:25:13.000Z"
+      "asOf": "2026-11-04T21:00:03.000Z"
     }
   },
   "performance": [
@@ -91,14 +91,14 @@
       "ticker": "JOBY",
       "name": "Joby Aviation",
       "role": "subject",
-      "lastClose": 5.090000152587891,
+      "lastClose": 5.050000190734863,
       "lastDate": "2026-11-04",
       "returns": {
-        "1W": 0.001968549022052013,
-        "1M": -0.11937716819621669,
-        "3M": -0.38153093126360116,
-        "YTD": -0.6143939222623929,
-        "1Y": -0.655149046500151
+        "1W": -0.00590545933498865,
+        "1M": -0.12629757657010388,
+        "3M": -0.38639119421352575,
+        "YTD": -0.6174242224465605,
+        "1Y": -0.6578590709739147
       },
       "source": {
         "label": "Yahoo Finance daily adjusted closes, JOBY",
@@ -110,14 +110,14 @@
       "ticker": "SPY",
       "name": "S&P 500 ETF (SPY)",
       "role": "benchmark",
-      "lastClose": 768.0549926757812,
+      "lastClose": 766.8099975585938,
       "lastDate": "2026-11-04",
       "returns": {
-        "1W": -0.00550945202867148,
-        "1M": -0.014164003901098177,
-        "3M": 0.001824471757428725,
-        "YTD": 0.13510974393982744,
-        "1Y": 0.14972640600088627
+        "1W": -0.007121492687374831,
+        "1M": -0.015762015779407612,
+        "3M": 0.00020054301858718482,
+        "YTD": 0.1332697635970741,
+        "1Y": 0.14786283734316763
       },
       "source": {
         "label": "Yahoo Finance daily adjusted closes, SPY",
@@ -129,14 +129,14 @@
       "ticker": "ACHR",
       "name": "Piloted eVTOL air taxi (Midnight)",
       "role": "peer",
-      "lastClose": 4.135000228881836,
+      "lastClose": 4.119999885559082,
       "lastDate": "2026-11-04",
       "returns": {
-        "1W": -0.04723500380151269,
-        "1M": -0.11075265718782779,
-        "3M": -0.20936898397672155,
-        "YTD": -0.45013294689232475,
-        "1Y": -0.5674686142903302
+        "1W": -0.05069130398477639,
+        "1M": -0.11397853740613106,
+        "3M": -0.21223711844479975,
+        "YTD": -0.4521276734030695,
+        "1Y": -0.5690376877907846
       },
       "source": {
         "label": "Yahoo Finance daily adjusted closes, ACHR",
@@ -148,14 +148,14 @@
       "ticker": "BETA",
       "name": "Electric CTOL/eVTOL (ALIA)",
       "role": "peer",
-      "lastClose": 25.25,
+      "lastClose": 25.309999465942383,
       "lastDate": "2026-11-04",
       "returns": {
-        "1W": 0.2637637927179757,
-        "1M": 0.20813399334289695,
-        "3M": 0.11135566739028957,
-        "YTD": -0.1049273016850929,
-        "1Y": -0.29861111111111116
+        "1W": 0.2667667690601696,
+        "1M": 0.211004781239428,
+        "3M": 0.11399648903446602,
+        "YTD": -0.10280041519485517,
+        "1Y": -0.2969444592793783
       },
       "source": {
         "label": "Yahoo Finance daily adjusted closes, BETA",
@@ -167,14 +167,14 @@
       "ticker": "EVEX",
       "name": "eVTOL developer majority-owned by Embraer",
       "role": "peer",
-      "lastClose": 1.725000023841858,
+      "lastClose": 1.6799999475479126,
       "lastDate": "2026-11-04",
       "returns": {
-        "1W": 0.05182929200511999,
-        "1M": 0.008771921263311722,
-        "3M": -0.3416030155765598,
-        "YTD": -0.5676691679902682,
-        "1Y": -0.5665829106595268
+        "1W": 0.024390220854836775,
+        "1M": -0.017543912239656678,
+        "3M": -0.3587786179656961,
+        "YTD": -0.5789473825733229,
+        "1Y": -0.5778894624379918
       },
       "source": {
         "label": "Yahoo Finance daily adjusted closes, EVEX",
@@ -186,14 +186,14 @@
       "ticker": "EH",
       "name": "Autonomous passenger eVTOL (China)",
       "role": "peer",
-      "lastClose": 4.099999904632568,
+      "lastClose": 4.079999923706055,
       "lastDate": "2026-11-04",
       "returns": {
-        "1W": 0.11413038865661429,
-        "1M": 0,
-        "3M": -0.230769237650991,
-        "YTD": -0.6889226244537718,
-        "1Y": -0.7576832218590268
+        "1W": 0.10869561132952099,
+        "1M": -0.004878044241882984,
+        "3M": -0.23452157934194684,
+        "YTD": -0.6904400736543352,
+        "1Y": -0.7588652538233491
       },
       "source": {
         "label": "Yahoo Finance daily adjusted closes, EH",
@@ -205,14 +205,14 @@
       "ticker": "EVTL",
       "name": "Piloted eVTOL (VX4/Valo), UK",
       "role": "peer",
-      "lastClose": 0.40549999475479126,
+      "lastClose": 0.4011000096797943,
       "lastDate": "2026-11-04",
       "returns": {
-        "1W": -0.01815978952199382,
-        "1M": -0.2758928695921691,
-        "3M": -0.6781746049016211,
-        "YTD": -0.9239212006455642,
-        "1Y": -0.9045882365282845
+        "1W": -0.02881350673041816,
+        "1M": -0.2837499857640693,
+        "3M": -0.6816666565748749,
+        "YTD": -0.9247467138046596,
+        "1Y": -0.905623527134166
       },
       "source": {
         "label": "Yahoo Finance daily adjusted closes, EVTL",
@@ -224,14 +224,14 @@
       "ticker": "HOVR",
       "name": "Hybrid-electric VTOL (Cavorite X7), Canada",
       "role": "peer",
-      "lastClose": 1.1799999475479126,
+      "lastClose": 1.1699999570846558,
       "lastDate": "2026-11-04",
       "returns": {
-        "1W": -0.09230769936149663,
-        "1M": -0.2625000437721604,
-        "3M": -0.3948718365676137,
-        "YTD": -0.19727896286946978,
-        "1Y": -0.44339622111030186
+        "1W": -0.09999999999999998,
+        "1M": -0.26875003771856376,
+        "3M": -0.40000003667978046,
+        "YTD": -0.20408167733792526,
+        "1Y": -0.44811319799854343
       },
       "source": {
         "label": "Yahoo Finance daily adjusted closes, HOVR",
@@ -560,13 +560,13 @@
       "debtM": 701.874,
       "stubBurnM": 403.564,
       "sharesM": 989.124237,
-      "currentPrice": 5.09
+      "currentPrice": 5.05
     },
     "inputSources": {
       "price": {
-        "label": "Yahoo Finance · Quote as of 2026-11-04 19:25 UTC",
+        "label": "Yahoo Finance · Quote as of 2026-11-04 21:00 UTC",
         "url": "https://finance.yahoo.com/quote/JOBY/",
-        "asOf": "2026-11-04T19:25:13.000Z"
+        "asOf": "2026-11-04T21:00:03.000Z"
       },
       "cash": {
         "label": "SEC 10-Q · balance sheet as of 2026-06-30 · filed 2026-08-06",
@@ -683,11 +683,11 @@
       "target": 4.189000435006324,
       "low": 0,
       "high": 14.758940739589791,
-      "upside": -0.17701366699286358
+      "upside": -0.1704949633650843
     },
     "recommendation": "SELL",
     "rule": "Probability-weighted upside > +15% = BUY, < −15% = SELL, otherwise HOLD",
-    "impliedFleetAtScale": 2607.324719429016,
+    "impliedFleetAtScale": 2589.5684957504272,
     "topDrivers": [
       {
         "label": "Fleet at scale",
@@ -715,10 +715,369 @@
     "source": {
       "label": "Yahoo Finance analyst price targets",
       "url": "https://finance.yahoo.com/quote/JOBY/analysis/",
-      "asOf": "2026-11-04T19:25:16.442Z"
+      "asOf": "2026-11-05T00:00:35.702Z"
     }
   },
   "news": [
+    {
+      "title": "Joby Aviation Q3FY26 Results: Revenue $55 million, cash $2.2 billion",
+      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOVmtQb0dDY2RuRkFiOTVIeUNvSm5vbVBWazI2MmEzS1NQTkMwZ01yR1liMmVvd3VZUWlWVXYxNlNBaDdCYkJoZ1RSUHZBb2tFZktpdGJRME1VcDc5VHdtYjNEMU4xVEN6M0EtZzZwaUctTkZsb3ZPZHZSYlFwSjM5SVh3bFVZc3J5OWI2dFBHTVJOdzNVa0xyM21FMk9pZDREa2NWU05hOEIzS2lITnk2QVltdTZHMlBaajBuOUFB?oc=5",
+      "publisher": "scanx.trade",
+      "publishedAt": "2026-11-04T23:31:44.000Z",
+      "feed": "Google News",
+      "tag": "context",
+      "matched": [],
+      "jobySpecific": true,
+      "reaction": {
+        "eventDateET": "2026-11-04",
+        "afterClose": true,
+        "sameDaySession": "2026-11-04",
+        "sameDay": 0.041237173203088284,
+        "spySameDay": 0.016517561312278106,
+        "nextDaySession": null,
+        "nextDay": null,
+        "spyNextDay": null,
+        "firstReaction": null,
+        "partial": false,
+        "source": {
+          "label": "Yahoo Finance daily adjusted closes, JOBY and SPY",
+          "url": "https://finance.yahoo.com/quote/JOBY/history/",
+          "asOf": "2026-11-04"
+        }
+      },
+      "source": {
+        "label": "scanx.trade via Google News",
+        "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOVmtQb0dDY2RuRkFiOTVIeUNvSm5vbVBWazI2MmEzS1NQTkMwZ01yR1liMmVvd3VZUWlWVXYxNlNBaDdCYkJoZ1RSUHZBb2tFZktpdGJRME1VcDc5VHdtYjNEMU4xVEN6M0EtZzZwaUctTkZsb3ZPZHZSYlFwSjM5SVh3bFVZc3J5OWI2dFBHTVJOdzNVa0xyM21FMk9pZDREa2NWU05hOEIzS2lITnk2QVltdTZHMlBaajBuOUFB?oc=5",
+        "asOf": "2026-11-04T23:31:44.000Z"
+      }
+    },
+    {
+      "title": "Joby Aviation Q3 2026 Earnings Call Transcript",
+      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNYTV3UWNoOXRJUjZhZERQTEdwRUlLNDNWb09jQUM5MzY4dlNoX1dGZXotZ3hxeU5DTkZEUXZWVnV2aGlUUzZCYlhtYjhDdEd2ZFJjR1hPbjZmRmNKNlRVLURGbTRpckF3eklDLUw1U3Q0ZTI2aWhXc3hKODVKei03OVBfTnVyRktZb0dvTHBtWVZJMXF0S2c?oc=5",
+      "publisher": "Benzinga",
+      "publishedAt": "2026-11-04T23:00:14.000Z",
+      "feed": "Google News",
+      "tag": "context",
+      "matched": [],
+      "jobySpecific": true,
+      "reaction": {
+        "eventDateET": "2026-11-04",
+        "afterClose": true,
+        "sameDaySession": "2026-11-04",
+        "sameDay": 0.041237173203088284,
+        "spySameDay": 0.016517561312278106,
+        "nextDaySession": null,
+        "nextDay": null,
+        "spyNextDay": null,
+        "firstReaction": null,
+        "partial": false,
+        "source": {
+          "label": "Yahoo Finance daily adjusted closes, JOBY and SPY",
+          "url": "https://finance.yahoo.com/quote/JOBY/history/",
+          "asOf": "2026-11-04"
+        }
+      },
+      "source": {
+        "label": "Benzinga via Google News",
+        "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNYTV3UWNoOXRJUjZhZERQTEdwRUlLNDNWb09jQUM5MzY4dlNoX1dGZXotZ3hxeU5DTkZEUXZWVnV2aGlUUzZCYlhtYjhDdEd2ZFJjR1hPbjZmRmNKNlRVLURGbTRpckF3eklDLUw1U3Q0ZTI2aWhXc3hKODVKei03OVBfTnVyRktZb0dvTHBtWVZJMXF0S2c?oc=5",
+        "asOf": "2026-11-04T23:00:14.000Z"
+      }
+    },
+    {
+      "title": "Joby Aviation Q3 Loss Narrows, Revenue Rises; 2026 Outlook Raised",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/joby-aviation-q3-loss-narrows-225736830.html",
+      "publisher": "MT Newswires",
+      "publishedAt": "2026-11-04T22:57:36.000Z",
+      "feed": "Yahoo Finance",
+      "tag": "mixed",
+      "matched": [
+        "positive price move",
+        "losses/miss"
+      ],
+      "jobySpecific": true,
+      "reaction": {
+        "eventDateET": "2026-11-04",
+        "afterClose": true,
+        "sameDaySession": "2026-11-04",
+        "sameDay": 0.041237173203088284,
+        "spySameDay": 0.016517561312278106,
+        "nextDaySession": null,
+        "nextDay": null,
+        "spyNextDay": null,
+        "firstReaction": null,
+        "partial": false,
+        "source": {
+          "label": "Yahoo Finance daily adjusted closes, JOBY and SPY",
+          "url": "https://finance.yahoo.com/quote/JOBY/history/",
+          "asOf": "2026-11-04"
+        }
+      },
+      "source": {
+        "label": "MT Newswires via Yahoo Finance",
+        "url": "https://finance.yahoo.com/markets/stocks/articles/joby-aviation-q3-loss-narrows-225736830.html",
+        "asOf": "2026-11-04T22:57:36.000Z"
+      }
+    },
+    {
+      "title": "A $37 Million Reason Why JOBY Stock Is Up Today",
+      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQaTBVLVhfLUk1QkRTczdOMzVZSVowelNCM1ZIR1JoZVpKVmlnNVVoRndfMk9ZWTZseDhtQ1BERmNzTkgwaENGei10OFJlb3NQbnIyVUlHQzRYTE5OWTVRTFhZLUNfcVh3dnBLaGFudmoyTWpqcldyYWhiXzNwNTU1NldKTXJ0MktsaFFaRmtWLTY2U09S?oc=5",
+      "publisher": "Barchart.com",
+      "publishedAt": "2026-11-04T22:02:18.000Z",
+      "feed": "Google News",
+      "tag": "context",
+      "matched": [],
+      "jobySpecific": true,
+      "reaction": {
+        "eventDateET": "2026-11-04",
+        "afterClose": true,
+        "sameDaySession": "2026-11-04",
+        "sameDay": 0.041237173203088284,
+        "spySameDay": 0.016517561312278106,
+        "nextDaySession": null,
+        "nextDay": null,
+        "spyNextDay": null,
+        "firstReaction": null,
+        "partial": false,
+        "source": {
+          "label": "Yahoo Finance daily adjusted closes, JOBY and SPY",
+          "url": "https://finance.yahoo.com/quote/JOBY/history/",
+          "asOf": "2026-11-04"
+        }
+      },
+      "source": {
+        "label": "Barchart.com via Google News",
+        "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQaTBVLVhfLUk1QkRTczdOMzVZSVowelNCM1ZIR1JoZVpKVmlnNVVoRndfMk9ZWTZseDhtQ1BERmNzTkgwaENGei10OFJlb3NQbnIyVUlHQzRYTE5OWTVRTFhZLUNfcVh3dnBLaGFudmoyTWpqcldyYWhiXzNwNTU1NldKTXJ0MktsaFFaRmtWLTY2U09S?oc=5",
+        "asOf": "2026-11-04T22:02:18.000Z"
+      }
+    },
+    {
+      "title": "Joby Stock Rises on Solid Results, but Its Biggest Hurdle Remains",
+      "url": "https://finance.yahoo.com/m/2eadf5b6-63aa-3aba-91d5-5818f1bc1a53/joby-stock-rises-on-solid.html",
+      "publisher": "Barrons.com",
+      "publishedAt": "2026-11-04T21:59:00.000Z",
+      "feed": "Yahoo Finance",
+      "tag": "catalyst",
+      "matched": [
+        "positive price move"
+      ],
+      "jobySpecific": true,
+      "reaction": {
+        "eventDateET": "2026-11-04",
+        "afterClose": true,
+        "sameDaySession": "2026-11-04",
+        "sameDay": 0.041237173203088284,
+        "spySameDay": 0.016517561312278106,
+        "nextDaySession": null,
+        "nextDay": null,
+        "spyNextDay": null,
+        "firstReaction": null,
+        "partial": false,
+        "source": {
+          "label": "Yahoo Finance daily adjusted closes, JOBY and SPY",
+          "url": "https://finance.yahoo.com/quote/JOBY/history/",
+          "asOf": "2026-11-04"
+        }
+      },
+      "source": {
+        "label": "Barrons.com via Yahoo Finance",
+        "url": "https://finance.yahoo.com/m/2eadf5b6-63aa-3aba-91d5-5818f1bc1a53/joby-stock-rises-on-solid.html",
+        "asOf": "2026-11-04T21:59:00.000Z"
+      }
+    },
+    {
+      "title": "Joby Aviation earnings beat by $0.03, revenue topped estimates",
+      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPLTRfWVItaFFrQndrUEFWVU0wWGxVYjZYNEFxMHU4VS1XMzR0a25nZHZTN2xWelRUaDhUckNuMzZ4N1BySEVJUmE5UnRMTlNIRkhKZmFYTmY0ejBCR2pvOC1zX1gwZFhKN3p6RnFjRGFnTTdBd2JaTkNtZFNJYnZfX3EyREZkZzF4QXBmZmZUdW80bThkeTh6T19JcXdCYkdFd1FGYlBDbm9rVDg?oc=5",
+      "publisher": "Investing.com",
+      "publishedAt": "2026-11-04T21:55:24.000Z",
+      "feed": "Google News",
+      "tag": "context",
+      "matched": [],
+      "jobySpecific": true,
+      "reaction": {
+        "eventDateET": "2026-11-04",
+        "afterClose": true,
+        "sameDaySession": "2026-11-04",
+        "sameDay": 0.041237173203088284,
+        "spySameDay": 0.016517561312278106,
+        "nextDaySession": null,
+        "nextDay": null,
+        "spyNextDay": null,
+        "firstReaction": null,
+        "partial": false,
+        "source": {
+          "label": "Yahoo Finance daily adjusted closes, JOBY and SPY",
+          "url": "https://finance.yahoo.com/quote/JOBY/history/",
+          "asOf": "2026-11-04"
+        }
+      },
+      "source": {
+        "label": "Investing.com via Google News",
+        "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPLTRfWVItaFFrQndrUEFWVU0wWGxVYjZYNEFxMHU4VS1XMzR0a25nZHZTN2xWelRUaDhUckNuMzZ4N1BySEVJUmE5UnRMTlNIRkhKZmFYTmY0ejBCR2pvOC1zX1gwZFhKN3p6RnFjRGFnTTdBd2JaTkNtZFNJYnZfX3EyREZkZzF4QXBmZmZUdW80bThkeTh6T19JcXdCYkdFd1FGYlBDbm9rVDg?oc=5",
+        "asOf": "2026-11-04T21:55:24.000Z"
+      }
+    },
+    {
+      "title": "Joby Shares Pop After Q3 Earnings Beat Expectations: - Joby Aviation (NYSE:JOBY)",
+      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPMVMxT2R4ZElCTmg5QVlUQVB1NnNRYnpKa3lwclJ0Rk40bzRNaEZ3ZmE0X29WUTZnbmNnSG1rSG96QlZKMnBFdmxacDlKMnhRYlFhYVpWck5fUXhDeTJqX2FNMERxWXg4RGw4WGVSeTN5U3Z0d29DeGtoT0dFeHhsUWZkVzNtYWRIa1ZDLWNBYmY2UFVMVTBBVzRHcjdxRDlhUG9rdGltb0dwVEo4?oc=5",
+      "publisher": "Benzinga",
+      "publishedAt": "2026-11-04T21:40:16.000Z",
+      "feed": "Google News",
+      "tag": "context",
+      "matched": [],
+      "jobySpecific": true,
+      "reaction": {
+        "eventDateET": "2026-11-04",
+        "afterClose": true,
+        "sameDaySession": "2026-11-04",
+        "sameDay": 0.041237173203088284,
+        "spySameDay": 0.016517561312278106,
+        "nextDaySession": null,
+        "nextDay": null,
+        "spyNextDay": null,
+        "firstReaction": null,
+        "partial": false,
+        "source": {
+          "label": "Yahoo Finance daily adjusted closes, JOBY and SPY",
+          "url": "https://finance.yahoo.com/quote/JOBY/history/",
+          "asOf": "2026-11-04"
+        }
+      },
+      "source": {
+        "label": "Benzinga via Google News",
+        "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPMVMxT2R4ZElCTmg5QVlUQVB1NnNRYnpKa3lwclJ0Rk40bzRNaEZ3ZmE0X29WUTZnbmNnSG1rSG96QlZKMnBFdmxacDlKMnhRYlFhYVpWck5fUXhDeTJqX2FNMERxWXg4RGw4WGVSeTN5U3Z0d29DeGtoT0dFeHhsUWZkVzNtYWRIa1ZDLWNBYmY2UFVMVTBBVzRHcjdxRDlhUG9rdGltb0dwVEo4?oc=5",
+        "asOf": "2026-11-04T21:40:16.000Z"
+      }
+    },
+    {
+      "title": "Joby Aviation (JOBY) Tops Q3 EPS by 3c",
+      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNblBROC00cjdmM0dHNUhCVnVKRXhtRmF3T0xxTU1PaDlEaWJXZmtUUU1HRWh6c2loMzFHbXI2ay1kN0w2UHlEVmstNnZiT2hIN1FyMzF5T0VDS08yLVdLaFdJX0tyakVhM2JJUkZ2U2pTYW4yYlhCcEZTUk16ekNLdXhmQkI4WnYzMm9TT2RmUERRVXdFZjhfdFhOZw?oc=5",
+      "publisher": "StreetInsider",
+      "publishedAt": "2026-11-04T21:23:14.000Z",
+      "feed": "Google News",
+      "tag": "context",
+      "matched": [],
+      "jobySpecific": true,
+      "reaction": {
+        "eventDateET": "2026-11-04",
+        "afterClose": true,
+        "sameDaySession": "2026-11-04",
+        "sameDay": 0.041237173203088284,
+        "spySameDay": 0.016517561312278106,
+        "nextDaySession": null,
+        "nextDay": null,
+        "spyNextDay": null,
+        "firstReaction": null,
+        "partial": false,
+        "source": {
+          "label": "Yahoo Finance daily adjusted closes, JOBY and SPY",
+          "url": "https://finance.yahoo.com/quote/JOBY/history/",
+          "asOf": "2026-11-04"
+        }
+      },
+      "source": {
+        "label": "StreetInsider via Google News",
+        "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNblBROC00cjdmM0dHNUhCVnVKRXhtRmF3T0xxTU1PaDlEaWJXZmtUUU1HRWh6c2loMzFHbXI2ay1kN0w2UHlEVmstNnZiT2hIN1FyMzF5T0VDS08yLVdLaFdJX0tyakVhM2JJUkZ2U2pTYW4yYlhCcEZTUk16ekNLdXhmQkI4WnYzMm9TT2RmUERRVXdFZjhfdFhOZw?oc=5",
+        "asOf": "2026-11-04T21:23:14.000Z"
+      }
+    },
+    {
+      "title": "Joby Stock Jumps After Sales Surge by 144% in Q3",
+      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5lOXJzMENZa2RIa1RLdjhhZTIzWXJxNHdKNjlqN1BMSXE1OWxQTUFyOEtuSXRZMzdRcTVrS0ZmMU9MTktERWM0MDRocVpWNmdweUF5dE56bnY0cEtMMk5xbzRUaks0cVdEZjRzaHRGeUd0dXRqNTV0ODlsaEFVdE0?oc=5",
+      "publisher": "TipRanks",
+      "publishedAt": "2026-11-04T21:12:03.000Z",
+      "feed": "Google News",
+      "tag": "catalyst",
+      "matched": [
+        "positive price move"
+      ],
+      "jobySpecific": true,
+      "reaction": {
+        "eventDateET": "2026-11-04",
+        "afterClose": true,
+        "sameDaySession": "2026-11-04",
+        "sameDay": 0.041237173203088284,
+        "spySameDay": 0.016517561312278106,
+        "nextDaySession": null,
+        "nextDay": null,
+        "spyNextDay": null,
+        "firstReaction": null,
+        "partial": false,
+        "source": {
+          "label": "Yahoo Finance daily adjusted closes, JOBY and SPY",
+          "url": "https://finance.yahoo.com/quote/JOBY/history/",
+          "asOf": "2026-11-04"
+        }
+      },
+      "source": {
+        "label": "TipRanks via Google News",
+        "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5lOXJzMENZa2RIa1RLdjhhZTIzWXJxNHdKNjlqN1BMSXE1OWxQTUFyOEtuSXRZMzdRcTVrS0ZmMU9MTktERWM0MDRocVpWNmdweUF5dE56bnY0cEtMMk5xbzRUaks0cVdEZjRzaHRGeUd0dXRqNTV0ODlsaEFVdE0?oc=5",
+        "asOf": "2026-11-04T21:12:03.000Z"
+      }
+    },
+    {
+      "title": "CA-JOBY-AVIATION-INC",
+      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOYjVubVVQMVVsVFFQZTA5cFRFX3pMQ3Z6X1VJRGd4UUpia1AyVzRfbk1fdlNrb3FuQUpXWnZ1aTd1TlB0OUZsM0gzcTZkejVDRXQ0NGRRTmZQazktc3UtQVE2ajlfam91eTZ2YS1OdkNHbVFCYzRMWmdTWFg4dzF6MjZPb3EwSTZNMXJZS1RzLXVwcXlXZ2xPYUF0bl9Jc0pOdklyMHlWdW42Q0Yx?oc=5",
+      "publisher": "Black Hills Pioneer",
+      "publishedAt": "2026-11-04T21:06:32.000Z",
+      "feed": "Google News",
+      "tag": "context",
+      "matched": [],
+      "jobySpecific": true,
+      "reaction": {
+        "eventDateET": "2026-11-04",
+        "afterClose": true,
+        "sameDaySession": "2026-11-04",
+        "sameDay": 0.041237173203088284,
+        "spySameDay": 0.016517561312278106,
+        "nextDaySession": null,
+        "nextDay": null,
+        "spyNextDay": null,
+        "firstReaction": null,
+        "partial": false,
+        "source": {
+          "label": "Yahoo Finance daily adjusted closes, JOBY and SPY",
+          "url": "https://finance.yahoo.com/quote/JOBY/history/",
+          "asOf": "2026-11-04"
+        }
+      },
+      "source": {
+        "label": "Black Hills Pioneer via Google News",
+        "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOYjVubVVQMVVsVFFQZTA5cFRFX3pMQ3Z6X1VJRGd4UUpia1AyVzRfbk1fdlNrb3FuQUpXWnZ1aTd1TlB0OUZsM0gzcTZkejVDRXQ0NGRRTmZQazktc3UtQVE2ajlfam91eTZ2YS1OdkNHbVFCYzRMWmdTWFg4dzF6MjZPb3EwSTZNMXJZS1RzLXVwcXlXZ2xPYUF0bl9Jc0pOdklyMHlWdW42Q0Yx?oc=5",
+        "asOf": "2026-11-04T21:06:32.000Z"
+      }
+    },
+    {
+      "title": "Joby Reports Third Quarter 2026 Financial Results",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/joby-reports-third-quarter-2026-210500787.html",
+      "publisher": "Business Wire",
+      "publishedAt": "2026-11-04T21:05:00.000Z",
+      "feed": "Yahoo Finance",
+      "tag": "context",
+      "matched": [],
+      "jobySpecific": true,
+      "reaction": {
+        "eventDateET": "2026-11-04",
+        "afterClose": true,
+        "sameDaySession": "2026-11-04",
+        "sameDay": 0.041237173203088284,
+        "spySameDay": 0.016517561312278106,
+        "nextDaySession": null,
+        "nextDay": null,
+        "spyNextDay": null,
+        "firstReaction": null,
+        "partial": false,
+        "source": {
+          "label": "Yahoo Finance daily adjusted closes, JOBY and SPY",
+          "url": "https://finance.yahoo.com/quote/JOBY/history/",
+          "asOf": "2026-11-04"
+        }
+      },
+      "source": {
+        "label": "Business Wire via Yahoo Finance",
+        "url": "https://finance.yahoo.com/markets/stocks/articles/joby-reports-third-quarter-2026-210500787.html",
+        "asOf": "2026-11-04T21:05:00.000Z"
+      }
+    },
     {
       "title": "Joby Secures $37 Million In U.S. Air Force Funding For Autonomy Stack",
       "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPa3NoUkxIaDgzSm5rcDlCV1JtRnhMbnMtemxRdFpWZmRTX21HNWNLN1UyN1ZURzZNQ3FUT05lSFVHbTRBVFlnbnh2Vms1Z2dPQi00eXJPczF3T2EwQkdudkt0SDR3Y09MQWtqN3pCbEE3SWRXemxMREZ6ZEw4UUhnYy1FSlZOUHl2Z2VFR2s1NE5qcnVrbldZV3p2RjdvODlBMHN2VEphdlpiU08ySE1oelJNQUplVmc?oc=5",
@@ -734,13 +1093,13 @@
         "eventDateET": "2026-11-04",
         "afterClose": false,
         "sameDaySession": "2026-11-04",
-        "sameDay": 0.049484588180317646,
-        "spySameDay": 0.018167982413200834,
+        "sameDay": 0.041237173203088284,
+        "spySameDay": 0.016517561312278106,
         "nextDaySession": null,
         "nextDay": null,
         "spyNextDay": null,
-        "firstReaction": 0.049484588180317646,
-        "partial": true,
+        "firstReaction": 0.041237173203088284,
+        "partial": false,
         "source": {
           "label": "Yahoo Finance daily adjusted closes, JOBY and SPY",
           "url": "https://finance.yahoo.com/quote/JOBY/history/",
@@ -766,13 +1125,13 @@
         "eventDateET": "2026-11-04",
         "afterClose": false,
         "sameDaySession": "2026-11-04",
-        "sameDay": 0.049484588180317646,
-        "spySameDay": 0.018167982413200834,
+        "sameDay": 0.041237173203088284,
+        "spySameDay": 0.016517561312278106,
         "nextDaySession": null,
         "nextDay": null,
         "spyNextDay": null,
-        "firstReaction": 0.049484588180317646,
-        "partial": true,
+        "firstReaction": 0.041237173203088284,
+        "partial": false,
         "source": {
           "label": "Yahoo Finance daily adjusted closes, JOBY and SPY",
           "url": "https://finance.yahoo.com/quote/JOBY/history/",
@@ -789,7 +1148,7 @@
       "title": "All eyes on Joby Aviation earnings amid Dubai launch timeline By Investing.com",
       "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPajhhNkNtXzFNbXN4UlVueGNYUmxYZENhTWRtbFRkaEdpbkxkN3BDdnBGLWQyVHZSNTd5Ukx4dDhIZEx4MEhfY2ZkcFVJWi1WZVYxY3NRTUVYeXFQUzNxa3FfMmxwU3lhVjhJelVVYTRKcV9JT29lMTd3YXRvdVNmdDVWTXNkdm1xd1doMXdJYmRvNC1yTnh5R1AwanAzVHdWR3ZlaVliZFFsenJ2WmZySjc3ZFI4TE9kYXdQVUhNVQ?oc=5",
       "publisher": "Investing.com South Africa",
-      "publishedAt": "2026-11-04T16:42:04.000Z",
+      "publishedAt": "2026-11-04T16:55:43.000Z",
       "feed": "Google News",
       "tag": "catalyst",
       "matched": [
@@ -800,13 +1159,13 @@
         "eventDateET": "2026-11-04",
         "afterClose": false,
         "sameDaySession": "2026-11-04",
-        "sameDay": 0.049484588180317646,
-        "spySameDay": 0.018167982413200834,
+        "sameDay": 0.041237173203088284,
+        "spySameDay": 0.016517561312278106,
         "nextDaySession": null,
         "nextDay": null,
         "spyNextDay": null,
-        "firstReaction": 0.049484588180317646,
-        "partial": true,
+        "firstReaction": 0.041237173203088284,
+        "partial": false,
         "source": {
           "label": "Yahoo Finance daily adjusted closes, JOBY and SPY",
           "url": "https://finance.yahoo.com/quote/JOBY/history/",
@@ -816,7 +1175,7 @@
       "source": {
         "label": "Investing.com South Africa via Google News",
         "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPajhhNkNtXzFNbXN4UlVueGNYUmxYZENhTWRtbFRkaEdpbkxkN3BDdnBGLWQyVHZSNTd5Ukx4dDhIZEx4MEhfY2ZkcFVJWi1WZVYxY3NRTUVYeXFQUzNxa3FfMmxwU3lhVjhJelVVYTRKcV9JT29lMTd3YXRvdVNmdDVWTXNkdm1xd1doMXdJYmRvNC1yTnh5R1AwanAzVHdWR3ZlaVliZFFsenJ2WmZySjc3ZFI4TE9kYXdQVUhNVQ?oc=5",
-        "asOf": "2026-11-04T16:42:04.000Z"
+        "asOf": "2026-11-04T16:55:43.000Z"
       }
     },
     {
@@ -834,13 +1193,13 @@
         "eventDateET": "2026-11-04",
         "afterClose": false,
         "sameDaySession": "2026-11-04",
-        "sameDay": 0.049484588180317646,
-        "spySameDay": 0.018167982413200834,
+        "sameDay": 0.041237173203088284,
+        "spySameDay": 0.016517561312278106,
         "nextDaySession": null,
         "nextDay": null,
         "spyNextDay": null,
-        "firstReaction": 0.049484588180317646,
-        "partial": true,
+        "firstReaction": 0.041237173203088284,
+        "partial": false,
         "source": {
           "label": "Yahoo Finance daily adjusted closes, JOBY and SPY",
           "url": "https://finance.yahoo.com/quote/JOBY/history/",
@@ -870,13 +1229,13 @@
         "eventDateET": "2026-11-04",
         "afterClose": false,
         "sameDaySession": "2026-11-04",
-        "sameDay": 0.049484588180317646,
-        "spySameDay": 0.018167982413200834,
+        "sameDay": 0.041237173203088284,
+        "spySameDay": 0.016517561312278106,
         "nextDaySession": null,
         "nextDay": null,
         "spyNextDay": null,
-        "firstReaction": 0.049484588180317646,
-        "partial": true,
+        "firstReaction": 0.041237173203088284,
+        "partial": false,
         "source": {
           "label": "Yahoo Finance daily adjusted closes, JOBY and SPY",
           "url": "https://finance.yahoo.com/quote/JOBY/history/",
@@ -904,13 +1263,13 @@
         "eventDateET": "2026-11-04",
         "afterClose": false,
         "sameDaySession": "2026-11-04",
-        "sameDay": 0.049484588180317646,
-        "spySameDay": 0.018167982413200834,
+        "sameDay": 0.041237173203088284,
+        "spySameDay": 0.016517561312278106,
         "nextDaySession": null,
         "nextDay": null,
         "spyNextDay": null,
-        "firstReaction": 0.049484588180317646,
-        "partial": true,
+        "firstReaction": 0.041237173203088284,
+        "partial": false,
         "source": {
           "label": "Yahoo Finance daily adjusted closes, JOBY and SPY",
           "url": "https://finance.yahoo.com/quote/JOBY/history/",
@@ -936,13 +1295,13 @@
         "eventDateET": "2026-11-04",
         "afterClose": false,
         "sameDaySession": "2026-11-04",
-        "sameDay": 0.049484588180317646,
-        "spySameDay": 0.018167982413200834,
+        "sameDay": 0.041237173203088284,
+        "spySameDay": 0.016517561312278106,
         "nextDaySession": null,
         "nextDay": null,
         "spyNextDay": null,
-        "firstReaction": 0.049484588180317646,
-        "partial": true,
+        "firstReaction": 0.041237173203088284,
+        "partial": false,
         "source": {
           "label": "Yahoo Finance daily adjusted closes, JOBY and SPY",
           "url": "https://finance.yahoo.com/quote/JOBY/history/",
@@ -968,13 +1327,13 @@
         "eventDateET": "2026-11-04",
         "afterClose": false,
         "sameDaySession": "2026-11-04",
-        "sameDay": 0.049484588180317646,
-        "spySameDay": 0.018167982413200834,
+        "sameDay": 0.041237173203088284,
+        "spySameDay": 0.016517561312278106,
         "nextDaySession": null,
         "nextDay": null,
         "spyNextDay": null,
-        "firstReaction": 0.049484588180317646,
-        "partial": true,
+        "firstReaction": 0.041237173203088284,
+        "partial": false,
         "source": {
           "label": "Yahoo Finance daily adjusted closes, JOBY and SPY",
           "url": "https://finance.yahoo.com/quote/JOBY/history/",
@@ -1002,13 +1361,13 @@
         "eventDateET": "2026-11-04",
         "afterClose": false,
         "sameDaySession": "2026-11-04",
-        "sameDay": 0.049484588180317646,
-        "spySameDay": 0.018167982413200834,
+        "sameDay": 0.041237173203088284,
+        "spySameDay": 0.016517561312278106,
         "nextDaySession": null,
         "nextDay": null,
         "spyNextDay": null,
-        "firstReaction": 0.049484588180317646,
-        "partial": true,
+        "firstReaction": 0.041237173203088284,
+        "partial": false,
         "source": {
           "label": "Yahoo Finance daily adjusted closes, JOBY and SPY",
           "url": "https://finance.yahoo.com/quote/JOBY/history/",
@@ -1036,13 +1395,13 @@
         "eventDateET": "2026-11-04",
         "afterClose": false,
         "sameDaySession": "2026-11-04",
-        "sameDay": 0.049484588180317646,
-        "spySameDay": 0.018167982413200834,
+        "sameDay": 0.041237173203088284,
+        "spySameDay": 0.016517561312278106,
         "nextDaySession": null,
         "nextDay": null,
         "spyNextDay": null,
-        "firstReaction": 0.049484588180317646,
-        "partial": true,
+        "firstReaction": 0.041237173203088284,
+        "partial": false,
         "source": {
           "label": "Yahoo Finance daily adjusted closes, JOBY and SPY",
           "url": "https://finance.yahoo.com/quote/JOBY/history/",
@@ -1070,13 +1429,13 @@
         "eventDateET": "2026-11-04",
         "afterClose": false,
         "sameDaySession": "2026-11-04",
-        "sameDay": 0.049484588180317646,
-        "spySameDay": 0.018167982413200834,
+        "sameDay": 0.041237173203088284,
+        "spySameDay": 0.016517561312278106,
         "nextDaySession": null,
         "nextDay": null,
         "spyNextDay": null,
-        "firstReaction": 0.049484588180317646,
-        "partial": true,
+        "firstReaction": 0.041237173203088284,
+        "partial": false,
         "source": {
           "label": "Yahoo Finance daily adjusted closes, JOBY and SPY",
           "url": "https://finance.yahoo.com/quote/JOBY/history/",
@@ -1104,13 +1463,13 @@
         "eventDateET": "2026-11-04",
         "afterClose": false,
         "sameDaySession": "2026-11-04",
-        "sameDay": 0.049484588180317646,
-        "spySameDay": 0.018167982413200834,
+        "sameDay": 0.041237173203088284,
+        "spySameDay": 0.016517561312278106,
         "nextDaySession": null,
         "nextDay": null,
         "spyNextDay": null,
-        "firstReaction": 0.049484588180317646,
-        "partial": true,
+        "firstReaction": 0.041237173203088284,
+        "partial": false,
         "source": {
           "label": "Yahoo Finance daily adjusted closes, JOBY and SPY",
           "url": "https://finance.yahoo.com/quote/JOBY/history/",
@@ -1138,13 +1497,13 @@
         "eventDateET": "2026-11-04",
         "afterClose": false,
         "sameDaySession": "2026-11-04",
-        "sameDay": 0.049484588180317646,
-        "spySameDay": 0.018167982413200834,
+        "sameDay": 0.041237173203088284,
+        "spySameDay": 0.016517561312278106,
         "nextDaySession": null,
         "nextDay": null,
         "spyNextDay": null,
-        "firstReaction": 0.049484588180317646,
-        "partial": true,
+        "firstReaction": 0.041237173203088284,
+        "partial": false,
         "source": {
           "label": "Yahoo Finance daily adjusted closes, JOBY and SPY",
           "url": "https://finance.yahoo.com/quote/JOBY/history/",
@@ -1173,13 +1532,13 @@
         "eventDateET": "2026-11-04",
         "afterClose": false,
         "sameDaySession": "2026-11-04",
-        "sameDay": 0.049484588180317646,
-        "spySameDay": 0.018167982413200834,
+        "sameDay": 0.041237173203088284,
+        "spySameDay": 0.016517561312278106,
         "nextDaySession": null,
         "nextDay": null,
         "spyNextDay": null,
-        "firstReaction": 0.049484588180317646,
-        "partial": true,
+        "firstReaction": 0.041237173203088284,
+        "partial": false,
         "source": {
           "label": "Yahoo Finance daily adjusted closes, JOBY and SPY",
           "url": "https://finance.yahoo.com/quote/JOBY/history/",
@@ -1207,13 +1566,13 @@
         "eventDateET": "2026-11-04",
         "afterClose": false,
         "sameDaySession": "2026-11-04",
-        "sameDay": 0.049484588180317646,
-        "spySameDay": 0.018167982413200834,
+        "sameDay": 0.041237173203088284,
+        "spySameDay": 0.016517561312278106,
         "nextDaySession": null,
         "nextDay": null,
         "spyNextDay": null,
-        "firstReaction": 0.049484588180317646,
-        "partial": true,
+        "firstReaction": 0.041237173203088284,
+        "partial": false,
         "source": {
           "label": "Yahoo Finance daily adjusted closes, JOBY and SPY",
           "url": "https://finance.yahoo.com/quote/JOBY/history/",
@@ -1239,13 +1598,13 @@
         "eventDateET": "2026-11-04",
         "afterClose": false,
         "sameDaySession": "2026-11-04",
-        "sameDay": 0.049484588180317646,
-        "spySameDay": 0.018167982413200834,
+        "sameDay": 0.041237173203088284,
+        "spySameDay": 0.016517561312278106,
         "nextDaySession": null,
         "nextDay": null,
         "spyNextDay": null,
-        "firstReaction": 0.049484588180317646,
-        "partial": true,
+        "firstReaction": 0.041237173203088284,
+        "partial": false,
         "source": {
           "label": "Yahoo Finance daily adjusted closes, JOBY and SPY",
           "url": "https://finance.yahoo.com/quote/JOBY/history/",
@@ -1271,13 +1630,13 @@
         "eventDateET": "2026-11-04",
         "afterClose": false,
         "sameDaySession": "2026-11-04",
-        "sameDay": 0.049484588180317646,
-        "spySameDay": 0.018167982413200834,
+        "sameDay": 0.041237173203088284,
+        "spySameDay": 0.016517561312278106,
         "nextDaySession": null,
         "nextDay": null,
         "spyNextDay": null,
-        "firstReaction": 0.049484588180317646,
-        "partial": true,
+        "firstReaction": 0.041237173203088284,
+        "partial": false,
         "source": {
           "label": "Yahoo Finance daily adjusted closes, JOBY and SPY",
           "url": "https://finance.yahoo.com/quote/JOBY/history/",
@@ -1305,13 +1664,13 @@
         "eventDateET": "2026-11-04",
         "afterClose": false,
         "sameDaySession": "2026-11-04",
-        "sameDay": 0.049484588180317646,
-        "spySameDay": 0.018167982413200834,
+        "sameDay": 0.041237173203088284,
+        "spySameDay": 0.016517561312278106,
         "nextDaySession": null,
         "nextDay": null,
         "spyNextDay": null,
-        "firstReaction": 0.049484588180317646,
-        "partial": true,
+        "firstReaction": 0.041237173203088284,
+        "partial": false,
         "source": {
           "label": "Yahoo Finance daily adjusted closes, JOBY and SPY",
           "url": "https://finance.yahoo.com/quote/JOBY/history/",
@@ -1340,10 +1699,10 @@
         "sameDay": 0.008316000484173136,
         "spySameDay": 0.0029916235514395595,
         "nextDaySession": "2026-11-04",
-        "nextDay": 0.049484588180317646,
-        "spyNextDay": 0.018167982413200834,
+        "nextDay": 0.041237173203088284,
+        "spyNextDay": 0.016517561312278106,
         "firstReaction": 0.008316000484173136,
-        "partial": true,
+        "partial": false,
         "source": {
           "label": "Yahoo Finance daily adjusted closes, JOBY and SPY",
           "url": "https://finance.yahoo.com/quote/JOBY/history/",
@@ -1354,38 +1713,6 @@
         "label": "The Motley Fool via Google News",
         "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNbGJtM2loMUx0eGR6bGhTM1NHZjU2OUJBNV9CSU1haEduR19MMEg0S2tsN1dwa1VLaXRYMlRfNXoxRDVoTXd5V0RwbTVuZlI3UEsza05jNWNZaVdOTnFweGFDSDZWUnlFUUNRZlFveGF1UWpWbkY4TGxIcGZYd05UTExZX05MQ0F5ZmlaQkQ1ZEU5SW9vcHhqRk9SdGdITHdmRGgydF9oYTM?oc=5",
         "asOf": "2026-11-03T20:23:00.000Z"
-      }
-    },
-    {
-      "title": "Joby Aviation Reports Q3 Earnings Tomorrow – Who Owns JOBY Stock?",
-      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPcjZVMjAyTEJFakRPWGdQZDRmTDlMVzlfNjN3WVF6LXhVU2xQYWlrRzByMXVrdGtEbEd5TWc4RHBTbkhRZWZudUVfd21fbG5rVDhzYnUzNEVyLWFUNW9jYW9aTksyRzAzai1oZlQ2a05JMGloRGxMeFFJRDVIOUllZGxudlJjdE43Ymt3X05xWmFhZTVicDdR?oc=5",
-      "publisher": "TipRanks",
-      "publishedAt": "2026-11-03T20:06:38.000Z",
-      "feed": "Google News",
-      "tag": "context",
-      "matched": [],
-      "jobySpecific": true,
-      "reaction": {
-        "eventDateET": "2026-11-03",
-        "afterClose": false,
-        "sameDaySession": "2026-11-03",
-        "sameDay": 0.008316000484173136,
-        "spySameDay": 0.0029916235514395595,
-        "nextDaySession": "2026-11-04",
-        "nextDay": 0.049484588180317646,
-        "spyNextDay": 0.018167982413200834,
-        "firstReaction": 0.008316000484173136,
-        "partial": true,
-        "source": {
-          "label": "Yahoo Finance daily adjusted closes, JOBY and SPY",
-          "url": "https://finance.yahoo.com/quote/JOBY/history/",
-          "asOf": "2026-11-04"
-        }
-      },
-      "source": {
-        "label": "TipRanks via Google News",
-        "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPcjZVMjAyTEJFakRPWGdQZDRmTDlMVzlfNjN3WVF6LXhVU2xQYWlrRzByMXVrdGtEbEd5TWc4RHBTbkhRZWZudUVfd21fbG5rVDhzYnUzNEVyLWFUNW9jYW9aTksyRzAzai1oZlQ2a05JMGloRGxMeFFJRDVIOUllZGxudlJjdE43Ymt3X05xWmFhZTVicDdR?oc=5",
-        "asOf": "2026-11-03T20:06:38.000Z"
       }
     },
     {
@@ -1404,10 +1731,10 @@
         "sameDay": 0.008316000484173136,
         "spySameDay": 0.0029916235514395595,
         "nextDaySession": "2026-11-04",
-        "nextDay": 0.049484588180317646,
-        "spyNextDay": 0.018167982413200834,
+        "nextDay": 0.041237173203088284,
+        "spyNextDay": 0.016517561312278106,
         "firstReaction": 0.008316000484173136,
-        "partial": true,
+        "partial": false,
         "source": {
           "label": "Yahoo Finance daily adjusted closes, JOBY and SPY",
           "url": "https://finance.yahoo.com/quote/JOBY/history/",
@@ -2056,6 +2383,40 @@
       }
     },
     {
+      "title": "Joby Aviation begins week of electric air taxi flights in Florida",
+      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNSGxfUlJEbVFWM2l1UjBXaU5hNldjTEh6SENBYzRuS05LNWdZN2xBcFphVS1oT3Rrazg4d3ZYazU1NkdNVG1fa2VQUmMyaEtuV2hqbzZ3Z2xvTFV4dlg2UEZzS21USUx0VU53YjR4bDlVSmk3a0ctODYxZkhhV1d3SGs3RHJRWk41bXlNUERmdHpDSWJ0cDZWeXozWGs3VDhXYmdNNDl3bWtBdEtYZktCOWZWLXdoVXA1VEQ1YXZrNA?oc=5",
+      "publisher": "Investing.com",
+      "publishedAt": "2026-10-30T17:41:31.000Z",
+      "feed": "Google News",
+      "tag": "catalyst",
+      "matched": [
+        "launch/start"
+      ],
+      "jobySpecific": true,
+      "reaction": {
+        "eventDateET": "2026-10-30",
+        "afterClose": false,
+        "sameDaySession": "2026-10-30",
+        "sameDay": -0.03543303760668293,
+        "spySameDay": -0.01772904090171079,
+        "nextDaySession": "2026-11-02",
+        "nextDay": -0.018367377721681843,
+        "spyNextDay": -0.004790127636589259,
+        "firstReaction": -0.03543303760668293,
+        "partial": false,
+        "source": {
+          "label": "Yahoo Finance daily adjusted closes, JOBY and SPY",
+          "url": "https://finance.yahoo.com/quote/JOBY/history/",
+          "asOf": "2026-11-02"
+        }
+      },
+      "source": {
+        "label": "Investing.com via Google News",
+        "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNSGxfUlJEbVFWM2l1UjBXaU5hNldjTEh6SENBYzRuS05LNWdZN2xBcFphVS1oT3Rrazg4d3ZYazU1NkdNVG1fa2VQUmMyaEtuV2hqbzZ3Z2xvTFV4dlg2UEZzS21USUx0VU53YjR4bDlVSmk3a0ctODYxZkhhV1d3SGs3RHJRWk41bXlNUERmdHpDSWJ0cDZWeXozWGs3VDhXYmdNNDl3bWtBdEtYZktCOWZWLXdoVXA1VEQ1YXZrNA?oc=5",
+        "asOf": "2026-10-30T17:41:31.000Z"
+      }
+    },
+    {
       "title": "Joby Brings Its Vertical Takeoff and Landing Air Taxi to Florida :: Joby Aero, Inc. (JOBY)",
       "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNRm15aGU4ejRwSWJyOFNqNE5NU21ESXFnMUxkMEFMQThvd0JseEhZZnVUNE9tdHBnSzVmTl9xWDBtQml2dzFsYldxUUZ5QkJ0dEVyamdfVXVKWmhXZ1BZeGo2NEoyWFVETzh3aVQ3RGd5VnlCaHd4N3AzTTNUVEp1cTZnM2NDcjZ0czMybjVkTFE2aG4zM3NHOWlmdUV3UUNBTm1uSFFmRXpiVkFHVmFyOU9aUHNEcXpuT3FTdWwxSQ?oc=5",
       "publisher": "Joby Aviation",
@@ -2085,40 +2446,6 @@
         "label": "Joby Aviation via Google News",
         "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNRm15aGU4ejRwSWJyOFNqNE5NU21ESXFnMUxkMEFMQThvd0JseEhZZnVUNE9tdHBnSzVmTl9xWDBtQml2dzFsYldxUUZ5QkJ0dEVyamdfVXVKWmhXZ1BZeGo2NEoyWFVETzh3aVQ3RGd5VnlCaHd4N3AzTTNUVEp1cTZnM2NDcjZ0czMybjVkTFE2aG4zM3NHOWlmdUV3UUNBTm1uSFFmRXpiVkFHVmFyOU9aUHNEcXpuT3FTdWwxSQ?oc=5",
         "asOf": "2026-10-30T17:15:10.000Z"
-      }
-    },
-    {
-      "title": "Joby Aviation begins week of electric air taxi flights in Florida",
-      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOX3FvbFZwRTdjVy1BR2lHWFlpWTB4LXRscTFHMGlEemEwV3BQUkY4UHhxUkU4cWRMTXlVSTU0aE50VG1mSnBrYTVJLTNEWW91eVhDZkcyZmthY0ZxbFJmaWVxZmpNNlJxeTQwX25OWkRERHBtMlAwd2s4NXBSTnhUdjFnRjFxeHBHNEpDUmd0enV5NHk1TV8zSXJWNGdwcm1BNUkxYzhnM0xvNVQ0WmdMWTJRX1JyUzRScHJQQXNoQ09NcUtX?oc=5",
-      "publisher": "Investing.com UK",
-      "publishedAt": "2026-10-30T17:10:00.000Z",
-      "feed": "Google News",
-      "tag": "catalyst",
-      "matched": [
-        "launch/start"
-      ],
-      "jobySpecific": true,
-      "reaction": {
-        "eventDateET": "2026-10-30",
-        "afterClose": false,
-        "sameDaySession": "2026-10-30",
-        "sameDay": -0.03543303760668293,
-        "spySameDay": -0.01772904090171079,
-        "nextDaySession": "2026-11-02",
-        "nextDay": -0.018367377721681843,
-        "spyNextDay": -0.004790127636589259,
-        "firstReaction": -0.03543303760668293,
-        "partial": false,
-        "source": {
-          "label": "Yahoo Finance daily adjusted closes, JOBY and SPY",
-          "url": "https://finance.yahoo.com/quote/JOBY/history/",
-          "asOf": "2026-11-02"
-        }
-      },
-      "source": {
-        "label": "Investing.com UK via Google News",
-        "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOX3FvbFZwRTdjVy1BR2lHWFlpWTB4LXRscTFHMGlEemEwV3BQUkY4UHhxUkU4cWRMTXlVSTU0aE50VG1mSnBrYTVJLTNEWW91eVhDZkcyZmthY0ZxbFJmaWVxZmpNNlJxeTQwX25OWkRERHBtMlAwd2s4NXBSTnhUdjFnRjFxeHBHNEpDUmd0enV5NHk1TV8zSXJWNGdwcm1BNUkxYzhnM0xvNVQ0WmdMWTJRX1JyUzRScHJQQXNoQ09NcUtX?oc=5",
-        "asOf": "2026-10-30T17:10:00.000Z"
       }
     },
     {
@@ -2249,38 +2576,6 @@
         "label": "Simply Wall St. via Yahoo Finance",
         "url": "https://finance.yahoo.com/markets/stocks/articles/joby-aviation-joby-stock-gets-131610922.html",
         "asOf": "2026-10-30T13:16:10.000Z"
-      }
-    },
-    {
-      "title": "Joby's electric air taxi flies the world's first airline route",
-      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNSjFsSldkenB0RE9EOTItYlBRS0NneFBOZjE4alpOTXJkN2pZR2VBNDJtR1ZvLUx4LThRbDN4eWxDbkVWRTFFLU12T3N2RThsNzZOd3FmbERraTM4M1NiVEFxLXhONzA2Rl9RQ3lIeE1aMk9ZT2tTS0ZOLUhlVHJjN2dIeG8?oc=5",
-      "publisher": "Yahoo",
-      "publishedAt": "2026-10-30T12:00:42.000Z",
-      "feed": "Google News",
-      "tag": "context",
-      "matched": [],
-      "jobySpecific": true,
-      "reaction": {
-        "eventDateET": "2026-10-30",
-        "afterClose": false,
-        "sameDaySession": "2026-10-30",
-        "sameDay": -0.03543303760668293,
-        "spySameDay": -0.01772904090171079,
-        "nextDaySession": "2026-11-02",
-        "nextDay": -0.018367377721681843,
-        "spyNextDay": -0.004790127636589259,
-        "firstReaction": -0.03543303760668293,
-        "partial": false,
-        "source": {
-          "label": "Yahoo Finance daily adjusted closes, JOBY and SPY",
-          "url": "https://finance.yahoo.com/quote/JOBY/history/",
-          "asOf": "2026-11-02"
-        }
-      },
-      "source": {
-        "label": "Yahoo via Google News",
-        "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNSjFsSldkenB0RE9EOTItYlBRS0NneFBOZjE4alpOTXJkN2pZR2VBNDJtR1ZvLUx4LThRbDN4eWxDbkVWRTFFLU12T3N2RThsNzZOd3FmbERraTM4M1NiVEFxLXhONzA2Rl9RQ3lIeE1aMk9ZT2tTS0ZOLUhlVHJjN2dIeG8?oc=5",
-        "asOf": "2026-10-30T12:00:42.000Z"
       }
     },
     {
@@ -2446,106 +2741,10 @@
       }
     },
     {
-      "title": "Why Is Joby Aviation (NYSE:JOBY) Under Fresh Scrutiny as Its Report Approaches?",
-      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNT2tya2prYnRFMnE5TjM4TVhxUmZrQS1nWXdPYzk4WE90RVBvdE5TbmFHYUp4STk1MU0tZWd0V2RUX3oxTURUVlkwMEgzTWw1dWFrSGpHZExYeDBucldxM1FwUEFReENsTk55aUhaRDd5b29iWXpJbmNaQ0s3UXF2cFNzc3NXaWZfZ1ZqSFY3c0JrVURsVWhTZG1QNkdPYnhYWElkWmlScUZBWEFpWVNQOVVYcXZuRmZDUHpr?oc=5",
-      "publisher": "Kalkine Media",
-      "publishedAt": "2026-10-29T06:44:00.000Z",
-      "feed": "Google News",
-      "tag": "context",
-      "matched": [],
-      "jobySpecific": true,
-      "reaction": {
-        "eventDateET": "2026-10-29",
-        "afterClose": false,
-        "sameDaySession": "2026-10-29",
-        "sameDay": 0,
-        "spySameDay": -0.0038197255200072,
-        "nextDaySession": "2026-10-30",
-        "nextDay": -0.03543303760668293,
-        "spyNextDay": -0.01772904090171079,
-        "firstReaction": 0,
-        "partial": false,
-        "source": {
-          "label": "Yahoo Finance daily adjusted closes, JOBY and SPY",
-          "url": "https://finance.yahoo.com/quote/JOBY/history/",
-          "asOf": "2026-10-30"
-        }
-      },
-      "source": {
-        "label": "Kalkine Media via Google News",
-        "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNT2tya2prYnRFMnE5TjM4TVhxUmZrQS1nWXdPYzk4WE90RVBvdE5TbmFHYUp4STk1MU0tZWd0V2RUX3oxTURUVlkwMEgzTWw1dWFrSGpHZExYeDBucldxM1FwUEFReENsTk55aUhaRDd5b29iWXpJbmNaQ0s3UXF2cFNzc3NXaWZfZ1ZqSFY3c0JrVURsVWhTZG1QNkdPYnhYWElkWmlScUZBWEFpWVNQOVVYcXZuRmZDUHpr?oc=5",
-        "asOf": "2026-10-29T06:44:00.000Z"
-      }
-    },
-    {
-      "title": "Cathie Wood Dumps More AMD, Buys Joby and Archer",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/cathie-wood-dumps-more-amd-172934990.html",
-      "publisher": "GuruFocus.com",
-      "publishedAt": "2026-10-28T17:29:34.000Z",
-      "feed": "Yahoo Finance",
-      "tag": "context",
-      "matched": [],
-      "jobySpecific": true,
-      "reaction": {
-        "eventDateET": "2026-10-28",
-        "afterClose": false,
-        "sameDaySession": "2026-10-28",
-        "sameDay": 0.013971994336583471,
-        "spySameDay": 0.003443110602771249,
-        "nextDaySession": "2026-10-29",
-        "nextDay": 0,
-        "spyNextDay": -0.0038197255200072,
-        "firstReaction": 0.013971994336583471,
-        "partial": false,
-        "source": {
-          "label": "Yahoo Finance daily adjusted closes, JOBY and SPY",
-          "url": "https://finance.yahoo.com/quote/JOBY/history/",
-          "asOf": "2026-10-29"
-        }
-      },
-      "source": {
-        "label": "GuruFocus.com via Yahoo Finance",
-        "url": "https://finance.yahoo.com/markets/stocks/articles/cathie-wood-dumps-more-amd-172934990.html",
-        "asOf": "2026-10-28T17:29:34.000Z"
-      }
-    },
-    {
       "title": "ACHR vs. JOBY: Which eVTOL Stock Offers Stronger Growth Potential?",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/achr-vs-joby-evtol-stock-135900081.html",
-      "publisher": "Zacks",
-      "publishedAt": "2026-10-28T13:59:00.000Z",
-      "feed": "Yahoo Finance",
-      "tag": "context",
-      "matched": [],
-      "jobySpecific": true,
-      "reaction": {
-        "eventDateET": "2026-10-28",
-        "afterClose": false,
-        "sameDaySession": "2026-10-28",
-        "sameDay": 0.013971994336583471,
-        "spySameDay": 0.003443110602771249,
-        "nextDaySession": "2026-10-29",
-        "nextDay": 0,
-        "spyNextDay": -0.0038197255200072,
-        "firstReaction": 0.013971994336583471,
-        "partial": false,
-        "source": {
-          "label": "Yahoo Finance daily adjusted closes, JOBY and SPY",
-          "url": "https://finance.yahoo.com/quote/JOBY/history/",
-          "asOf": "2026-10-29"
-        }
-      },
-      "source": {
-        "label": "Zacks via Yahoo Finance",
-        "url": "https://finance.yahoo.com/markets/stocks/articles/achr-vs-joby-evtol-stock-135900081.html",
-        "asOf": "2026-10-28T13:59:00.000Z"
-      }
-    },
-    {
-      "title": "The Pentagon Is Now the eVTOL Industry's Biggest Customer. Here's How Much Revenue That's Actually Worth to Archer and Joby.",
-      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQdTVZakZZMXk1VEZTMXhEZUR1STNDNHNXWkxQeFBJeFV4VGhaeVNUeHItMEpxdXpQYldEVzNTOUJGTnloZHlGRzFSVjBrRWVQWlNLM25PaG81N3RfVWxXYVA5emVvSkZUVWp6LWNKWlktY0hWTG9UejNFRmZ6MV9zdTRJUUZLS1JFclFnOS05RkVlSERzQUd2OHpBWGRvdw?oc=5",
+      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNS01IMTVHMnh4dmtxU2x5Q1BfTGIxRjl0M0ZyT29ZajY5d0tydFAzRTJIWjM1RWhkVnlpQlpvVUdsUmRYOTJ1UVRFS2pfV05kVjFkUWY4UG53MUFvbHRLdWtfbHh4WGtFQ1lxX0NwdVFGUi1TYW5sMWtWZEZwVWc3OFJtTTJ1RVFNTVYydGIzMW9mYVU?oc=5",
       "publisher": "Yahoo Finance",
-      "publishedAt": "2026-10-28T10:10:00.000Z",
+      "publishedAt": "2026-10-28T13:59:00.000Z",
       "feed": "Google News",
       "tag": "context",
       "matched": [],
@@ -2569,8 +2768,8 @@
       },
       "source": {
         "label": "Yahoo Finance via Google News",
-        "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQdTVZakZZMXk1VEZTMXhEZUR1STNDNHNXWkxQeFBJeFV4VGhaeVNUeHItMEpxdXpQYldEVzNTOUJGTnloZHlGRzFSVjBrRWVQWlNLM25PaG81N3RfVWxXYVA5emVvSkZUVWp6LWNKWlktY0hWTG9UejNFRmZ6MV9zdTRJUUZLS1JFclFnOS05RkVlSERzQUd2OHpBWGRvdw?oc=5",
-        "asOf": "2026-10-28T10:10:00.000Z"
+        "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNS01IMTVHMnh4dmtxU2x5Q1BfTGIxRjl0M0ZyT29ZajY5d0tydFAzRTJIWjM1RWhkVnlpQlpvVUdsUmRYOTJ1UVRFS2pfV05kVjFkUWY4UG53MUFvbHRLdWtfbHh4WGtFQ1lxX0NwdVFGUi1TYW5sMWtWZEZwVWc3OFJtTTJ1RVFNTVYydGIzMW9mYVU?oc=5",
+        "asOf": "2026-10-28T13:59:00.000Z"
       }
     },
     {
@@ -2603,6 +2802,40 @@
         "label": "Yahoo Finance via Google News",
         "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQUjB0QXdDcl9mREJTdHNOVkhoNzh4U2VDcmVSNWZRaU1rRktJMTJyQ21yUWtUZDBlT2NsRHdyNkZ5UTNXdlRXUlc0enNuMXZDclYzMTBBSHhuQm41dTMxWHlPcFZzODhoUk1vb3J3TE1obndpdUo0M05UbVBtWVV2SG9IMGRrc3BXZ0JJQjJOVUFuQm1WMDlxbA?oc=5",
         "asOf": "2026-10-26T21:50:23.000Z"
+      }
+    },
+    {
+      "title": "Cathie Wood’s ARK Invest Loads Up On Joby, Archer Aviation As Aerospace Bets Expand",
+      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPcUJveG4wRUZuWXpHZ1diNGprVkM3V0cyVWptUUN1RXJ2WWJwd0RHaURGX1RCc190UXFhYmtGUUc2bTJ5RVlVZXhyRGdMS0l2aVRVcVhOdEVWZVpoNkllMHlfTkVNZ0JnR0tDb1RlWEhBNElvdEN0N2t4QWt5UkIyZktJcWVSaGlXLUQ2UFdremlZX3BuYWQ3OQ?oc=5",
+      "publisher": "Yahoo Finance",
+      "publishedAt": "2026-10-26T07:00:00.000Z",
+      "feed": "Google News",
+      "tag": "catalyst",
+      "matched": [
+        "expansion/milestone"
+      ],
+      "jobySpecific": true,
+      "reaction": {
+        "eventDateET": "2026-10-26",
+        "afterClose": false,
+        "sameDaySession": "2026-10-26",
+        "sameDay": -0.0147059177091301,
+        "spySameDay": 0.007105576038835215,
+        "nextDaySession": "2026-10-27",
+        "nextDay": 0.06823031295462845,
+        "spyNextDay": 0.005605103485520013,
+        "firstReaction": -0.0147059177091301,
+        "partial": false,
+        "source": {
+          "label": "Yahoo Finance daily adjusted closes, JOBY and SPY",
+          "url": "https://finance.yahoo.com/quote/JOBY/history/",
+          "asOf": "2026-10-27"
+        }
+      },
+      "source": {
+        "label": "Yahoo Finance via Google News",
+        "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPcUJveG4wRUZuWXpHZ1diNGprVkM3V0cyVWptUUN1RXJ2WWJwd0RHaURGX1RCc190UXFhYmtGUUc2bTJ5RVlVZXhyRGdMS0l2aVRVcVhOdEVWZVpoNkllMHlfTkVNZ0JnR0tDb1RlWEhBNElvdEN0N2t4QWt5UkIyZktJcWVSaGlXLUQ2UFdremlZX3BuYWQ3OQ?oc=5",
+        "asOf": "2026-10-26T07:00:00.000Z"
       }
     },
     {
@@ -2738,8 +2971,8 @@
       }
     },
     {
-      "title": "Joby Aviation to Report Third Quarter 2026 Financial Results",
-      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNbE1XQzBEcDYxd1JYU013SzB5WkczTGlDQ3dQelhxVzF5SjRBbURWLWE1dEVIRVoybHBHWktDcjREUzhIN0tDRE43QnplUkxfRFloRG9aWEZjRGlhUExjTmJsYVdvUDVVNFhuTjg3Ri1HNDdoeG1jRTYzdUtGZjlJcTBMOVZqQy1tZ3kwQmRYNERhVi1INm12SWdB?oc=5",
+      "title": "Joby Aviation to Report Third Quarter 2026 Financial Results :: Joby Aero, Inc. (JOBY)",
+      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNMzVUQWdnakNwc3VYZU5IbHNWdDNxMDBlcDVGaktCenladUt3Q3BGUElraVZaeWRYLXRYNEd6c2djNXJIVUdPRFduV1FyZWV1dExlNl9hdEZHclVrTkdiR3FZVzBPMFFRWGFkcHFMWFVvc09rRUM4SHhQUDhzTDNzNGZRR01EV2dJUXUwbzlrNXV0Yjk4SFRIZVFxRUUxM2xYdURTWnphWjFTMG5ZWEpTUVl1Yk1jeGNnQWFhRFBDMlNpNV9m?oc=5",
       "publisher": "Joby Aviation",
       "publishedAt": "2026-10-15T07:00:00.000Z",
       "feed": "Google News",
@@ -2765,7 +2998,7 @@
       },
       "source": {
         "label": "Joby Aviation via Google News",
-        "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNbE1XQzBEcDYxd1JYU013SzB5WkczTGlDQ3dQelhxVzF5SjRBbURWLWE1dEVIRVoybHBHWktDcjREUzhIN0tDRE43QnplUkxfRFloRG9aWEZjRGlhUExjTmJsYVdvUDVVNFhuTjg3Ri1HNDdoeG1jRTYzdUtGZjlJcTBMOVZqQy1tZ3kwQmRYNERhVi1INm12SWdB?oc=5",
+        "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNMzVUQWdnakNwc3VYZU5IbHNWdDNxMDBlcDVGaktCenladUt3Q3BGUElraVZaeWRYLXRYNEd6c2djNXJIVUdPRFduV1FyZWV1dExlNl9hdEZHclVrTkdiR3FZVzBPMFFRWGFkcHFMWFVvc09rRUM4SHhQUDhzTDNzNGZRR01EV2dJUXUwbzlrNXV0Yjk4SFRIZVFxRUUxM2xYdURTWnphWjFTMG5ZWEpTUVl1Yk1jeGNnQWFhRFBDMlNpNV9m?oc=5",
         "asOf": "2026-10-15T07:00:00.000Z"
       }
     },
@@ -3005,6 +3238,37 @@
   "filings": [
     {
       "form": "8-K",
+      "items": "2.02,9.01",
+      "itemsDescription": "Results of operations",
+      "filed": "2026-11-04",
+      "acceptedAt": "2026-11-04T21:05:38.000Z",
+      "reportDate": "2026-11-04",
+      "url": "https://www.sec.gov/Archives/edgar/data/1819848/000181984826000531/joby-20261104.htm",
+      "reaction": {
+        "eventDateET": "2026-11-04",
+        "afterClose": true,
+        "sameDaySession": "2026-11-04",
+        "sameDay": 0.041237173203088284,
+        "spySameDay": 0.016517561312278106,
+        "nextDaySession": null,
+        "nextDay": null,
+        "spyNextDay": null,
+        "firstReaction": null,
+        "partial": false,
+        "source": {
+          "label": "Yahoo Finance daily adjusted closes, JOBY and SPY",
+          "url": "https://finance.yahoo.com/quote/JOBY/history/",
+          "asOf": "2026-11-04"
+        }
+      },
+      "source": {
+        "label": "SEC 8-K filed 2026-11-04",
+        "url": "https://www.sec.gov/Archives/edgar/data/1819848/000181984826000531/joby-20261104.htm",
+        "asOf": "2026-11-04"
+      }
+    },
+    {
+      "form": "8-K",
       "items": "8.01,9.01",
       "itemsDescription": "Other events",
       "filed": "2026-09-11",
@@ -3117,24 +3381,11 @@
       "when": "Nov 4, 2026, 4:00 PM ET",
       "title": "Quarterly earnings release; consensus revenue ≈ $40.4M",
       "kind": "earnings",
-      "past": false,
+      "past": true,
       "source": {
         "label": "Yahoo Finance earnings calendar",
         "url": "https://finance.yahoo.com/quote/JOBY/",
-        "asOf": "2026-11-04T19:25:16.442Z"
-      }
-    },
-    {
-      "date": "2026-11-04",
-      "precision": "day",
-      "when": "November 4",
-      "title": "Joby Aviation Just Launched Florida Air Taxi Flights. Its November 4 Report Will Show What They Cost",
-      "kind": "news",
-      "past": false,
-      "source": {
-        "label": "TIKR via Yahoo Finance",
-        "url": "https://finance.yahoo.com/markets/stocks/articles/joby-aviation-just-launched-florida-145232448.html",
-        "asOf": "2026-11-04T14:52:32.000Z"
+        "asOf": "2026-11-05T00:00:35.702Z"
       }
     },
     {
